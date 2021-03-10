@@ -15,9 +15,11 @@ Under CTC Notion > Blog > Projects
 ## Running Locally
 
 This is using the unofficial Notion API, but hopefully doesn't break entirely:
-`NOTION_TOKEN = 5e755ea78755c533b9294b48b81cbe55f0fafc69dcc2b04ffddcd773cfc7493b850cfacd980b404c193ad916f76849286af8ad4b3ef3b1cde79c74b7acffd7829d956a6760076b269db72ced6749`
+`export NOTION_TOKEN = 5e755ea78755c533b9294b48b81cbe55f0fafc69dcc2b04ffddcd773cfc7493b850cfacd980b404c193ad916f76849286af8ad4b3ef3b1cde79c74b7acffd7829d956a6760076b269db72ced6749`
 
-`BLOG_INDEX_ID = 5139c44e-2e76-48bc-adbf-61e18e70a6c8`
+`export BLOG_INDEX_ID = 5139c44e-2e76-48bc-adbf-61e18e70a6c8`
+
+then yarn dev
 
 1. Install dependencies `yarn`
 2. Expose `NOTION_TOKEN` and `BLOG_INDEX_ID` in your environment `export NOTION_TOKEN='<your-token>'`and `export BLOG_INDEX_ID='<your-blog-index-id>'` or `set NOTION_TOKEN="<your-token>" && set BLOG_INDEX_ID="<your-blog-index-id>"` for Windows
