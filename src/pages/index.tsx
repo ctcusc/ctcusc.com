@@ -17,14 +17,7 @@ export default function Index() {
         <h1>Code the Change</h1>
         <h2>
           We're a student-run organization at USC that drives social impact
-          through software projects for nonprofit organizations'{' '}
-          <ExtLink
-            href="https://github.com/vercel/next.js/issues/9524"
-            className="dotted"
-            style={{ color: 'inherit' }}
-          >
-            SSG
-          </ExtLink>
+          through software projects for nonprofit organizations
         </h2>
 
         <Features />

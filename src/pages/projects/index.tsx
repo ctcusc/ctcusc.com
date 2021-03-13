@@ -63,7 +63,12 @@ const Index = ({ posts = [], preview }) => {
         </div>
       )}
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
-        <h1>My Notion Blog</h1>
+        <h1>Our work</h1>
+        <p>A glimse into the work we do.</p>
+        <p>
+          If you’re a Nonprofit interested in partnering with us, apply{' '}
+          <a href="/nonprofits">here</a>
+        </p>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}

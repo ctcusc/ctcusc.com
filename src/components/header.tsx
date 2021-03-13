@@ -8,7 +8,7 @@ import Logo from './svgs/logo'
 const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Projects', page: '/projects' },
   { label: 'About', page: '/about' },
-  { label: 'Nonprofits', link: '/nonprofits' },
+  { label: 'Nonprofits', page: '/nonprofits' },
   { label: 'Students', page: '/students' },
 ]
 
@@ -16,11 +16,14 @@ const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
+  const title = 'Code the Change'
 
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} Code the Change</title>
+        <title>
+          {titlePre ? `${titlePre} |` : ''} {title}
+        </title>
         <meta
           name="description"
           content="Code the Change is a student-run organization at USC that develops technology for nonprofits pro-bono."
@@ -32,8 +35,9 @@ const Header = ({ titlePre = '' }) => {
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
       <Link href="/">
-        <a className={styles.logo} aria-label="CTC Logo">
+        <a className={styles.left} aria-label="CTC Logo">
           <Logo />
+          <h4 className={styles.name}>{title}</h4>
         </a>
       </Link>
       <ul>

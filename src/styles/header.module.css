@@ -1,9 +1,10 @@
 .header {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   min-height: 64px;
-  padding: 2em 0;
-  text-align: center;
-  letter-spacing: -0.02em;
+  padding: 2em 4em;
 }
 
 .header ul {
@@ -28,6 +29,16 @@
 
 @media (max-width: 600px) {
   .header {
-    padding: .5em 0 2em;
+    padding: 0.5em 1em 2em;
   }
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  font-weight: 600;
+  margin-left: 12px;
 }
