@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Mark",
+    "role": "President",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Mary",
+    "role": "VP of Projects",
+    "photo": "/mary.png",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "name": "Woody",
+    "role": "VP of Product",
+    "photo": "/woody.png",
+    "link": "https://www.google.com/"
+  },
+  {
+    "name": "Mark",
+    "role": "President",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Mary",
+    "role": "VP of Projects",
+    "photo": "/mary.png",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "name": "Woody",
+    "role": "VP of Product",
+    "photo": "/woody.png",
+    "link": "https://www.google.com/"
+  },
+  {
+    "name": "Mark",
+    "role": "President",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Mary",
+    "role": "VP of Projects",
+    "photo": "/mary.png",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "name": "Woody",
+    "role": "VP of Product",
+    "photo": "/woody.png",
+    "link": "https://www.google.com/"
+  }
+]

@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.item {
+  min-height: 200px;
+  width: 200px;
+}
+
+.pfp {
+  min-height: 200px;
+}
