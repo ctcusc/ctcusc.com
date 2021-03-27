@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Team from '../../components/team'
 import Header from '../../components/header'
 import sharedStyles from '../../styles/shared.module.css'
 
@@ -15,6 +16,7 @@ const Index = () => {
         <h3>1.</h3>
         <h3>2.</h3>
         <h3>3.</h3>
+        <Team />
       </div>
     </>
   )
