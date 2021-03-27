@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Header from '../../components/header'
 import sharedStyles from '../../styles/shared.module.css'
+import Team from '../../components/team'
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
         <h3>Designer</h3>
         <h3>Product Manager</h3>
         <h3>Tech Lead</h3>
+        <Team />
       </div>
     </>
   )
