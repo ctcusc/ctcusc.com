@@ -1,25 +1,32 @@
 import Header from '../components/header'
-import ExtLink from '../components/ext-link'
+import Link from 'next/link'
 import Features from '../components/features'
+import landingStyles from '../styles/landing.module.css'
 import sharedStyles from '../styles/shared.module.css'
 
 export default function Index() {
   return (
     <>
       <Header titlePre="Home" />
+      <div className={landingStyles.hero} />
       <div className={sharedStyles.layout}>
-        <img
-          src="/vercel-and-notion.png"
-          height="85"
-          width="250"
-          alt="Vercel + Notion"
-        />
-        <h1>Code the Change</h1>
-        <h2>
-          We're a student-run organization at USC that drives social impact
-          through software projects for nonprofit organizations
+        <p className={landingStyles.title}>
+          Code <br />
+          the Change
+        </p>
+        <h2 className={landingStyles.subtitle}>
+          Welcome! We’re a group of USC Students dedicated to social impact
+          through technology. We’ve helped build software solutions probono for
+          Nonprofits to help achieve their mission.
         </h2>
-
+        <div className={landingStyles.buttons}>
+          <Link href="/nonprofits/">
+            <a className={landingStyles.primarybutton}>Apply Now →</a>
+          </Link>
+          <Link href="/about/">
+            <a className={landingStyles.secondarybutton}>About us</a>
+          </Link>
+        </div>
         <Features />
 
         <div className="explanation">

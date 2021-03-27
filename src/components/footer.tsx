@@ -1,32 +1,71 @@
+import Link from 'next/link'
 import ExtLink from './ext-link'
 
-import contactStyles from '../styles/contact.module.css'
+import footerStyles from '../styles/footer.module.css'
+import headerStyles from '../styles/header.module.css'
 
+import Logo from './svgs/logo'
 import GitHub from '../components/svgs/github'
 import Twitter from '../components/svgs/twitter'
 import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
-const contacts = [
+const links = [
   {
-    Comp: Twitter,
-    alt: 'twitter icon',
-    link: 'https://twitter.com/codethechange',
+    title: 'Social',
+    list: [
+      {
+        Comp: Twitter,
+        alt: 'twitter icon',
+        link: 'https://twitter.com/codethechange',
+      },
+      {
+        Comp: GitHub,
+        alt: 'github icon',
+        link: 'https://github.com/ctcusc',
+      },
+      {
+        Comp: LinkedIn,
+        alt: 'linkedin icon',
+        link: 'https://www.linkedin.com/codethechange',
+      },
+      {
+        Comp: Envelope,
+        alt: 'envelope icon',
+        link: 'mailto:ctcusc@gmail.com?subject=Nonprofit Client',
+      },
+    ],
   },
   {
-    Comp: GitHub,
-    alt: 'github icon',
-    link: 'https://github.com/ctcusc',
+    title: 'General',
+    list: [
+      {
+        alt: 'About',
+        link: '/about',
+      },
+      {
+        alt: 'Projects',
+        link: '/projects',
+      },
+    ],
   },
   {
-    Comp: LinkedIn,
-    alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/codethechange',
+    title: 'Students',
+    list: [
+      {
+        alt: 'Apply',
+        link: '/students',
+      },
+    ],
   },
   {
-    Comp: Envelope,
-    alt: 'envelope icon',
-    link: 'mailto:ctcusc@gmail.com?subject=Nonprofit Client',
+    title: 'Nonprofits',
+    list: [
+      {
+        alt: 'Apply',
+        link: '/nonprofits',
+      },
+    ],
   },
 ]
 
@@ -34,33 +73,36 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <h2></h2>
-        <span>For Nonprofits: Want to work with us?</span>
-        <ExtLink href="/contact">
-          <img
-            src="https://vercel.com/button"
-            height={46}
-            width={132}
-            alt="deploy to Vercel button"
-          />
-        </ExtLink>
-        <span>For Students: Want to apply?</span>
-        <ExtLink href="/contact">
-          <img
-            src="https://vercel.com/button"
-            height={46}
-            width={132}
-            alt="deploy to Vercel button"
-          />
-        </ExtLink>
-        <div className={contactStyles.links}>
-          {contacts.map(({ Comp, link, alt }) => {
-            return (
-              <ExtLink key={link} href={link} aria-label={alt}>
-                <Comp height={32} />
-              </ExtLink>
-            )
-          })}
+        <div className={footerStyles.colophon}>
+          <Link href="/">
+            <a className={headerStyles.left}>
+              <Logo
+                className={headerStyles.logo}
+                width={48}
+                height={32}
+                aria-label="Code the Change"
+              />
+              <h4 className={headerStyles.name}>Code the Change</h4>
+            </a>
+          </Link>
+        </div>
+        <div className={footerStyles.links}>
+          <div className={footerStyles.section}>
+            {links.map(({ title, list }) => {
+              {
+                title
+              }
+              ;<ul>
+                {list.map(({ alt, link }) => (
+                  <li key={alt}>
+                    <Link href={link}>
+                      <a>{alt}</a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            })}
+          </div>
         </div>
       </footer>
     </>

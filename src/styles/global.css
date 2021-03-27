@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Inter';
-  font-weight: 100 900;
+  font-weight: 100 600 900;
   font-display: block;
   src: url('https://assets.vercel.com/raw/upload/v1587415301/fonts/2/inter-var-latin.woff2')
     format('woff2');
@@ -36,7 +36,6 @@ html,
 body {
   background: var(--bg);
   font-family: var(--font-sans);
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   color: var(--fg);
@@ -345,12 +344,6 @@ code {
   width: 130%;
   background: #fff;
   transform: skew(-20deg);
-}
-
-@media (max-width: 600px) {
-  .explanation {
-    padding: 0 1rem 4rem;
-  }
 }
 
 .dotted {

@@ -1,0 +1,95 @@
+.hero {
+  background: conic-gradient(
+    from 262.66deg at 65.88% 50%,
+    #2ac769 -15deg,
+    #008535 80.63deg,
+    #2ac769 345deg,
+    #008535 440.63deg
+  );
+  width: 100%;
+  height: 400px;
+}
+
+.title {
+  position: absolute;
+  margin-top: -300px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 144px;
+  /* or 100% */
+
+  letter-spacing: -0.06em;
+
+  /* "Black" */
+  color: #38473e;
+}
+
+.subtitle {
+  margin-top: 64px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.005em;
+
+  /* "Black" */
+
+  color: #38473e;
+}
+
+.buttons {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+}
+
+.primarybutton {
+  padding: 12px 20px;
+  background: rgba(187, 231, 186, 0.4);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  /* CTC Brand Dark Green */
+
+  color: #166132;
+}
+
+.secondarybutton {
+  margin-left: 12px;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  /* "Black" */
+
+  color: #38473e;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    height: 640px;
+  }
+  .title {
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: -168px;
+    /* or 100% */
+
+    letter-spacing: -0.06em;
+  }
+}

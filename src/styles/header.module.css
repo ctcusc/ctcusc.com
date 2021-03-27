@@ -1,4 +1,7 @@
 .header {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,26 +22,53 @@
 
 .header :global(a) {
   color: var(--accents-3);
-  font-weight: 400;
-}
-
-.header :global(a.active) {
-  color: #0070f3;
   font-weight: 600;
 }
 
-@media (max-width: 600px) {
+.header :hover {
+  color: #166132;
+}
+
+.header :global(a.active) {
+  color: #166132;
+}
+
+@media (max-width: 800px) {
   .header {
-    padding: 0.5em 1em 2em;
+    padding: 1em 1em 2em;
+  }
+
+  .name {
+    display: none;
   }
 }
 
 .left {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  opacity: 0.8;
+}
+
+.logo:hover {
+  opacity: 1;
 }
 
 .name {
+  font-style: normal;
   font-weight: 600;
-  margin-left: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: -0.05em;
+
+  /* CTC Brand Dark Green */
+
+  color: #166132;
+  padding: 8px 16px;
 }

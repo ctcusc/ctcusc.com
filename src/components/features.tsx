@@ -13,11 +13,11 @@ const features = [
     icon: Lightning,
   },
   {
-    text: 'Code',
+    text: 'Design',
     icon: Jamstack,
   },
   {
-    text: 'Design',
+    text: 'Develop',
     icon: Wifi,
   },
   {

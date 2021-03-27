@@ -17,6 +17,8 @@ const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
   const title = 'Code the Change'
+  const desc =
+    'Code the Change is a student-run organization at USC that develops technology for nonprofits pro-bono.'
 
   return (
     <header className={styles.header}>
@@ -24,10 +26,7 @@ const Header = ({ titlePre = '' }) => {
         <title>
           {titlePre ? `${titlePre} |` : ''} {title}
         </title>
-        <meta
-          name="description"
-          content="Code the Change is a student-run organization at USC that develops technology for nonprofits pro-bono."
-        />
+        <meta name="description" content={desc} />
         <meta name="og:title" content="Code the Change" />
         <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:site" content="@ctcusc" />
@@ -35,8 +34,13 @@ const Header = ({ titlePre = '' }) => {
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
       <Link href="/">
-        <a className={styles.left} aria-label="CTC Logo">
-          <Logo />
+        <a className={styles.left}>
+          <Logo
+            className={styles.logo}
+            width={48}
+            height={32}
+            aria-label={title}
+          />
           <h4 className={styles.name}>{title}</h4>
         </a>
       </Link>
