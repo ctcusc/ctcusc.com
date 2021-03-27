@@ -1,7 +1,19 @@
 import styles from '../styles/team.module.css'
-import data from './data/teammembers.json'
+import mems from './data/teammembers.json'
+
+function shuffleMembersOnPageLoad(array) {
+  let i = array.length - 1
+  for (; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    const temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
+  }
+  return array
+}
 
 const Team = () => {
+  const data = shuffleMembersOnPageLoad(mems)
   const members = data.map((data) => {
     return (
       <div className={styles.item}>
