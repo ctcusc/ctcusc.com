@@ -1,0 +1,30 @@
+.item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  padding: 48px 64px 12px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+
+.text {
+  margin-top: 40px;
+  grid-column: span 2;
+}
+
+.title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}

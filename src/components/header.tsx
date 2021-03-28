@@ -41,7 +41,7 @@ const Header = ({ titlePre = '' }) => {
             height={32}
             aria-label={title}
           />
-          <h4 className={styles.name}>{title}</h4>
+          <span className={styles.name}>{title}</span>
         </a>
       </Link>
       <ul>

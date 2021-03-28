@@ -2,7 +2,7 @@ import Header from '../components/header'
 import ExtLink from '../components/ext-link'
 
 import sharedStyles from '../styles/shared.module.css'
-import contactStyles from '../styles/contact.module.css'
+import nonprofitStyles from '../styles/nonprofits.module.css'
 
 export default function Nonprofits() {
   return (
@@ -10,11 +10,25 @@ export default function Nonprofits() {
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
         <h1>Partner with us.</h1>
-        <div className={contactStyles.avatar}>
-          <img src="/avatar.png" alt="placeholder img" height={60} />
+        <div className={nonprofitStyles.photogrid}>
+          <img
+            className={nonprofitStyles.c}
+            src="/usc.jpg"
+            alt="picture of University of Southern California Campus"
+          />
+          <img
+            className={nonprofitStyles.a}
+            src="/greendot-team.jpg"
+            alt="Greendot Schools Team in front of sign"
+          />
+          <img
+            className={nonprofitStyles.b}
+            src="/demo-night.jpg"
+            alt="4 members smiling"
+          />
         </div>
         <h3>Los Angeles</h3>
-        <div className={contactStyles.name}>
+        <div className={nonprofitStyles.name}>
           <ExtLink href="mailto:ctcusc@gmail.com">ctcusc@gmail.com</ExtLink>
         </div>
         <p>
@@ -26,13 +40,6 @@ export default function Nonprofits() {
         <p>
           If you would like to apply for our next year of projects, we accept
           applications between May - August. Contact us here.
-        </p>
-        <p>
-          Code the Change is a nationwide organization with another chapter at
-          Stanford University. There are also other great student organizations
-          focused on social impact and technology, including Cal Blueprint (UC
-          Berkeley), Hack4Impact (University of Pennsylvania), CS4Social Good
-          (Brown University).
         </p>
       </div>
     </>

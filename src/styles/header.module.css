@@ -22,7 +22,7 @@
 
 .header :global(a) {
   color: var(--accents-3);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .header :hover {

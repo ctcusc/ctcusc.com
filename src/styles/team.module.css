@@ -1,14 +1,24 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 4px;
 }
 
 .item {
-  min-height: 200px;
-  width: 200px;
+  min-height: 160px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pfp {
-  min-height: 200px;
+  min-height: 160px;
+}
+
+.name {
+}
+
+.role {
 }

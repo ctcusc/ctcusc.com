@@ -13,7 +13,7 @@
   --gap-double: 2rem;
 
   --bg: #fff;
-  --fg: #000;
+  --fg: #444;
   --accents-1: #111;
   --accents-2: #333;
   --accents-3: #888;
@@ -21,7 +21,8 @@
 
   --radius: 8px;
 
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -248,14 +249,6 @@ figure {
   color: #999;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-a:hover {
-  color: #3291ff;
-}
-
 .links {
   margin-top: var(--gap);
 }
@@ -274,25 +267,36 @@ mark {
   max-width: calc(100vw - var(--gap-double));
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  line-height: 1.75;
+}
+
 h1 {
-  margin: var(--gap-double) 0 calc(0.5 * var(--gap)) 0;
-  font-size: 2.25rem;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  letter-spacing: -0.89px;
 }
 
 h2 {
-  font-size: 36px;
-  padding-top: 30px;
+  font-size: 2rem;
+  letter-spacing: -0.69px;
 }
 
 h3 {
-  font-size: 26px;
-  padding-top: 20px;
+  font-size: 1.5rem;
+  letter-spacing: -0.47px;
 }
 
 h4 {
-  margin: 1rem 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.33px;
 }
 
 .video {
@@ -310,17 +314,37 @@ h4 {
 }
 
 p {
-  color: #555;
+  font-size: 16px;
+  line-height: 1.4em;
   font-weight: 400;
-  font-size: 0.94rem;
-  line-height: 1.7;
+  outline: none;
+  color: var(--fg);
+  text-decoration: none;
+  margin-bottom: 16px;
 }
+
+a {
+  text-decoration: none;
+}
+
+p a:hover,
+p a:focus,
+p a:active,
+a.reset:hover,
+a.reset:focus {
+  color: var(--gray);
+}
+
 pre {
   white-space: pre;
 }
 pre :global(code) {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+ul {
+  margin-left: 16px;
 }
 
 code {
@@ -368,7 +392,7 @@ footer span:nth-child(3) a {
   color: inherit;
 }
 
-#progress {
+#nprogress {
   pointer-events: none;
 }
 
@@ -378,6 +402,16 @@ footer span:nth-child(3) a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 5px;
   background: var(--fg);
+}
+
+#nprogress::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: transparent;
 }

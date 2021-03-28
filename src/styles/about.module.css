@@ -1,0 +1,25 @@
+.photogrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  gap: 8px;
+  max-height: 240px;
+  justify-items: start;
+}
+
+.photo {
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.photo:first-child {
+  grid-column: span 2;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}

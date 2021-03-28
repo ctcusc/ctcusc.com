@@ -1,0 +1,114 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  overflow: hidden;
+  gap: 32px;
+  align-items: center;
+  justify-items: start;
+}
+
+.photo {
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.buttons {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+}
+
+.primarybutton {
+  padding: 12px 20px;
+  background: rgba(187, 231, 186, 0.4);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  /* CTC Brand Dark Green */
+
+  color: #166132;
+}
+
+.secondarybutton {
+  margin-left: 12px;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  /* "Black" */
+
+  color: #38473e;
+}
+
+.photogrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  gap: 20px;
+}
+
+.photo {
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.photo:first-child {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+
+.selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25%);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.choice {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  color: green;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photogrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo:first-child {
+    grid-column: span 2;
+  }
+}

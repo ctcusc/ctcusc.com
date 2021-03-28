@@ -1,5 +1,6 @@
 import styles from '../styles/team.module.css'
 import mems from './data/teammembers.json'
+import ExtLink from './ext-link'
 
 function shuffleMembersOnPageLoad(array) {
   let i = array.length - 1
@@ -13,21 +14,22 @@ function shuffleMembersOnPageLoad(array) {
 }
 
 const Team = () => {
-  const data = shuffleMembersOnPageLoad(mems)
+  const data = shuffleMembersOnPageLoad(mems).slice(0, 12)
   const members = data.map((data) => {
     return (
       <div className={styles.item}>
         <img className={styles.pfp} src={data.photo} />
-        <h3>{data.name}</h3>
-        <p>{data.role}</p>
-        <a href={data.link}>About</a>
+        <ExtLink href={data.link}>
+          <p className={styles.name}>{data.name}</p>
+          <span className={styles.role}>{data.role}</span>
+        </ExtLink>
       </div>
     )
   })
 
   return (
     <div>
-      <div className={styles.grid}> {members} </div>
+      <div className={styles.grid}>{members}</div>
     </div>
   )
 }

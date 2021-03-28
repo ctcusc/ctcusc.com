@@ -2,7 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Team from '../../components/team'
 import Header from '../../components/header'
+import aboutStyles from '../../styles/about.module.css'
 import sharedStyles from '../../styles/shared.module.css'
+
+const values = [
+  {
+    value: 'Dedication to Impact',
+    desc: 'etcsad asd asd asd asd sads',
+  },
+]
 
 const Index = () => {
   return (
@@ -10,10 +18,35 @@ const Index = () => {
       <Header titlePre="About" />
       <div className={sharedStyles.layout}>
         <h1>About us.</h1>
+        <div className={aboutStyles.photogrid}>
+          <img
+            className={aboutStyles.photo}
+            src="/2017-CTC-Group.jpg"
+            alt="Group Photo of Code the Change Medmind Team"
+          />
+          <img
+            className={aboutStyles.photo}
+            src="/gopro-retreat.jpg"
+            alt="Group Photo of Code the Change All Team"
+          />
+          <img
+            className={aboutStyles.photo}
+            src="/members-sitting.jpg"
+            alt="4 members smiling"
+          />
+        </div>
         <h2>Our Mission</h2>
         <p>
-          design and build sustainable software for nonprofit organizations that
+          Design and build sustainable software for nonprofit organizations that
           helps them scale their impact and ultimately create social change.
+        </p>
+        <p>
+          Code the Change is a nationwide nonprofit organization with another
+          chapter at Stanford University. There are also other great student
+          organizations focused on social impact and technology, including
+          Blueprint (UC Berkeley, University of Waterloo, UCLA and more),
+          Hack4Impact (University of Pennsylvania, Cornell University, UIUC,
+          Georgia Tech, and more).
         </p>
         <h2>Our Values</h2>
         <span>1</span>
@@ -43,6 +76,11 @@ const Index = () => {
           many facets, including development, design, and product. They work
           collaboratively with nonprofits and within their teams and also play
           active leadership roles.
+        </p>
+        <h1>Our Team</h1>
+        <p>
+          We're completely student-run organization of ~40 members. Here are
+          some of our members:
         </p>
         <Team />
       </div>
