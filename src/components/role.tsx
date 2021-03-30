@@ -29,7 +29,7 @@ const Role = () => {
       return (
         <div className={styles.item}>
           <div>
-            <Image src={picture} alt={rolename} width={150} height={250} />
+            <Image src={picture} alt={rolename} width={100} height={100} />
             <h3 className={styles.title}>{rolename}</h3>
           </div>
           <div className={styles.text}>

@@ -3,7 +3,6 @@ import Header from '../../components/header'
 import Role from '../../components/role'
 import studentsStyles from '../../styles/students.module.css'
 import sharedStyles from '../../styles/shared.module.css'
-import rpc from '../../lib/notion/rpc'
 
 const faq = [
   {

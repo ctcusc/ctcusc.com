@@ -2,13 +2,30 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Team from '../../components/team'
 import Header from '../../components/header'
+import Value from '../../components/value'
 import aboutStyles from '../../styles/about.module.css'
 import sharedStyles from '../../styles/shared.module.css'
 
 const values = [
   {
-    value: 'Dedication to Impact',
-    desc: 'etcsad asd asd asd asd sads',
+    title: 'Dedication to Impact',
+    desc:
+      'CTC members care about creating a positive impact in their communities. This might be through active volunteering, advocacy, projects, or any other way to support the people around them.',
+  },
+  {
+    title: 'Community',
+    desc:
+      'CTC is a close community brought together by a common goal. Throughout the year, mentorship grows and friendships are made. Members support each other on their project teams and even beyond CTC.',
+  },
+  {
+    title: 'Growth',
+    desc:
+      'CTC members are dedicated to growing themselves and those around them. They are curious to learn new things and take initiative on their own.',
+  },
+  {
+    title: 'Technical Growth',
+    desc:
+      'CTC members are interested in growing their technical skills across many facets, including development, design, and product. They work collaboratively with nonprofits and within their teams and also play active leadership roles.',
   },
 ]
 
@@ -44,39 +61,16 @@ const Index = () => {
           Code the Change is a nationwide nonprofit organization with another
           chapter at Stanford University. There are also other great student
           organizations focused on social impact and technology, including
-          Blueprint (UC Berkeley, University of Waterloo, UCLA and more),
-          Hack4Impact (University of Pennsylvania, Cornell University, UIUC,
-          Georgia Tech, and more).
+          Blueprint (UC Berkeley, University of Waterloo, UCLA), Hack4Impact
+          (University of Pennsylvania, Cornell University, UIUC, Georgia Tech),
+          and Code 4 Good (MIT).
         </p>
         <h2>Our Values</h2>
-        <span>1</span>
-        <h3>Dedication to Impact</h3>
-        <p>
-          CTC members care about creating a positive impact in their
-          communities. This might be through active volunteering, advocacy,
-          projects, or any other way to support the people around them.
-        </p>
-        <span>2</span>
-        <h3>Community</h3>
-        <p>
-          CTC is a close community brought together by a common goal. Throughout
-          the year, mentorship grows and friendships are made. Members support
-          each other on their project teams and even beyond CTC.
-        </p>
-        <span>3</span>
-        <h3>Intrinsic Motivation</h3>
-        <p>
-          CTC members are dedicated to growing themselves and those around them.
-          They are curious to learn new things and take initiative on their own.
-        </p>
-        <span>4</span>
-        <h3>Technical Growth</h3>
-        <p>
-          CTC members are interested in growing their technical skills across
-          many facets, including development, design, and product. They work
-          collaboratively with nonprofits and within their teams and also play
-          active leadership roles.
-        </p>
+        <div className={aboutStyles.values}>
+          {values.map((value) => {
+            return <Value {...value} />
+          })}
+        </div>
         <h1>Our Team</h1>
         <p>
           We're completely student-run organization of ~40 members. Here are

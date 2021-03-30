@@ -1,56 +1,248 @@
 [
   {
-    "name": "Mark",
+    "name": "Adam Egyed",
+    "role": "VP of Product",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/"
+  },
+  {
+    "name": "Alex Balasky",
+    "role": "Developer",
+    "photo": "/mary.png",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "name": "Amanda Ding",
+    "role": "Designer",
+    "photo": "/woody.png",
+    "link": "https://www.google.com/"
+  },
+  {
+    "name": "Angela Xuan",
+    "role": "Designer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Andrew Hariri",
+    "role": "Developer",
+    "photo": "/mary.png",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "name": "Angie Jia",
+    "role": "Developer",
+    "photo": "/woody.png",
+    "link": "https://www.google.com/"
+  },
+  {
+    "name": "Anna Hong",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Anthony Wiencko",
+    "role": "Tech Lead",
+    "photo": "/mary.png",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "name": "Ava DeLaCruz",
+    "role": "Product Manager",
+    "photo": "/woody.png",
+    "link": "https://www.google.com/"
+  },
+  {
+    "name": "Brenna Chen",
+    "role": "VP of Membership",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Bryan Huang",
     "role": "President",
     "photo": "/mark.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
-    "name": "Mary",
-    "role": "VP of Projects",
-    "photo": "/mary.png",
-    "link": "https://www.facebook.com/"
-  },
-  {
-    "name": "Woody",
-    "role": "VP of Product",
-    "photo": "/woody.png",
-    "link": "https://www.google.com/"
-  },
-  {
-    "name": "Mark",
-    "role": "President",
+    "name": "Carolyn Zhang",
+    "role": "Developer",
     "photo": "/mark.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
-    "name": "Mary",
-    "role": "VP of Projects",
-    "photo": "/mary.png",
-    "link": "https://www.facebook.com/"
-  },
-  {
-    "name": "Woody",
-    "role": "VP of Product",
-    "photo": "/woody.png",
-    "link": "https://www.google.com/"
-  },
-  {
-    "name": "Mark",
-    "role": "President",
+    "name": "Carson Mogush",
+    "role": "Developer",
     "photo": "/mark.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
-    "name": "Mary",
-    "role": "VP of Projects",
-    "photo": "/mary.png",
-    "link": "https://www.facebook.com/"
+    "name": "Chloe Tanlimco",
+    "role": "Tech Lead",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
   },
   {
-    "name": "Woody",
-    "role": "VP of Product",
-    "photo": "/woody.png",
-    "link": "https://www.google.com/"
+    "name": "Claudia Chiu",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "David Kang",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Eugene Lee",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Eujue Lee",
+    "role": "Designer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Fayez Loan",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Grace Leeswadtrakul",
+    "role": "Designer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Jack Jobes",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Jacob Cashman",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Jamie Flores",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Jay Lin",
+    "role": "VP of Communications",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Leslie Lin",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Madelyn Dubuk",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Matt Evenson",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Morgan Lu",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Natalie Abreu",
+    "role": "VP of Projects",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Ronak Pai",
+    "role": "VP of Finance",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Sarah Zhou",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Shirley Su",
+    "role": "VP of Recruitment",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Vikram Kher",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Yang Qiao",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Yash Chandak",
+    "role": "Tech Lead",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Matthew Cho",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Emily Ho",
+    "role": "Designer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Pete Thaveesi",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Bridget Bell",
+    "role": "VP of Community",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Lynne Bai",
+    "role": "Developer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Sam Tripp",
+    "role": "Designer",
+    "photo": "/mark.png",
+    "link": "https://www.linkedin.com/feed/"
   }
 ]

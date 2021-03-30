@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.index {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 20px;
+}
+
+.text {
+  padding-top: 20px;
+}
