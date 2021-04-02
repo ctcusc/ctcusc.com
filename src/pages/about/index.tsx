@@ -58,8 +58,9 @@ const Index = () => {
           helps them scale their impact and ultimately create social change.
         </p>
         <p>
-          Code the Change is a nationwide nonprofit organization with another
-          chapter at Stanford University. There are also other great student
+          Code the Change is a nationwide nonprofit organization with chapters
+          at Stanford University, University of British Columbia, and the
+          University of Calgary. There are also other great student
           organizations focused on social impact and technology, including
           Blueprint (UC Berkeley, University of Waterloo, UCLA), Hack4Impact
           (University of Pennsylvania, Cornell University, UIUC, Georgia Tech),
