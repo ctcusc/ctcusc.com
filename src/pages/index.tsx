@@ -1,4 +1,5 @@
 import Header from '../components/header'
+import Footer from '../components/footer'
 import Link from 'next/link'
 import Features from '../components/features'
 import landingStyles from '../styles/landing.module.css'
@@ -7,9 +8,9 @@ import sharedStyles from '../styles/shared.module.css'
 export default function Index() {
   return (
     <>
-      <Header titlePre="Home" />
-      <div className={landingStyles.hero} />
       <div className={sharedStyles.layout}>
+        <Header titlePre="Home" />
+        <div className={landingStyles.hero} />
         <p className={landingStyles.title}>
           Code <br />
           the Change
@@ -19,6 +20,7 @@ export default function Index() {
           through technology. We’ve helped build software solutions probono for
           Nonprofits to help achieve their mission.
         </h2>
+        <div className="flex flex-row items-center">hi</div>
         <div className={landingStyles.buttons}>
           <Link href="/nonprofits/">
             <a className={landingStyles.primarybutton}>Apply Now →</a>
@@ -37,6 +39,7 @@ export default function Index() {
             alleviate various problems facing our world.
           </p>
         </div>
+        <Footer />
       </div>
     </>
   )

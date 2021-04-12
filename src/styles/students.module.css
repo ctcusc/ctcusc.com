@@ -6,6 +6,11 @@
   gap: 32px;
   align-items: center;
   justify-items: start;
+  margin: 128px 0px 64px 0px;
+}
+
+.grid h1 {
+  margin-top: 0px;
 }
 
 .photo {
@@ -17,7 +22,7 @@
 }
 
 .buttons {
-  margin-top: 64px;
+  margin-top: 32px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -38,23 +43,42 @@
 
   /* CTC Brand Dark Green */
 
-  color: #166132;
+  color: var(--ctc);
 }
 
-.secondarybutton {
-  margin-left: 12px;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
+.roles {
+  width: 100%;
+  grid-column: 1 / 4;
+  background-color: gray;
+  padding: 20px;
+}
 
-  letter-spacing: 0.01em;
+.carousel {
+  grid-column: 2;
+}
 
-  /* "Black" */
+.sliderActive {
+  background-color: var(--fg);
+  content: '';
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 0 2px;
+}
 
-  color: #38473e;
+.sliderInactive {
+  background-color: var(--gray);
+  content: '';
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 0 2px;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 32px;
 }
 
 .photogrid {

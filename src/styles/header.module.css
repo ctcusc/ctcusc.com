@@ -1,13 +1,9 @@
 .header {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   min-height: 64px;
-  padding: 2em 4em;
 }
 
 .header ul {
@@ -33,11 +29,7 @@
   color: #166132;
 }
 
-@media (max-width: 800px) {
-  .header {
-    padding: 1em 1em 2em;
-  }
-
+@media (max-width: 900px) {
   .name {
     display: none;
   }

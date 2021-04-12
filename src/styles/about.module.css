@@ -24,6 +24,16 @@
   margin: 0;
 }
 
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  overflow: hidden;
+  gap: 32px;
+  align-items: center;
+  justify-items: start;
+}
+
 .values {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

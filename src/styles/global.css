@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 100 600 900;
+  font-weight: 100 500 600 900;
   font-display: optional;
   src: url('https://assets.vercel.com/raw/upload/v1587415301/fonts/2/inter-var-latin.woff2')
     format('woff2');
@@ -13,8 +13,14 @@
   --gap: 1rem;
   --gap-double: 2rem;
 
-  --bg: #fff;
-  --fg: #444;
+  --bg: #f4f1f0;
+  --gray: #d6d6d6;
+  --fg: #38473e;
+  --ctc: #166132;
+  --verde: #39ad64;
+  --accent: #611a16;
+  --rojo: #ad0c05;
+
   --accents-1: #111;
   --accents-2: #333;
   --accents-3: #888;
@@ -38,8 +44,6 @@ html,
 body {
   background: var(--bg);
   font-family: var(--font-sans);
-  margin-left: auto;
-  margin-right: auto;
   color: var(--fg);
   font-size: 16px;
   text-rendering: optimizeLegibility;
@@ -220,7 +224,7 @@ pre.dark[class*='language-'] {
   white-space: nowrap;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .feature div {
     flex-basis: auto;
     padding-left: 0;
@@ -276,27 +280,53 @@ h5,
 h6 {
   font-family: var(--font-sans);
   font-weight: 600;
-  line-height: 1.75;
 }
 
 h1 {
   font-size: 2.5rem;
-  line-height: 1.25;
+  line-height: 2;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.89px;
 }
 
 h2 {
   font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.69px;
 }
 
 h3 {
   font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.47px;
 }
 
 h4 {
   font-size: 1.25rem;
+  line-height: 1;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.33px;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.33px;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.33px;
 }
 
