@@ -228,9 +228,7 @@ const Index = () => {
           draggable={false}
           arrows={false}
           showDots={true}
-          customDot={
-            <SegmentedControlButton className={studentsStyles.controlbutton} />
-          }
+          customDot={<SegmentedControlButton />}
           responsive={single}
           ssr
           infinite
