@@ -25,9 +25,7 @@ export default function Footer() {
             <span className={footerStyles.name}>Code the Change</span>
           </a>
         </Link>
-        <div>
-          <Github props={12}></Github>
-        </div>
+        <div></div>
         <ExtLink href="https://instagram.com/ctcusc">Instagram</ExtLink>
         <ExtLink href="https://github.com/ctcusc">Github</ExtLink>
         <ExtLink href="https://figma.com/codethechange">Figma</ExtLink>

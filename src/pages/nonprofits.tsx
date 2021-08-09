@@ -1,19 +1,25 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Image from 'next/image'
+import Link from 'next/link'
 import ExtLink from '../components/ext-link'
 import Clock from 'react-live-clock'
 import sharedStyles from '../styles/shared.module.css'
 import nonprofitStyles from '../styles/nonprofits.module.css'
+import banner from '../../public/greendot-team.jpg'
+import panel from '../../public//demo-night.jpg'
+import present from '../../public/present.jpg'
+import usc from '../../public/usc.png'
 
 export default function Nonprofits() {
   return (
     <div className={sharedStyles.layout}>
       <Header titlePre="Contact" />
       <h1>Partner with us.</h1>
-      <img
-        src="/greendot-team.jpg"
+      <Image
+        src={banner}
         alt="Greendot Schools Team in front of sign"
+        placeholder="blur"
       />
       <h2>Let's achieve your goals — together.</h2>
       <div className={nonprofitStyles.info}>
@@ -28,39 +34,56 @@ export default function Nonprofits() {
             system.
           </p>
           <p>
-            All for free! We open up applications for Nonprofits in May and
-            select the best fit for their needs and our bandwidth. Apply or send
-            us an email with questions!
+            Probono! We open up applications for Nonprofits in May and select
+            the best fit for their needs and our bandwidth. Apply or send us an
+            email with questions!
           </p>
+          <div className={nonprofitStyles.buttons}>
+            <Link href="/nonprofits/">
+              <a className={nonprofitStyles.primarybutton}>Apply Now →</a>
+            </Link>
+          </div>
         </div>
         <div>
           <b>What is the application timeline?</b>
-          <p>We open up applications in May.</p>
-          <b>What is the application timeline?</b>
-          <p>We open up applications in May.</p>
-          <b>What is the application timeline?</b>
-          <p>We open up applications in May.</p>
-          <b>What is the application timeline?</b>
-          <p>We open up applications in May.</p>
-          <b>What is the application timeline?</b>
-          <p>We open up applications in May.</p>
+          <p>We open up applications in May — August.</p>
+          <b>What does communication look like?</b>
+          <p>
+            Our expectation is biweekly meetings virtually with a Team lead.
+          </p>
+          <b>What kinds of projects do you accept?</b>
+          <p>
+            We'll work with you to scope out a technical solution to your
+            problem.
+          </p>
+          <b>What about maintenance?</b>
+          <p>
+            We expect you to maintain the project after handoff. We'll work to
+            make that painless.
+          </p>
+          <b>What does the timeline of the project look like?</b>
+          <p>
+            While we've successfully completed all projects with our clients in
+            the past, we cannot contractually obligate our members to do so.
+          </p>
         </div>
       </div>
       <div className={nonprofitStyles.photogrid}>
-        <img
-          className={nonprofitStyles.c}
-          src="/usc.jpg"
-          alt="picture of University of Southern California Campus"
-        />
-        <img
+        <div className={nonprofitStyles.c}>
+          <Image
+            src={usc}
+            alt="picture of University of Southern California Campus"
+          />
+        </div>
+        <Image
           className={nonprofitStyles.a}
-          src="/demo-night.jpg"
-          alt="4 members smiling"
+          src={panel}
+          alt="Member presenting to nonprofits"
         />
-        <img
+        <Image
           className={nonprofitStyles.b}
-          src="/demo-night.jpg"
-          alt="4 members smiling"
+          src={present}
+          alt="Member presenting to audience"
         />
       </div>
       <div className={nonprofitStyles.info}>

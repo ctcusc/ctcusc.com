@@ -11,6 +11,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  filter: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.item:hover {
+  filter: saturate(100%);
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
 .pfp {
@@ -18,7 +29,10 @@
 }
 
 .name {
+  margin: 12px auto 0 auto;
+  text-align: center;
 }
 
 .role {
+  text-align: center;
 }

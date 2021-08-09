@@ -3,7 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   overflow: hidden;
   gap: 8px;
-  max-height: 240px;
+  max-height: 220px;
   justify-items: start;
 }
 
@@ -26,7 +26,7 @@
 
 .mission {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   overflow: hidden;
   gap: 32px;

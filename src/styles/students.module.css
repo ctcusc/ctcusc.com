@@ -49,12 +49,18 @@
 .roles {
   width: 100%;
   grid-column: 1 / 4;
-  background-color: gray;
+  background-color: #199c5c;
   padding: 20px;
 }
 
 .carousel {
   grid-column: 2;
+}
+
+.controlbutton {
+  border: 1px red solid;
+  color: black;
+  background-color: black;
 }
 
 .sliderActive {

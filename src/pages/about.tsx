@@ -7,6 +7,9 @@ import Footer from '../components/footer'
 import Value from '../components/value'
 import aboutStyles from '../styles/about.module.css'
 import sharedStyles from '../styles/shared.module.css'
+import group from '../../public/2017-CTC-Group.jpg'
+import retreat from '../../public/gopro-retreat.jpg'
+import dinner from '../../public/ctc-dinner.jpg'
 
 const values = [
   {
@@ -49,20 +52,24 @@ const Index = () => {
       <Header titlePre="About" />
       <h1>About us.</h1>
       <div className={aboutStyles.photogrid}>
-        <img
+        <div className={aboutStyles.photo}>
+          <Image
+            src={group}
+            alt="All Team Photo of Code the Change"
+            placeholder="blur"
+          />
+        </div>
+        <Image
           className={aboutStyles.photo}
-          src="/2017-CTC-Group.jpg"
-          alt="Group Photo of Code the Change Medmind Team"
+          src={retreat}
+          alt="Code the Change at Retreat"
+          placeholder="blur"
         />
-        <img
+        <Image
           className={aboutStyles.photo}
-          src="/gopro-retreat.jpg"
-          alt="Group Photo of Code the Change All Team"
-        />
-        <img
-          className={aboutStyles.photo}
-          src="/members-sitting.jpg"
-          alt="4 members smiling"
+          src={dinner}
+          alt="Code the Change Dinner Photo"
+          placeholder="blur"
         />
       </div>
       <div className={aboutStyles.mission}>

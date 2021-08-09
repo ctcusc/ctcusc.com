@@ -1,77 +1,141 @@
 .hero {
-  height: 400px;
-  background: conic-gradient(
-    from 262.66deg at 65.88% 50%,
-    #2ac769 -15deg,
-    #008535 80.63deg,
-    #2ac769 345deg,
-    #008535 440.63deg
-  );
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background: var(--ctc);
   width: 100%;
-  grid-column: 1 / 4;
+  margin-bottom: 32px;
 }
 
 .title {
+  font-family: Manrope;
+  font-size: 96px;
   font-style: normal;
-  font-weight: bold;
-  font-size: 144px;
-  line-height: 144px;
-  /* or 100% */
-
+  font-weight: 700;
+  line-height: 96px;
   letter-spacing: -0.06em;
+  text-align: left;
+  color: #f4f1f0;
 
-  /* "Black" */
-  color: #38473e;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 32px 0px;
+  margin-top: 40%;
 }
 
 .subtitle {
-  margin-top: 64px;
+  font-family: Manrope;
   font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: -0.005em;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  /* or 100% */
 
-  /* "Black" */
+  color: var(--verde);
 
-  color: #38473e;
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 32px 0px;
 }
 
 .buttons {
-  margin-top: 64px;
+  /* Auto Layout */
+
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  border-radius: 4px;
+  padding: 0px;
+
+  position: static;
+  width: 562px;
+  height: 68px;
+  left: 0px;
+  top: 304px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 32px 0px;
 }
 
 .primarybutton {
-  padding: 12px 20px;
-  background: rgba(187, 231, 186, 0.4);
-  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 22px 34px;
+
+  position: static;
+  width: 228px;
+  height: 68px;
+  left: 0px;
+  top: 0px;
+
+  background: #f4f1f0;
+  border-radius: 40px;
+  color: #999999;
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 24px;
   line-height: 24px;
-  /* identical to box height, or 150% */
 
-  letter-spacing: 0.01em;
+  /* Inside Auto Layout */
 
-  /* CTC Brand Dark Green */
-
-  color: #166132;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 32px;
 }
 
 .secondarybutton {
-  margin-left: 12px;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 22px 34px;
 
-  letter-spacing: 0.01em;
+  position: static;
+  width: 228px;
+  height: 68px;
+  left: 0px;
+  top: 0px;
+
+  background: #f4f1f0;
+  border-radius: 40px;
+  color: #999999;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 32px;
+}
+
+.explanation > p {
+  width: 55ch;
+  padding: 0 2rem;
+  background: var(--bg);
+  margin: auto;
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 36px */
+
+  letter-spacing: -0.01em;
 
   /* "Black" */
 

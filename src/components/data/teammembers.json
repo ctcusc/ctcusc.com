@@ -2,247 +2,229 @@
   {
     "name": "Adam Egyed",
     "role": "VP of Product",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-adam.png",
     "link": "https://www.linkedin.com/"
   },
   {
     "name": "Alex Balasky",
     "role": "Developer",
-    "photo": "/mary.png",
+    "photo": "headshots/ctc-alex.png",
     "link": "https://www.facebook.com/"
   },
   {
     "name": "Amanda Ding",
     "role": "Designer",
-    "photo": "/woody.png",
+    "photo": "headshots/ctc-amanda.png",
     "link": "https://www.google.com/"
   },
   {
     "name": "Angela Xuan",
     "role": "Designer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-angela.png",
     "link": "https://www.linkedin.com/feed/"
-  },
-  {
-    "name": "Andrew Hariri",
-    "role": "Developer",
-    "photo": "/mary.png",
-    "link": "https://www.facebook.com/"
   },
   {
     "name": "Angie Jia",
     "role": "Developer",
-    "photo": "/woody.png",
+    "photo": "headshots/ctc-angie.png",
     "link": "https://www.google.com/"
   },
   {
     "name": "Anna Hong",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-anna.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Anthony Wiencko",
     "role": "Tech Lead",
-    "photo": "/mary.png",
+    "photo": "headshots/ctc-anthony.png",
     "link": "https://www.facebook.com/"
   },
   {
     "name": "Ava DeLaCruz",
     "role": "Product Manager",
-    "photo": "/woody.png",
+    "photo": "headshots/ctc-ava.png",
     "link": "https://www.google.com/"
   },
   {
     "name": "Brenna Chen",
     "role": "VP of Membership",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-brenna.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Bryan Huang",
     "role": "President",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-bryan.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Carolyn Zhang",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-carolyn.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Carson Mogush",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-carson.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Chloe Tanlimco",
     "role": "Tech Lead",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-chloe.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Claudia Chiu",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-claudia.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "David Kang",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-david.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Eugene Lee",
     "role": "Developer",
-    "photo": "/mark.png",
-    "link": "https://www.linkedin.com/feed/"
-  },
-  {
-    "name": "Eujue Lee",
-    "role": "Designer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-eugene.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Fayez Loan",
     "role": "Developer",
-    "photo": "/mark.png",
-    "link": "https://www.linkedin.com/feed/"
-  },
-  {
-    "name": "Grace Leeswadtrakul",
-    "role": "Designer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-fayez.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Jack Jobes",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-jack.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Jacob Cashman",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-jacob.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Jamie Flores",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-jamie.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Jay Lin",
     "role": "VP of Communications",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-jay.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Leslie Lin",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-leslie.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Madelyn Dubuk",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-madelyn.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Matt Evenson",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-matt.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Morgan Lu",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-morgan.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Natalie Abreu",
     "role": "VP of Projects",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-natalie.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Ronak Pai",
     "role": "VP of Finance",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-ronak.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Sarah Zhou",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-sarah.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Shirley Su",
     "role": "VP of Recruitment",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-shirley.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Vikram Kher",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-vikram.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Yang Qiao",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-yang.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Yash Chandak",
     "role": "Tech Lead",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-yash.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Matthew Cho",
     "role": "Developer",
-    "photo": "/mark.png",
-    "link": "https://www.linkedin.com/feed/"
-  },
-  {
-    "name": "Emily Ho",
-    "role": "Designer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-matthew.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Pete Thaveesi",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-pete.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Bridget Bell",
     "role": "VP of Community",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-bridget.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Lynne Bai",
     "role": "Developer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-lynne.png",
     "link": "https://www.linkedin.com/feed/"
   },
   {
     "name": "Sam Tripp",
     "role": "Designer",
-    "photo": "/mark.png",
+    "photo": "headshots/ctc-sam.png",
+    "link": "https://www.linkedin.com/feed/"
+  },
+  {
+    "name": "Carson Mogush",
+    "role": "Developer",
+    "photo": "headshots/ctc-carson.png",
     "link": "https://www.linkedin.com/feed/"
   }
 ]

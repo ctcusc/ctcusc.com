@@ -14,14 +14,13 @@ function shuffleMembersOnPageLoad(array) {
 }
 
 const Team = () => {
-  const data = shuffleMembersOnPageLoad(mems).slice(0, 12)
-  const members = data.map(({ photo, link, name, role }) => {
+  const members = mems.map(({ photo, link, name, role }) => {
     return (
       <div className={styles.item}>
-        <img className={styles.pfp} src={photo} />
         <ExtLink href={link}>
+          <img className={styles.pfp} src={photo} />
           <p className={styles.name}>{name}</p>
-          <span className={styles.role}>{role}</span>
+          <p className={styles.role}>{role}</p>
         </ExtLink>
       </div>
     )

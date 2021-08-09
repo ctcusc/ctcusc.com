@@ -7,6 +7,12 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import studentsStyles from '../../styles/students.module.css'
 import sharedStyles from '../../styles/shared.module.css'
+import members from '../../../public/members-sitting.jpg'
+import painting from '../../../public/painting.png'
+import candid from '../../../public/candid.jpg'
+import snow from '../../../public/snow-retreat.jpg'
+import relax from '../../../public/team-room.jpg'
+import lifting from '../../../public/phys-photos.jpg'
 
 const single = {
   single: {
@@ -73,30 +79,30 @@ const faq = [
   {
     question: 'How is this club set up?',
     answer:
-      'We usually work with three nonprofits with three teams each assigned to a specific project. Each team will have one Product Manager and Tech Lead, with a team of developers and designers accordingly sized.',
+      'We usually work with three nonprofits with a team each assigned to a specific project. Each team will have one Product Manager and Tech Lead, with a team of developers and designers accordingly sized.',
   },
   {
     question: 'What can I expect in terms of time commitment?',
     answer:
-      "You'll attend weekly General Meetings and weekly team meetings, with tickets (tasks) for the project. We'll be working with the nonprofit from August to April",
+      "You'll attend weekly General Meetings and weekly team meetings, with tickets (tasks) for the project. We'll be working with the nonprofit from August to April.",
   },
   {
     question: 'How much experience do I need?',
     answer:
-      'We encourage all freshman, transfers, or anyone new to technology to apply. All new members go through onboarding and are paired with a mentor to work on the project tasks together.',
+      'We look at potential—we encourage all freshman, transfers, anyone to apply. All new members go through onboarding and are paired with a mentor to work on the project tasks together.',
   },
   {
     question: 'Can I apply for more than one role?',
     answer:
-      'No. However, if you believe you have a good reason to apply to more than one, we can accept on a per-request basis.',
+      'If you believe you have a good reason to apply to more than one, we can accept on a per-request basis.',
   },
   {
     question:
       "I'm not sure that I want to apply right now. Can I apply in the spring?",
-    answer: 'No.',
+    answer: 'No, sadly we will be midway through our projects by then.',
   },
   {
-    question: 'I am a ___ major. Can I still apply?',
+    question: 'I am a ■■■ major. Can I still apply?',
     answer:
       'While many of our members are Computer Science or Design-related majors, we have no preferences for major, year, background, experience level. We review every application we get.',
   },
@@ -208,10 +214,11 @@ const Index = () => {
             </Link>
           </div>
         </div>
-        <img
+        <Image
           className={studentsStyles.photo}
-          src="/members-sitting.jpg"
+          src={members}
           alt="4 members smiling"
+          placeholder="blur"
         />
       </div>
       <h2>Roles</h2>
@@ -221,7 +228,9 @@ const Index = () => {
           draggable={false}
           arrows={false}
           showDots={true}
-          customDot={<SegmentedControlButton />}
+          customDot={
+            <SegmentedControlButton className={studentsStyles.controlbutton} />
+          }
           responsive={single}
           ssr
           infinite
@@ -267,30 +276,36 @@ const Index = () => {
       </div>
       <div className={studentsStyles.selector}></div>
       <div className={studentsStyles.photogrid}>
-        <img
+        <div className={studentsStyles.photo}>
+          <Image
+            src={candid}
+            alt="Gladeo team working on project together"
+            placeholder="blur"
+          />
+        </div>
+        <Image
           className={studentsStyles.photo}
-          src="/candid.jpg"
-          alt="Gladeo team working on project together"
-        />
-        <img
-          className={studentsStyles.photo}
-          src="/phys-photos.jpg"
+          src={lifting}
           alt="Team Photo lifting one member up"
+          placeholder="blur"
         />
-        <img
+        <Image
           className={studentsStyles.photo}
-          src="/sil-retreat.jpg"
-          alt="Team members silouettes"
+          src={painting}
+          alt="Team members painting at Virtual Retreat"
+          placeholder="blur"
         />
-        <img
+        <Image
           className={studentsStyles.photo}
-          src="/snow-retreat.jpg"
+          src={snow}
           alt="Prank around snow area in retreat"
+          placeholder="blur"
         />
-        <img
+        <Image
           className={studentsStyles.photo}
-          src="/team-room.jpg"
+          src={relax}
           alt="Members in team relaxing in room"
+          placeholder="blur"
         />
       </div>
       <h2>Questions</h2>
