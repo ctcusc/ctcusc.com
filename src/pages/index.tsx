@@ -34,7 +34,7 @@ export default function Index() {
               </Link>
             </div>
           </p>
-          <p className={landingStyles.title}>Code the Change</p>
+          <h1 className={landingStyles.title}>Code the Change</h1>
           <h2 className={landingStyles.subtitle}>
             We’re a community of technologists at USC dedicated to social impact
             that builds products for nonprofit organizations in Los Angeles

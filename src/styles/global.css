@@ -225,6 +225,7 @@ pre.dark[class*='language-'] {
   margin: 0 0 0 0.5rem;
   font-weight: 700;
   font-size: 0.95rem;
+  letter-spacing: -1px;
   white-space: nowrap;
 }
 

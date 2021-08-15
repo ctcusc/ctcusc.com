@@ -34,12 +34,6 @@
   color: var(--accents-1);
 }
 
-@media (max-width: 900px) {
-  .name {
-    display: none;
-  }
-}
-
 .left {
   display: flex;
   flex-direction: row;
@@ -71,8 +65,14 @@
   padding: 8px 16px;
 }
 
+@media (max-width: 800px) {
+  .name {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .header {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
