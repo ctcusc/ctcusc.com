@@ -7,11 +7,33 @@
   grid-column: 2;
 }
 
-.layout img {
-  margin: auto;
-  max-width: 100%;
-  display: block;
-  height: auto;
+.fullbleedhero {
+  width: 100%;
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background: var(--ctc);
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.fullbleedfooter {
+  width: 100%;
+  grid-column: 1 / 4;
+  margin-top: 64px;
+  background-color: var(--ctc);
+  display: grid;
+  grid-template-columns: 1fr;
+  font-weight: 600;
+}
+
+.fullbleedroles {
+  width: 100%;
+  grid-column: 1 / 4;
+  background-color: var(--ctc);
+  padding: 48px;
 }
 
 @media (max-width: 900px) {

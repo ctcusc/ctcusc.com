@@ -1,10 +1,14 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Link from 'next/link'
+import ExtLink from '../components/ext-link'
 import Features from '../components/features'
 import landingStyles from '../styles/landing.module.css'
 import sharedStyles from '../styles/shared.module.css'
 import Image from 'next/image'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 import organization from '../../public/alumni_pic.jpg'
 
 export default function Index() {
@@ -12,28 +16,43 @@ export default function Index() {
     <>
       <div className={sharedStyles.layout}>
         <Header titlePre="Home" />
-        <div className={landingStyles.hero}>
+        <div className={sharedStyles.fullbleedhero}>
+          <p className={landingStyles.alert}>
+            <div>Applications open 8/26. Get notified through the</div>
+            <ExtLink href="https://forms.gle/pbtxcShKGbjiQYpe7">
+              <motion.div
+                whileHover={{
+                  x: 2,
+                  transition: { duration: 0.125 },
+                }}
+                whileTap={{ scale: 0.95 }}
+                className={landingStyles.alertLink}
+              >
+                interest form →
+              </motion.div>
+            </ExtLink>
+          </p>
           <p className={landingStyles.title}>Code the Change</p>
           <h2 className={landingStyles.subtitle}>
             We’re a community of technologists at USC dedicated to social impact
             that builds products for nonprofit organizations in Los Angeles
           </h2>
           <div className={landingStyles.buttons}>
-            <Link href="/nonprofits/">
-              <a className={landingStyles.primarybutton}>Join our Team</a>
-            </Link>
             <Link href="/about/">
-              <a className={landingStyles.secondarybutton}>
-                Apply as a Nonprofit
-              </a>
+              <motion.div
+                whileHover={{
+                  y: 4,
+                  transition: { duration: 0.125 },
+                }}
+                whileTap={{ scale: 0.95 }}
+                className={landingStyles.primarybutton}
+              >
+                About us
+              </motion.div>
             </Link>
           </div>
         </div>
-        <Image
-          src={organization}
-          alt="Picture of our Alumni night"
-          placeholder="blur"
-        />
+        <div></div>
         <div className={landingStyles.explanation}>
           <p>Welcome!</p>
           <p>
@@ -60,11 +79,20 @@ export default function Index() {
             If this mission toward a better future resonates, we’d love to have
             you join us.
           </p>
-          <p>
-            <Link href="/students/">FAQ</Link>
-            <br />
-            <Link href="/students/">Apply</Link>
-          </p>
+          <div className={landingStyles.buttons}>
+            <Link href="/students/">
+              <motion.div
+                whileHover={{
+                  y: 4,
+                  transition: { duration: 0.125 },
+                }}
+                whileTap={{ scale: 0.95 }}
+                className={landingStyles.primarybutton}
+              >
+                Apply now
+              </motion.div>
+            </Link>
+          </div>
         </div>
         <Features />
 

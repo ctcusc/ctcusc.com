@@ -1,9 +1,13 @@
 .header {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   min-height: 64px;
+  transition: ease-in top 0.125s;
+  z-index: 1;
 }
 
 .header ul {
@@ -18,15 +22,15 @@
 
 .header :global(a) {
   color: var(--accents-3);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .header :hover {
-  color: #166132;
+  color: var(--accents-1);
 }
 
 .header :global(a.active) {
-  color: #166132;
+  color: var(--accents-1);
 }
 
 @media (max-width: 900px) {
@@ -51,7 +55,7 @@
 
 .name {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   /* identical to box height, or 150% */

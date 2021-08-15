@@ -2,7 +2,7 @@ import Link from 'next/link'
 import ExtLink from './ext-link'
 
 import footerStyles from '../styles/footer.module.css'
-import headerStyles from '../styles/header.module.css'
+import sharedStyles from '../styles/shared.module.css'
 
 import Logo from './svgs/logo'
 import GitHub from '../components/svgs/github'
@@ -12,8 +12,16 @@ import LinkedIn from '../components/svgs/linkedin'
 
 export default function Footer() {
   return (
-    <footer className={footerStyles.grid}>
+    <footer className={sharedStyles.fullbleedfooter}>
       <div className={footerStyles.colophon}>
+        <b>© USC Code the Change</b>
+        <div className={footerStyles.socials}>
+          <ExtLink href="https://instagram.com/ctcusc">Instagram</ExtLink>
+          <br className={footerStyles.space} />
+          <ExtLink href="https://github.com/ctcusc">Github</ExtLink>
+          <br className={footerStyles.space} />
+          <ExtLink href="https://figma.com/codethechange">Figma</ExtLink>
+        </div>
         <Link href="/">
           <a className={footerStyles.left}>
             <Logo
@@ -22,32 +30,8 @@ export default function Footer() {
               height={32}
               aria-label="Code the Change Logo"
             />
-            <span className={footerStyles.name}>Code the Change</span>
           </a>
         </Link>
-        <div></div>
-        <ExtLink href="https://instagram.com/ctcusc">Instagram</ExtLink>
-        <ExtLink href="https://github.com/ctcusc">Github</ExtLink>
-        <ExtLink href="https://figma.com/codethechange">Figma</ExtLink>
-        <p>© USC Code the Change</p>
-      </div>
-      <div className={footerStyles.section}>
-        <Link href="/about">About</Link>
-        <Link href="/about">Projects</Link>
-        <Link href="/about">Team</Link>
-        <Link href="/about">Sponsor</Link>
-      </div>
-      <div className={footerStyles.section}>
-        <Link href="/students">Apply</Link>
-        <Link href="/students">Process</Link>
-        <Link href="/students">FAQ</Link>
-        <Link href="/students">Resources</Link>
-      </div>
-      <div className={footerStyles.section}>
-        <Link href="/nonprofits">Apply</Link>
-        <Link href="/nonprofits">Process</Link>
-        <Link href="/nonprofits">FAQ</Link>
-        <Link href="/nonprofits">Resources</Link>
       </div>
     </footer>
   )

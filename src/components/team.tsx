@@ -1,34 +1,30 @@
-import styles from '../styles/team.module.css'
+import teamStyles from '../styles/team.module.css'
 import mems from './data/teammembers.json'
 import ExtLink from './ext-link'
 
-function shuffleMembersOnPageLoad(array) {
-  let i = array.length - 1
-  for (; i > 0; i--) {
+function shuffleMembersOnPageLoad(a) {
+  for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    const temp = array[i]
-    array[i] = array[j]
-    array[j] = temp
+    ;[a[i], a[j]] = [a[j], a[i]]
   }
-  return array
+  return a
 }
 
 const Team = () => {
   const members = mems.map(({ photo, link, name, role }) => {
     return (
-      <div className={styles.item}>
+      <div className={teamStyles.item}>
         <ExtLink href={link}>
-          <img className={styles.pfp} src={photo} />
-          <p className={styles.name}>{name}</p>
-          <p className={styles.role}>{role}</p>
+          <img className={teamStyles.pfp} src={photo} />
+          <p className={teamStyles.name}>{name}</p>
+          <p className={teamStyles.role}>{role}</p>
         </ExtLink>
       </div>
     )
   })
-
   return (
     <div>
-      <div className={styles.grid}>{members}</div>
+      <div className={teamStyles.grid}>{members.splice(0, 12)}</div>
     </div>
   )
 }

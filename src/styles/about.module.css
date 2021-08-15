@@ -26,7 +26,7 @@
 
 .mission {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   overflow: hidden;
   gap: 32px;
@@ -38,4 +38,23 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+}
+
+.alumni {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 800px) {
+  .photogrid {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+  .values {
+    grid-template-columns: 1fr;
+  }
+  .alumni {
+    grid-template-columns: 1fr;
+  }
 }

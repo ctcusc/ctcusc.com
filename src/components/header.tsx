@@ -1,9 +1,26 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import ExtLink from './ext-link'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 import Logo from './svgs/logo'
+
+export function debounce(func, wait, immediate) {
+  var timeout
+  return function () {
+    var context = this,
+      args = arguments
+    var later = function () {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    }
+    var callNow = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (callNow) func.apply(context, args)
+  }
+}
 
 const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Projects', page: '/projects' },
@@ -16,12 +33,33 @@ const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    )
+
+    setPrevScrollPos(currentScrollPos)
+  }, 100)
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [prevScrollPos, visible, handleScroll])
+
   const title = 'Code the Change'
   const desc =
     'Code the Change is a student-run organization at USC that develops technology for nonprofits pro-bono.'
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} style={{ top: visible ? '0' : '-60px' }}>
       <Head>
         <title>
           {titlePre ? `${titlePre} |` : ''} {title}

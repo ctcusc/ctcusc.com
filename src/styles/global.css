@@ -24,10 +24,12 @@
   --gap: 1rem;
   --gap-double: 2rem;
 
+  --white: #ffffff;
   --bg: #f4f1f0;
   --gray: #d6d6d6;
   --fg: #38473e;
-  --ctc: #199c5c;
+  --ctc: #4ccd87;
+  --indent: #43b878;
   --verde: #9df2ba;
   --accent: #611a16;
   --rojo: #ad0c05;
@@ -217,7 +219,7 @@ pre.dark[class*='language-'] {
   display: flex;
   flex-wrap: wrap;
   margin: 4rem auto;
-  width: 920px;
+  width: 420px;
   max-width: calc(100vw - var(--gap-double));
 }
 
@@ -237,13 +239,16 @@ pre.dark[class*='language-'] {
 }
 
 @media (max-width: 900px) {
+  .features {
+    max-width: 240px;
+  }
   .feature div {
     flex-basis: auto;
     padding-left: 0;
   }
 
   .feature h4 {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 }
 

@@ -1,0 +1,8 @@
+.link {
+  color: var(--accents-3);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--accents-1);
+}

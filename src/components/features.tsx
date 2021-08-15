@@ -3,13 +3,13 @@ import Jamstack from './svgs/jamstack'
 import Wifi from './svgs/wifi'
 import Lighthouse from './svgs/lighthouse'
 import Plus from './svgs/plus'
-import Notion from './svgs/notion'
+import Envelope from './svgs/envelope'
 import Edit from './svgs/edit'
 import Scroll from './svgs/scroll'
 
 const features = [
   {
-    text: 'Ideate',
+    text: 'Brainstorm',
     icon: Lightning,
   },
   {
@@ -21,23 +21,15 @@ const features = [
     icon: Wifi,
   },
   {
-    text: 'Strategy',
-    icon: Edit,
-  },
-  {
-    text: 'idk',
+    text: 'Iterate',
     icon: Plus,
   },
   {
-    text: 'MIT Licensed',
-    icon: Scroll,
+    text: 'Reconfigure',
+    icon: Edit,
   },
   {
-    text: 'yo yo yo',
-    icon: Notion,
-  },
-  {
-    text: 'Great scores',
+    text: 'Deliver',
     icon: Lighthouse,
   },
 ]

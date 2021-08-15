@@ -3,6 +3,8 @@ import Footer from '../components/footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import ExtLink from '../components/ext-link'
+import Accordion from '../components/accordion'
+import { motion } from 'framer-motion'
 import Clock from 'react-live-clock'
 import sharedStyles from '../styles/shared.module.css'
 import nonprofitStyles from '../styles/nonprofits.module.css'
@@ -11,18 +13,52 @@ import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
 import usc from '../../public/usc.png'
 
+const faq = [
+  {
+    question: 'What is the application timeline?',
+    answer: 'We open up applications in May — August.',
+  },
+  {
+    question: 'What does communication look like?',
+    answer: 'Our expectation is biweekly meetings virtually with a Team lead.',
+  },
+  {
+    question: 'What kinds of projects do you accept?',
+    answer:
+      "We'll work with you to scope out a technical solution to your problem. We've done web, mobile, data science in the past.",
+  },
+  {
+    question:
+      'What does the timeline of the project look like? Start and end dates?',
+    answer:
+      "September through April. While we've successfully completed all projects with our clients in the past, we cannot contractually obligate our members to do so.",
+  },
+  {
+    question: 'What about maintenance?',
+    answer:
+      "We expect you to maintain the project after handoff. We'll work to make that painless.",
+  },
+]
+
 export default function Nonprofits() {
   return (
     <div className={sharedStyles.layout}>
       <Header titlePre="Contact" />
       <h1>Partner with us.</h1>
-      <Image
-        src={banner}
-        alt="Greendot Schools Team in front of sign"
-        placeholder="blur"
-      />
+      <div className={nonprofitStyles.banner}>
+        <Image
+          src={banner}
+          alt="Greendot Schools Team in front of sign"
+          placeholder="blur"
+        />
+      </div>
       <h2>Let's achieve your goals — together.</h2>
-      <div className={nonprofitStyles.info}>
+      <motion.div
+        className={nonprofitStyles.info}
+        initial={{ x: '-100vw' }}
+        animate={{ x: 0 }}
+        transition={{ type: 'spring', duration: 1, bounce: 0.3 }}
+      >
         <div>
           <p>
             If you are a registered nonprofit with a clear understanding of your
@@ -39,35 +75,26 @@ export default function Nonprofits() {
             email with questions!
           </p>
           <div className={nonprofitStyles.buttons}>
-            <Link href="/nonprofits/">
-              <a className={nonprofitStyles.primarybutton}>Apply Now →</a>
-            </Link>
+            <ExtLink href="mailto:ctcusc@gmail.com">
+              <motion.div
+                whileHover={{
+                  x: 12,
+                  transition: { duration: 0.125 },
+                }}
+                whileTap={{ scale: 0.95 }}
+                className={nonprofitStyles.primarybutton}
+              >
+                Apply Now →
+              </motion.div>
+            </ExtLink>
           </div>
         </div>
-        <div>
-          <b>What is the application timeline?</b>
-          <p>We open up applications in May — August.</p>
-          <b>What does communication look like?</b>
-          <p>
-            Our expectation is biweekly meetings virtually with a Team lead.
-          </p>
-          <b>What kinds of projects do you accept?</b>
-          <p>
-            We'll work with you to scope out a technical solution to your
-            problem.
-          </p>
-          <b>What about maintenance?</b>
-          <p>
-            We expect you to maintain the project after handoff. We'll work to
-            make that painless.
-          </p>
-          <b>What does the timeline of the project look like?</b>
-          <p>
-            While we've successfully completed all projects with our clients in
-            the past, we cannot contractually obligate our members to do so.
-          </p>
+        <div className={nonprofitStyles.faq}>
+          {faq.map(({ question, answer }) => {
+            return <Accordion question={question} answer={answer} />
+          })}
         </div>
-      </div>
+      </motion.div>
       <div className={nonprofitStyles.photogrid}>
         <div className={nonprofitStyles.c}>
           <Image
