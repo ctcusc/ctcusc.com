@@ -212,9 +212,9 @@ const Index = () => {
                   placeholder="blur"
                 />
                 <div>
-                  <h4 className={studentsStyles.title}>The {name}</h4>
+                  <h4 className={studentsStyles.title}>{name}</h4>
                   <p className={studentsStyles.desc}>{desc}</p>
-                  <p className={studentsStyles.desc}>{skills}</p>
+                  <p className={studentsStyles.subdesc}>{skills}</p>
                 </div>
               </div>
             )

@@ -8,6 +8,7 @@
   min-height: 64px;
   transition: ease-in top 0.125s;
   z-index: 1;
+  font-size: 17px;
 }
 
 .header ul {
@@ -47,6 +48,7 @@
 
 .logo {
   opacity: 0.8;
+  margin-left: 12px;
 }
 
 .logo:hover {
@@ -56,8 +58,8 @@
 .name {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 21px;
   /* identical to box height, or 150% */
 
   text-align: center;
@@ -67,4 +69,10 @@
 
   color: #166132;
   padding: 8px 16px;
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 12px;
+  }
 }

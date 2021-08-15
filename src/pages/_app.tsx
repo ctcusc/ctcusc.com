@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1,
+        duration: 2,
         ease: [0.61, 1, 0.88, 1],
       },
     },

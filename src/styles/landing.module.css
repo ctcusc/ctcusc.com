@@ -26,6 +26,7 @@
 .alertLink {
   margin-left: 6px;
   color: var(--verde);
+  cursor: pointer;
 }
 
 .title {
@@ -69,15 +70,16 @@
   background: var(--gray);
   border-radius: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.01em;
-  color: var(--accents-3);
+  color: var(--accents-2);
   cursor: pointer;
+  margin-top: 24px;
 }
 
 .primarybutton:hover {
-  color: var(--accents-2);
+  color: var(--ctc);
 }
 
 .explanation {

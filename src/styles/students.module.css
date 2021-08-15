@@ -60,8 +60,9 @@
 
 .title {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2em;
+  letter-spacing: 0.4;
 }
 
 .desc {
@@ -72,12 +73,20 @@
   color: #daffde;
 }
 
+.subdesc {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--verde);
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  padding: 3px;
+  padding: 4px;
   list-style: none;
   background-color: var(--indent);
   border-radius: 10px;
@@ -94,7 +103,7 @@
 .button {
   position: relative;
   margin: 0;
-  padding: 8px 16px;
+  padding: 8px 24px;
   color: var(--white);
   line-height: 1;
   background: transparent;
@@ -168,6 +177,11 @@
 
   .panel {
     grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .list {
+    margin-top: 0px;
   }
 
   .faq {

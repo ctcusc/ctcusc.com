@@ -16,7 +16,7 @@
 
 .questionRow {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,7 +30,8 @@
 
 .answer {
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 17px;
+  letter-spacing: -0.12px;
   color: var(--accents-3);
   background-color: var(--white);
   padding: 0;

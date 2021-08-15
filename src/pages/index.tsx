@@ -18,19 +18,21 @@ export default function Index() {
         <Header titlePre="Home" />
         <div className={sharedStyles.fullbleedhero}>
           <p className={landingStyles.alert}>
-            <div>Applications open 8/26. Get notified through the</div>
-            <ExtLink href="https://forms.gle/pbtxcShKGbjiQYpe7">
-              <motion.div
-                whileHover={{
-                  x: 2,
-                  transition: { duration: 0.125 },
-                }}
-                whileTap={{ scale: 0.95 }}
-                className={landingStyles.alertLink}
-              >
-                interest form →
-              </motion.div>
-            </ExtLink>
+            <div>
+              Applications open 8/26. Get notified through the
+              <Link href="/students/">
+                <motion.div
+                  whileHover={{
+                    x: 2,
+                    transition: { duration: 0.125 },
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                  className={landingStyles.alertLink}
+                >
+                  interest form →
+                </motion.div>
+              </Link>
+            </div>
           </p>
           <p className={landingStyles.title}>Code the Change</p>
           <h2 className={landingStyles.subtitle}>

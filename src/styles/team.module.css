@@ -36,3 +36,25 @@
 .role {
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 4px;
+  }
+
+  .item {
+    min-height: 120px;
+    width: 120px;
+  }
+
+  .pfp {
+    max-width: 120px;
+  }
+
+  .name {
+    margin: 12px auto 0 auto;
+    text-align: center;
+  }
+}

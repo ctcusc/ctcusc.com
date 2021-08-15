@@ -1,8 +1,18 @@
 .link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.02px;
   color: var(--accents-3);
   text-decoration: none;
+
+  margin-left: 2px;
 }
 
 .link:hover {
+  color: var(--accents-1);
+}
+
+.link:active {
   color: var(--accents-1);
 }

@@ -53,12 +53,7 @@ export default function Nonprofits() {
         />
       </div>
       <h2>Let's achieve your goals — together.</h2>
-      <motion.div
-        className={nonprofitStyles.info}
-        initial={{ x: '-100vw' }}
-        animate={{ x: 0 }}
-        transition={{ type: 'spring', duration: 1, bounce: 0.3 }}
-      >
+      <div className={nonprofitStyles.info}>
         <div>
           <p>
             If you are a registered nonprofit with a clear understanding of your
@@ -94,7 +89,7 @@ export default function Nonprofits() {
             return <Accordion question={question} answer={answer} />
           })}
         </div>
-      </motion.div>
+      </div>
       <div className={nonprofitStyles.photogrid}>
         <div className={nonprofitStyles.c}>
           <Image

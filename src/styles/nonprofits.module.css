@@ -111,3 +111,9 @@
   color: var(--ctc);
   cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+}

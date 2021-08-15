@@ -14,13 +14,13 @@ export default function Footer() {
   return (
     <footer className={sharedStyles.fullbleedfooter}>
       <div className={footerStyles.colophon}>
-        <b>© USC Code the Change</b>
+        <b className={footerStyles.name}>© USC Code the Change</b>
         <div className={footerStyles.socials}>
           <ExtLink href="https://instagram.com/ctcusc">Instagram</ExtLink>
-          <br className={footerStyles.space} />
+          <div className={footerStyles.space} />
           <ExtLink href="https://github.com/ctcusc">Github</ExtLink>
-          <br className={footerStyles.space} />
-          <ExtLink href="https://figma.com/codethechange">Figma</ExtLink>
+          <div className={footerStyles.space} />
+          <ExtLink href="https://figma.com/@codethechange">Figma</ExtLink>
         </div>
         <Link href="/">
           <a className={footerStyles.left}>
