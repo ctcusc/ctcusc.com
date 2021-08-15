@@ -36,17 +36,21 @@ const Header = ({ titlePre = '' }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
 
-  const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset
+  const handleScroll = debounce(
+    () => {
+      const currentScrollPos = window.pageYOffset
 
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 70) ||
-        currentScrollPos < 10
-    )
+      setVisible(
+        (prevScrollPos > currentScrollPos &&
+          prevScrollPos - currentScrollPos > 70) ||
+          currentScrollPos < 10
+      )
 
-    setPrevScrollPos(currentScrollPos)
-  }, 100)
+      setPrevScrollPos(currentScrollPos)
+    },
+    100,
+    false
+  )
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
