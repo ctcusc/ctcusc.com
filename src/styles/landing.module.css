@@ -109,12 +109,14 @@
 
 @media (max-width: 800px) {
   .alert {
+    font-weight: 500;
     font-size: 0.6em;
     margin-top: 50%;
   }
 
   .title {
     font-size: 2.5em;
+    line-height: 3em;
     margin-top: 0;
   }
 
@@ -131,5 +133,10 @@
   .primarybutton {
     font-size: 12px;
     padding: 12px 16px;
+  }
+
+  .explanation {
+    font-weight: 500;
+    letter-spacing: -0.04px;
   }
 }
