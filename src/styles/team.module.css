@@ -29,11 +29,13 @@
 }
 
 .name {
+  font-weight: 700;
   margin: 12px auto 0 auto;
   text-align: center;
 }
 
 .role {
+  font-weight: 700;
   text-align: center;
 }
 

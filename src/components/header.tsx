@@ -23,7 +23,6 @@ export function debounce(func, wait, immediate) {
 }
 
 const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'Projects', page: '/projects' },
   { label: 'About', page: '/about' },
   { label: 'Nonprofits', page: '/nonprofits' },
   { label: 'Students', page: '/students' },
