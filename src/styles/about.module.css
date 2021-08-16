@@ -1,43 +1,22 @@
-.photogrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  overflow: hidden;
-  gap: 8px;
-  max-height: 220px;
-  justify-items: start;
+.buttons {
+  margin: 32px auto;
 }
 
-.photo {
-  display: block;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-  margin: 0;
+.primarybutton {
+  padding: 12px 20px;
+  background: var(--gray);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: var(--accents-2);
+  cursor: pointer;
 }
 
-.photo:first-child {
-  grid-column: span 2;
-  display: block;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-  margin: 0;
-}
-
-.mission {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  overflow: hidden;
-  gap: 32px;
-  align-items: center;
-  justify-items: start;
-}
-
-.values {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+.primarybutton:hover {
+  color: var(--ctc);
 }
 
 .alumni {
@@ -47,13 +26,6 @@
 }
 
 @media (max-width: 800px) {
-  .photogrid {
-    grid-template-columns: 1fr;
-    max-height: none;
-  }
-  .values {
-    grid-template-columns: 1fr;
-  }
   .alumni {
     grid-template-columns: 1fr;
   }
