@@ -89,6 +89,8 @@ export default function Index() {
           <div className={landingStyles.photo}>
             <Image
               src={group}
+              quality="50"
+              priority
               alt="All Team Photo of Code the Change"
               placeholder="blur"
             />
@@ -96,12 +98,16 @@ export default function Index() {
           <Image
             className={landingStyles.photo}
             src={dinner}
+            quality="50"
+            priority
             alt="Code the Change Dinner Photo"
             placeholder="blur"
           />
           <Image
             className={landingStyles.photo}
             src={retreat}
+            quality="50"
+            priority
             alt="Code the Change at Retreat"
             placeholder="blur"
           />
@@ -126,7 +132,13 @@ export default function Index() {
           developers and designers as well as a Tech Lead and Product Manager to
           lead the team.
         </h6>
-        <Image src={organization} alt="Alumni Night" placeholder="blur" />
+        <Image
+          src={organization}
+          alt="Alumni Night"
+          quality="50"
+          priority
+          placeholder="blur"
+        />
         <h6>
           We're committed to our impact, but we go beyond work — 'CTC' is a
           family. During an Alumni night last year, we had members all the way

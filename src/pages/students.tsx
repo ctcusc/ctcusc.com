@@ -11,7 +11,7 @@ import sharedStyles from '../styles/shared.module.css'
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import members from '../../public/members-sitting.jpg'
-import painting from '../../public/painting.png'
+import painting from '../../public/painting.jpg'
 import candid from '../../public/candid.jpg'
 import snow from '../../public/snow-retreat.jpg'
 import relax from '../../public/team-room.jpg'
@@ -19,6 +19,7 @@ import lifting from '../../public/phys-photos.jpg'
 import developer from '../../public/dev-char.png'
 import designer from '../../public/designer-char.png'
 import techlead from '../../public/tl-char.png'
+import pm from '../../public/pm-char.png'
 import rpc from '../lib/notion/rpc'
 
 const single = {
@@ -109,7 +110,7 @@ const roles = [
     desc:
       'Product Managers at Code the Change help ship great products and communicate between the nonprofits to the team.',
     skills: 'Product Strategy, Project Management, Nonprofit interaction',
-    img: developer,
+    img: pm,
   },
 ]
 
@@ -185,6 +186,8 @@ const Index = () => {
         <Image
           className={studentsStyles.photo}
           src={members}
+          priority
+          quality="50"
           alt="4 members smiling"
           placeholder="blur"
         />
@@ -209,6 +212,8 @@ const Index = () => {
                   className={studentsStyles.photo}
                   src={img}
                   alt={name}
+                  priority
+                  quality="5"
                   placeholder="blur"
                 />
                 <div>
@@ -227,6 +232,8 @@ const Index = () => {
           <Image
             src={candid}
             alt="Gladeo team working on project together"
+            quality="50"
+            priority
             placeholder="blur"
           />
         </div>
@@ -234,24 +241,32 @@ const Index = () => {
           className={studentsStyles.photo}
           src={lifting}
           alt="Team Photo lifting one member up"
+          quality="50"
+          priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
           src={painting}
           alt="Team members painting at Virtual Retreat"
+          quality="50"
+          priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
           src={snow}
           alt="Prank around snow area in retreat"
+          quality="50"
+          priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
           src={relax}
           alt="Members in team relaxing in room"
+          quality="50"
+          priority
           placeholder="blur"
         />
       </div>

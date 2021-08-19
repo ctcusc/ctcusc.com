@@ -11,7 +11,7 @@ import nonprofitStyles from '../styles/nonprofits.module.css'
 import banner from '../../public/greendot-team.jpg'
 import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
-import usc from '../../public/usc.png'
+import usc from '../../public/usc.jpg'
 
 const faq = [
   {
@@ -49,6 +49,8 @@ export default function Nonprofits() {
         <Image
           src={banner}
           alt="Greendot Schools Team in front of sign"
+          quality="100"
+          priority
           placeholder="blur"
         />
       </div>
@@ -94,17 +96,23 @@ export default function Nonprofits() {
         <div className={nonprofitStyles.c}>
           <Image
             src={usc}
+            quality="50"
+            priority
             alt="picture of University of Southern California Campus"
           />
         </div>
         <Image
           className={nonprofitStyles.a}
           src={panel}
+          quality="50"
+          priority
           alt="Member presenting to nonprofits"
         />
         <Image
           className={nonprofitStyles.b}
           src={present}
+          quality="50"
+          priority
           alt="Member presenting to audience"
         />
       </div>
