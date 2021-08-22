@@ -25,25 +25,25 @@ const values = [
     number: 1,
     title: 'Impact',
     desc:
-      'Do you care about creating a positive impact in your communities? This might be through projects, active volunteering, or advocacy.',
+      'Do you care about creating a positive impact in your communities? How do you create impact through projects, volunteering, or advocacy?',
   },
   {
     number: 2,
     title: 'Community',
     desc:
-      'How do you collaborate with others? We value diverse, new opinions and extend this respect beyond our projects and into friendships.',
+      'How do you collaborate with others? We value diverse, new opinions and extend this respect beyond our projects and into relationships.',
   },
   {
     number: 3,
     title: 'Growth',
     desc:
-      'Do you exhibit a desire for continuous growth? Onboarding, mentorship, learning from others are huge parts of our organization.',
+      'Do you exhibit a desire for continuous growth? Onboarding, mentorship, and learning from others are important parts of our organization.',
   },
   {
     number: 4,
     title: 'Initiative',
     desc:
-      'Are you self-motivated to call out injustices and tackle new problems? CTC thrives under ambiguous "no-right-answer" challenges.',
+      'Are you self-motivated to call out injustices and tackle new problems? Tackling ambiguous, hard problems as students requires self-directed members',
   },
 ]
 
@@ -58,8 +58,8 @@ export default function Index() {
             social change
           </h1>
           <h2 className={landingStyles.subtitle}>
-            A community of PMs, developers, and designers at USC working on pro
-            bono software for nonprofits
+            A community of PMs, developers, and designers at USC building
+            products for nonprofits
           </h2>
           <div className={landingStyles.buttons}>
             <Link href="/about/">
@@ -134,17 +134,16 @@ export default function Index() {
             placeholder="blur"
           />
           <h4>
-            Every year, we partner with several nonprofits in the Los Angeles
-            area. Many nonprofits do not have the resources in the technology
-            department; we build something free-of-charge to help them achieve
-            their mission.
+            Every year, we partner with nonprofits in the Los Angeles area. Many
+            nonprofits are bound in reach and scope of tech, we help
+            improve/create software to help their mission.
           </h4>
         </div>
         <div className={landingStyles.grid}>
           <h4>
-            As an organization, we are structured in project teams, with
-            Developers, Designers, Tech Lead, and a Product Manager to lead the
-            team.
+            As an organization, we are structured in project teams: Developers,
+            Designers, Tech Lead, and a Product Manager. EBoard manages events,
+            recruitment, and fun.
           </h4>
           <Image
             src={candid}
@@ -164,10 +163,10 @@ export default function Index() {
             placeholder="blur"
           />
           <h4>
-            We're committed to our impact, but we go beyond work — 'CTC' is a
-            family. During an Alumni night last year, we had members all the way
-            back from Code the Change's founding year (!) come in and hang out
-            with us. We support each other beyond just our projects.
+            We're committed to our impact, but we go beyond work — Code the
+            Change is a lifelong family. During an Alumni night, even members
+            from the founding year came back. We support each other beyond just
+            our projects.
           </h4>
         </div>
 
