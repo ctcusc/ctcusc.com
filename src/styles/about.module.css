@@ -4,19 +4,18 @@
 
 .primarybutton {
   padding: 12px 20px;
-  background: var(--gray);
+  background: var(--ctc);
   border-radius: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.01em;
-  color: var(--accents-2);
+  color: var(--verde);
   cursor: pointer;
 }
 
 .primarybutton:hover {
-  color: var(--ctc);
+  color: var(--white);
 }
 
 .alumni {

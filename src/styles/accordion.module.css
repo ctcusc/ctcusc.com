@@ -4,7 +4,7 @@
 }
 
 .question {
-  background-color: var(--white);
+  background-color: #fff;
   border-radius: 12px;
   border: none;
   padding: 0;
@@ -31,9 +31,7 @@
 .answer {
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: -0.12px;
   color: var(--accents-3);
-  background-color: var(--white);
   padding: 0;
   cursor: pointer;
   outline-offset: 4px;

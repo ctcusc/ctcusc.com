@@ -8,46 +8,24 @@
   margin-bottom: 32px;
 }
 
-.alert {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 8px 12px;
-
-  background: var(--indent);
-  border-radius: 16px;
-  color: var(--gray);
-  margin: 20% auto 0px;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.alertLink {
-  margin-left: 6px;
-  color: var(--verde);
-  cursor: pointer;
-}
-
 .title {
-  font-size: 96px;
+  font-family: 'akzidenz-grotesk-extended';
+  font-size: 4em;
   font-style: normal;
-  font-weight: 700;
-  line-height: 96px;
-  letter-spacing: -0.06em;
+  font-weight: 600;
+  line-height: 1.2em;
   color: #f4f1f0;
-
+  text-transform: capitalize;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 32px auto 0px auto;
+  margin: 30vh auto 0px auto;
   text-align: center;
 }
 
 .subtitle {
-  font-family: Manrope;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 36px;
   margin: 32px auto;
@@ -57,20 +35,26 @@
 }
 
 .buttons {
+  display: flex;
   margin: 32px auto;
 }
 
 .primarybutton {
   padding: 12px 20px;
-  background: var(--gray);
+  background: var(--white);
   border-radius: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.01em;
-  color: var(--accents-2);
+  color: var(--indent);
   cursor: pointer;
+  margin-left: 32px;
+}
+
+.primarybutton:first-child {
+  margin-left: 0px;
+  background: var(--verde);
 }
 
 .primarybutton:hover {
@@ -84,6 +68,7 @@
   gap: 8px;
   max-height: 220px;
   justify-items: start;
+  margin: 64px auto;
 }
 
 .photo {
@@ -104,13 +89,36 @@
 }
 
 .mission {
+  font-family: 'akzidenz-grotesk-extended';
+  font-weight: 700;
+}
+
+.statement {
+  color: var(--indent);
+  margin: auto auto 64px auto;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   overflow: hidden;
   gap: 32px;
   align-items: center;
   justify-items: start;
+  margin: 64px 0px 64px 0px;
+}
+
+.grid h4 {
+  margin-top: 0px;
+}
+
+.photo {
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
 }
 
 .values {
@@ -120,16 +128,8 @@
 }
 
 @media (max-width: 800px) {
-  .alert {
-    font-weight: 400;
-    font-size: 0.6em;
-    margin-top: 30%;
-  }
-
   .title {
-    font-size: 2em;
-    line-height: 2em;
-    margin-top: 0;
+    font-size: 3em;
   }
 
   .subtitle {
@@ -138,10 +138,10 @@
     margin-top: 0;
   }
 
-  .photogrid {
+  .grid {
     grid-template-columns: 1fr;
-    max-height: none;
   }
+
   .values {
     grid-template-columns: 1fr;
   }

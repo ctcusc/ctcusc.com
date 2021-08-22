@@ -3,9 +3,7 @@ import Jamstack from './svgs/jamstack'
 import Wifi from './svgs/wifi'
 import Lighthouse from './svgs/lighthouse'
 import Plus from './svgs/plus'
-import Envelope from './svgs/envelope'
 import Edit from './svgs/edit'
-import Scroll from './svgs/scroll'
 
 const features = [
   {

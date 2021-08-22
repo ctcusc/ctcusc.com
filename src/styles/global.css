@@ -1,12 +1,55 @@
+@import url('https://p.typekit.net/p.css?s=1&k=ewm3ygz&ht=tk&f=19119.19121.19123.19420&a=1037212&app=typekit&e=css');
+
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'akzidenz-grotesk';
+  src: url('https://use.typekit.net/af/99cda7/000000000000000000013631/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/99cda7/000000000000000000013631/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/99cda7/000000000000000000013631/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('opentype');
+  font-display: auto;
   font-style: normal;
-  font-weight: 400 600 700 800;
-  src: url(https://fonts.gstatic.com/s/manrope/v4/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
-    format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk';
+  src: url('https://use.typekit.net/af/9d033e/000000000000000000013633/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/9d033e/000000000000000000013633/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/9d033e/000000000000000000013633/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk';
+  src: url('https://use.typekit.net/af/5556ca/000000000000000000013635/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/5556ca/000000000000000000013635/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/5556ca/000000000000000000013635/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk-extended';
+  src: url('https://use.typekit.net/af/6bb33f/00000000000000000001375e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/6bb33f/00000000000000000001375e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/6bb33f/00000000000000000001375e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
 }
 
 html,
@@ -140,7 +183,7 @@ table {
   --gap: 1rem;
   --gap-double: 2rem;
 
-  --white: #ffffff;
+  --white: #def3e8;
   --bg: #f4f1f0;
   --gray: #d6d6d6;
   --fg: #38473e;
@@ -157,8 +200,9 @@ table {
 
   --radius: 8px;
 
-  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-sans: 'akzidenz-grotesk', 'Manrope', -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -348,9 +392,8 @@ pre.dark[class*='language-'] {
 
 .feature h4 {
   margin: 0 0 0 0.5rem;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.95rem;
-  letter-spacing: -1px;
   white-space: nowrap;
 }
 
@@ -408,51 +451,51 @@ h6 {
 }
 
 h1 {
+  font-weight: 500;
   font-size: 2.5rem;
   line-height: 2;
   margin-top: 4rem;
   margin-bottom: 1rem;
-  letter-spacing: -0.89px;
 }
 
 h2 {
+  font-weight: 500;
   font-size: 2rem;
   line-height: 1.5;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.69px;
 }
 
 h3 {
+  font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.47px;
 }
 
 h4 {
+  font-weight: 500;
   font-size: 1.25rem;
   line-height: 1;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.33px;
 }
 
 h5 {
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.33px;
 }
 
 h6 {
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.33px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .video {

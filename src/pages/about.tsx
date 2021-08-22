@@ -10,14 +10,6 @@ import great from '../../public/placement1.svg'
 import things from '../../public/placement2.svg'
 import { motion } from 'framer-motion'
 
-const news = [
-  {
-    img: '/mark.png',
-    link:
-      'https://viterbischool.usc.edu/news/2020/08/student-group-spotlight-code-the-change-building-software-for-social-impact/',
-  },
-]
-
 const Index = () => {
   return (
     <div className={sharedStyles.layout}>
@@ -112,16 +104,30 @@ const Index = () => {
       </p>
 
       <p>
-        At USC, if CTC isn't the right fit, there are plenty of other student
-        organizations to check out. There are many tech-focused groups for
-        aspiring developers and designers such as CAIS++, AthenaHacks, Lavalab,
-        Scope, Innovative Design, etc. There are also many social impact focused
-        groups such as LACI, 180 degrees consulting, JEP, etc. We'll also be
-        hosting events and discussions on social impact which are totally open
-        to the public.
+        At USC, if we aren't the right fit, there are plenty of other student
+        organizations to check out. For aspiring developers and designers such
+        as
+        <ExtLink href="http://caisplusplus.usc.edu/">CAIS++</ExtLink>,{' '}
+        <ExtLink href="https://innodatusc.com/">Innovative Design</ExtLink>,{' '}
+        <ExtLink href="https://www.scopeusc.com/">Scope</ExtLink>,{' '}
+        <ExtLink href="https://usclavalab.org/">Lavalab</ExtLink>,{' '}
+        <ExtLink href="https://athenahacks.com/">and AthenaHacks. </ExtLink>
       </p>
       <p>
-        If you don't go to USC, there are also other great student organizations
+        There are also many social impact focused groups such as{' '}
+        <ExtLink href="http://www.usclaci.org/">LACI</ExtLink>,{' '}
+        <ExtLink href="https://www.180degreesusc.org/">
+          180 Degrees Consulting
+        </ExtLink>
+        , and{' '}
+        <ExtLink href="https://communities.usc.edu/joint-educational-project-jep-service-learning/">
+          JEP.{' '}
+        </ExtLink>
+        We'll also be hosting events and discussions on social impact which are
+        all open to the public.
+      </p>
+      <p>
+        If you're a client, there are also other great student organizations
         focused on social impact and technology, including Blueprint at UC
         Berkeley, University of Waterloo, UCLA, Hack4Impact at University of
         Pennsylvania, Cornell University, UIUC, Georgia Tech, and Code 4 Good at

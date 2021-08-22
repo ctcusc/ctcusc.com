@@ -22,8 +22,8 @@
 }
 
 .header :global(a) {
-  color: var(--accents-3);
-  font-weight: 700;
+  color: #166132;
+  font-weight: 500;
 }
 
 .header :hover {
@@ -51,13 +51,12 @@
 
 .name {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 17px;
   line-height: 21px;
   /* identical to box height, or 150% */
 
   text-align: center;
-  letter-spacing: -0.05em;
 
   /* CTC Brand Dark Green */
 
@@ -68,11 +67,5 @@
 @media (max-width: 800px) {
   .name {
     display: none;
-  }
-}
-
-@media (max-width: 500px) {
-  .header {
-    font-size: 14px;
   }
 }

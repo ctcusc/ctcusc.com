@@ -1,17 +1,17 @@
 .link {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: var(--accents-3);
+  color: var(--accents);
   text-decoration: none;
 
   margin-left: 2px;
 }
 
 .link:hover {
-  color: var(--accents-1);
+  color: var(--ctc);
 }
 
 .link:active {
-  color: var(--accents-1);
+  color: var(--ctc);
 }

@@ -45,7 +45,7 @@ export default function Nonprofits() {
     <div className={sharedStyles.layout}>
       <Header titlePre="Contact" />
       <h1>Partner with us.</h1>
-      <div className={nonprofitStyles.banner}>
+      <div className={nonprofitStyles.grid}>
         <Image
           src={banner}
           alt="Greendot Schools Team in front of sign"
@@ -53,44 +53,43 @@ export default function Nonprofits() {
           priority
           placeholder="blur"
         />
-      </div>
-      <h2>Let's achieve your goals — together.</h2>
-      <div className={nonprofitStyles.info}>
         <div>
-          <p>
-            If you are a registered nonprofit with a clear understanding of your
-            problem that can be solved with technology, let’s talk.
-          </p>
-          <p>
-            We’ll work deeply with you for 9 months to help build out a solution
-            within web development, data science, mobile apps, or backend
-            system.
-          </p>
-          <p>
-            Probono! We open up applications for Nonprofits in May and select
-            the best fit for their needs and our bandwidth. Apply or send us an
-            email with questions!
-          </p>
-          <div className={nonprofitStyles.buttons}>
-            <ExtLink href="mailto:ctcusc@gmail.com">
-              <motion.div
-                whileHover={{
-                  x: 12,
-                  transition: { duration: 0.125 },
-                }}
-                whileTap={{ scale: 0.95 }}
-                className={nonprofitStyles.primarybutton}
-              >
-                Apply Now →
-              </motion.div>
-            </ExtLink>
+          <div>
+            <p>
+              If you are a registered nonprofit with a clear understanding of
+              your problem that can be solved with technology, let’s talk.
+            </p>
+            <p>
+              We’ll work deeply with you for 9 months to help build out a
+              solution within web development, data science, mobile apps, or
+              backend system.
+            </p>
+            <p>
+              Probono! We open up applications for Nonprofits in May and select
+              the best fit for their needs and our bandwidth. Apply or send us
+              an email with questions!
+            </p>
+            <div className={nonprofitStyles.buttons}>
+              <ExtLink href="mailto:ctcusc@gmail.com">
+                <motion.div
+                  whileHover={{
+                    x: 12,
+                    transition: { duration: 0.125 },
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                  className={nonprofitStyles.primarybutton}
+                >
+                  Apply Now →
+                </motion.div>
+              </ExtLink>
+            </div>
           </div>
         </div>
-        <div className={nonprofitStyles.faq}>
-          {faq.map(({ question, answer }) => {
-            return <Accordion question={question} answer={answer} />
-          })}
-        </div>
+      </div>
+      <div className={nonprofitStyles.faq}>
+        {faq.map(({ question, answer }) => {
+          return <Accordion question={question} answer={answer} />
+        })}
       </div>
       <div className={nonprofitStyles.photogrid}>
         <div className={nonprofitStyles.c}>

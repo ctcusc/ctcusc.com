@@ -37,15 +37,18 @@
 
 .primarybutton {
   padding: 12px 20px;
-  background: rgba(187, 231, 186, 0.4);
+  background: var(--ctc);
   border-radius: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.01em;
-  color: var(--ctc);
+  color: var(--verde);
   cursor: pointer;
+}
+
+.primarybutton:hover {
+  color: var(--white);
 }
 
 .explanation {
@@ -64,12 +67,6 @@
   font-weight: 700;
   font-size: 1rem;
   line-height: 150%;
-  /* or 36px */
-
-  letter-spacing: -0.01em;
-
-  /* "Black" */
-
   color: var(--accents-2);
 }
 
@@ -87,7 +84,6 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: 2em;
-  letter-spacing: 0.4;
 }
 
 .desc {
@@ -187,6 +183,17 @@
   gap: 20px 40px;
 }
 
+.disclaimer {
+  margin-top: 64px;
+  font-family: 'akzidenz-grotesk-extended';
+  font-weight: 700;
+}
+
+.statement {
+  color: var(--indent);
+  margin: auto auto 64px auto;
+}
+
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr;
@@ -219,6 +226,5 @@
 
   .explanation > p {
     font-weight: 700;
-    letter-spacing: -1px;
   }
 }
