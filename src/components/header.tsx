@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 import Logo from './svgs/logo'
-import ogImageUrl from '../../public/og-image.png'
 
 export function debounce(func, wait, immediate) {
   var timeout
@@ -28,6 +27,8 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Nonprofits', page: '/nonprofits' },
   { label: 'Students', page: '/students' },
 ]
+
+const ogImageUrl = '../../public/og-image.png'
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
