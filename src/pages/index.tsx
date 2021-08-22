@@ -15,6 +15,10 @@ import dinner from '../../public/ctc-dinner.jpg'
 import candid from '../../public/candid.jpg'
 import relax from '../../public/team-room.jpg'
 import selfie from '../../public/selfie.jpg'
+import developer from '../../public/dev-char.png'
+import designer from '../../public/designer-char.png'
+import techlead from '../../public/tl-char.png'
+import pm from '../../public/pm-char.png'
 
 const values = [
   {
@@ -166,14 +170,46 @@ export default function Index() {
             with us. We support each other beyond just our projects.
           </h4>
         </div>
-        <Roles />
+
         <h2>Our Values</h2>
         <div className={landingStyles.values}>
           {values.map((value) => {
             return <Value {...value} />
           })}
         </div>
-        <Features />
+        <h2>We're recruiting for</h2>
+        <div className={landingStyles.roles}>
+          <div className={landingStyles.role}>
+            <Image
+              src={developer}
+              alt="Developer"
+              priority
+              quality="100"
+              placeholder="blur"
+            />
+            <h3>Developers</h3>
+          </div>
+          <div className={landingStyles.role}>
+            <Image
+              src={designer}
+              alt="Designer"
+              priority
+              quality="5"
+              placeholder="blur"
+            />
+            <h3>Designers</h3>
+          </div>
+          <div className={landingStyles.role}>
+            <Image
+              src={pm}
+              alt="Product Manager"
+              priority
+              quality="100"
+              placeholder="blur"
+            />
+            <h3>Product Managers</h3>
+          </div>
+        </div>
         <div className={landingStyles.buttons}>
           <Link href="/students/">
             <motion.div
@@ -188,7 +224,6 @@ export default function Index() {
             </motion.div>
           </Link>
         </div>
-
         <Footer />
       </div>
     </>

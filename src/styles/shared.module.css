@@ -7,20 +7,6 @@
   grid-column: 2;
 }
 
-.fullbleedalert {
-  background: var(--accent);
-  color: var(--white);
-  width: 100%;
-  grid-column: 1 / 4;
-  padding: 16px auto;
-  min-height: 64px;
-  margin-top: 0px;
-  justify-content: center;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-}
-
 .fullbleedhero {
   width: 100%;
   grid-column: 1 / 4;
@@ -31,7 +17,7 @@
   background: var(--ctc);
   width: 100%;
   margin-bottom: 32px;
-  height: 80vh;
+  height: 90vh;
 }
 
 .fullbleedfooter {
@@ -60,5 +46,6 @@
 
   .fullbleedhero {
     padding: 0px 32px;
+    height: 100vh;
   }
 }

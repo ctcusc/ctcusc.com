@@ -15,6 +15,7 @@ export default function Footer() {
     <footer className={sharedStyles.fullbleedfooter}>
       <div className={footerStyles.colophon}>
         <b className={footerStyles.name}>© USC Code the Change</b>
+        <p>Built with Next.js in React, Deployed on Vercel</p>
         <div className={footerStyles.socials}>
           <ExtLink href="https://instagram.com/ctcusc">Instagram</ExtLink>
           <div className={footerStyles.space} />
