@@ -66,7 +66,7 @@ const Index = () => {
             solve those issues.
           </p>
           <div className={studentsStyles.buttons}>
-            <ExtLink href="https://forms.gle/pbtxcShKGbjiQYpe7">
+            <ExtLink href="https://forms.gle/Ej9US22iife8TWUi6">
               <motion.div
                 whileHover={{
                   x: 12,

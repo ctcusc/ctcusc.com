@@ -79,7 +79,7 @@ export default function Nonprofits() {
                   whileTap={{ scale: 0.95 }}
                   className={nonprofitStyles.primarybutton}
                 >
-                  Apply Now →
+                  Partner with us →
                 </motion.div>
               </ExtLink>
             </div>

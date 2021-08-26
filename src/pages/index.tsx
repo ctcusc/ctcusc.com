@@ -83,7 +83,7 @@ export default function Index() {
                 whileTap={{ scale: 0.95 }}
                 className={landingStyles.primarybutton}
               >
-                Apply now
+                Join us
               </motion.div>
             </Link>
           </div>
@@ -219,7 +219,7 @@ export default function Index() {
               whileTap={{ scale: 0.95 }}
               className={landingStyles.primarybutton}
             >
-              Apply now
+              Join us
             </motion.div>
           </Link>
         </div>
