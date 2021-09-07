@@ -19,6 +19,9 @@ import developer from '../../public/dev-char.png'
 import designer from '../../public/designer-char.png'
 import techlead from '../../public/tl-char.png'
 import pm from '../../public/pm-char.png'
+import nonprofit1 from '../../public/nonprofit1.png'
+import nonprofit2 from '../../public/nonprofit2.png'
+import nonprofit3 from '../../public/nonprofit3.png'
 
 const values = [
   {
@@ -169,7 +172,36 @@ export default function Index() {
             our projects.
           </h4>
         </div>
-
+        <h2>Last year's nonprofits</h2>
+        <div className={landingStyles.nonprofits}>
+          <div className={landingStyles.nonprofit}>
+            <Image
+              src={nonprofit1}
+              alt="ImagineLA"
+              priority
+              quality="100"
+              placeholder="blur"
+            />
+          </div>
+          <div className={landingStyles.nonprofit}>
+            <Image
+              src={nonprofit2}
+              alt="Affordable South LA"
+              priority
+              quality="5"
+              placeholder="blur"
+            />
+          </div>
+          <div className={landingStyles.nonprofit}>
+            <Image
+              src={nonprofit3}
+              alt="Humans Against Trafficking"
+              priority
+              quality="100"
+              placeholder="blur"
+            />
+          </div>
+        </div>
         <h2>Our Values</h2>
         <div className={landingStyles.values}>
           {values.map((value) => {
