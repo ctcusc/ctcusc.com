@@ -65,7 +65,7 @@ export default function Nonprofits() {
               backend system.
             </p>
             <p>
-              Pro bono! We open up applications for Nonprofits in May and select
+              Pro boono! We open up applications for Nonprofits in May and select
               the best fit for their needs and our bandwidth. Apply or send us
               an email with questions!
             </p>
