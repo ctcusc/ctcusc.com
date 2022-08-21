@@ -22,7 +22,7 @@ const faq = [
       'We usually work with three nonprofitsnonprofitsnonprofits with a team each assigned to a specific project. Each team will have one Product Manager and Tech Lead, with a team of developers and designers accordingly sized.',
   },
   {
-    question: 'What can I expect in terms of time commitment?',
+    question: 'What can I expect in terms of time commitment/workload?',
     answer:
       "2-4 hours weekly. You'll attend weekly General Meetings and weekly team meetings, with tickets (tasks) for the project. We'll be working with the nonprofit from August to April.",
   },
