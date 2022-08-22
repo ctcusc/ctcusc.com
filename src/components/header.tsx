@@ -26,7 +26,7 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'About', page: '/about' },
   { label: 'Nonprofits', page: '/nonprofits' },
   { label: 'Students', page: '/students' },
-  { label: 'Apply', page: 'https://forms.gle/Ej9US22iife8TWUi6' },
+  { label: 'Apply', page: 'https://forms.gle/TvXqCpoLUaKvg36z9' },
 ]
 
 const ogImageUrl = '../../public/og-image.png'

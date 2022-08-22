@@ -19,7 +19,7 @@ const faq = [
   {
     question: 'How is this club set up?',
     answer:
-      'We usually work with three nonprofitsnonprofitsnonprofits with a team each assigned to a specific project. Each team will have one Product Manager and Tech Lead, with a team of developers and designers accordingly sized.',
+      'We usually work with three nonprofits with a team each assigned to a specific project. Each team will have one Product Manager and Tech Lead, with a team of developers and designers accordingly sized.',
   },
   {
     question: 'What can I expect in terms of time commitment/workload?',
@@ -29,7 +29,7 @@ const faq = [
   {
     question: 'How much experience do I need?',
     answer:
-      'None! We look at potential—we encourage all freshman, transfers, anyone to apply. All new members go through onboarding and are paired with a mentor to work on the project tasks together.',
+      'None! We look at potential—we encourage all freshman, transfers, any undergraduate student to apply. All new members go through onboarding and are paired with a mentor to work on the project tasks together.',
   },
   {
     question: 'Can I apply for more than one role?',
@@ -66,7 +66,7 @@ const Index = () => {
             solve those issues.
           </p>
           <div className={studentsStyles.buttons}>
-            <ExtLink href="https://forms.gle/Ej9US22iife8TWUi6">
+            <ExtLink href="https://forms.gle/TvXqCpoLUaKvg36z9">
               <motion.div
                 whileHover={{
                   x: 12,
