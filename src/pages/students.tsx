@@ -17,7 +17,7 @@ import lifting from '../../public/phys-photos.jpg'
 
 const faq = [
   {
-    question: 'How is this club set up???',
+    question: 'How is this club set up?',
     answer:
       'We usually work with three nonprofits with a team each assigned to a specific project. Each team will have one Product Manager and Tech Lead, with a team of developers and designers accordingly sized.',
   },
