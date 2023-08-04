@@ -9,27 +9,23 @@ import studentsStyles from '../styles/students.module.css'
 import sharedStyles from '../styles/shared.module.css'
 import { motion } from 'framer-motion'
 import members from '../../public/members-sitting.jpg'
-import painting from '../../public/painting.jpg'
-import rocks from '../../public/rocks.png'
-import snow from '../../public/snow-retreat.jpg'
-import restaurant from '../../public/restaurant.jpg'
-import lifting from '../../public/phys-photos.jpg'
+import retreat from '../../public/retreat-spring23.jpg'
+import boys from '../../public/ctc-boys.jpg'
+import donut from '../../public/donut-22.jpg'
+import designers from '../../public/designers-conference.jpg'
+import writegirl from '../../public/writegirl.jpg'
+import retreatfa from '../../public/retreat-fall23.jpg'
 
 const faq = [
   {
-    question: 'How is this club set up?',
+    question: 'How does CTC work?',
     answer:
-      'We usually work with three nonprofits with a team each assigned to a specific project. Each team will have one Product Manager and Tech Lead, with a team of developers and designers accordingly sized.',
-  },
-  {
-    question: 'What can I expect in terms of time commitment/workload?',
-    answer:
-      "2-4 hours weekly. You'll attend weekly General Meetings and weekly team meetings, with tickets (tasks) for the project. We'll be working with the nonprofit from August to April.",
+      'All active CTC members are split into teams and assigned a nonprofit to work with for the year. Teams vary in size depending on the scope of the project, but all will have one Product Manager, 1 Tech Lead, and multiple developers + designers.',
   },
   {
     question: 'How much experience do I need?',
     answer:
-      'None! We look at potential—we encourage all freshman, transfers, any undergraduate student to apply. All new members go through onboarding and are paired with a mentor to work on the project tasks together.',
+      'None! We care more about potential and passion than experience. We encourage all freshman, transfers, any undergraduate student to apply. All new members go through onboarding and are paired with a mentor to work on project tasks together.',
   },
   {
     question: 'Can I apply for more than one role?',
@@ -37,14 +33,24 @@ const faq = [
       'No, but if you believe you have a good reason to apply to more than one, we can accept on a per-request basis.',
   },
   {
+    question: "I'm not a CS major. Can I still apply?",
+    answer:
+      'Please! While many of our members are Computer Science or Design-related majors, we have no preferences for major, year, background, experience level. We review every application we get.',
+  },
+  {
     question:
       "I'm not sure that I want to apply right now. Can I apply in the spring?",
     answer: 'No, sadly we will be midway through our projects by then.',
   },
   {
-    question: "I'm not a CS major. Can I still apply?",
+    question: 'What can I expect in terms of time commitment/workload?',
     answer:
-      'Please! While many of our members are Computer Science or Design-related majors, we have no preferences for major, year, background, experience level. We review every application we get.',
+      "2-5 hours weekly. You'll attend weekly General Meetings and weekly team meetings, and be assigned bi-weekly tickets (tasks) for your project. Projects run from October-April.",
+  },
+  {
+    question: 'How can I meet members to learn more?',
+    answer:
+      'Look out for us at the Viterbi Get Connected! Fair on August 29th and the USC Involvment Fair. We will also be holding a couple of info sessions, which we will post about here.',
   },
 ]
 
@@ -52,40 +58,34 @@ const Index = () => {
   return (
     <div className={sharedStyles.layout}>
       <Header titlePre="Students" />
+      {/* <div className={studentsStyles.break}/> */}
+      <h1>Join us.</h1>
       <div className={studentsStyles.grid}>
         <div>
-          <h1>Join us.</h1>
-          <p>We're a group of students on a mission to use tech for good.</p>
           <p>
-            Code the Change works with leaders at Nonprofits working tirelessly
-            to drive social change in their specific domain.
+            We're a diverse group of students dedicated to using tech for good.
           </p>
           <p>
-            They are the experts in the understanding of the social issue and
-            our organization leads the efforts in creating technology to help
-            solve those issues.
+            Working alongside fellow CTCers, be prepared to immerse yourself in
+            a nonprofit for the entire year.
           </p>
-          <div className={studentsStyles.buttons}>
-            <ExtLink href="https://forms.gle/TvXqCpoLUaKvg36z9">
-              <motion.div
-                whileHover={{
-                  x: 12,
-                  transition: { duration: 0.125 },
-                }}
-                whileTap={{ scale: 0.95 }}
-                className={studentsStyles.primarybutton}
-              >
-                Apply Now →
-              </motion.div>
-            </ExtLink>
-          </div>
+          <p>
+            We want to build the best solutions possible for our partner
+            organizations, so we're looking for students that genuinely share
+            our values.
+          </p>
+          <p>If this resonates with you, we’d love to have you join us.</p>
+          <p>
+            Applications open August 21, 2023. We're recruiting for developers
+            and designers.
+          </p>
         </div>
         <Image
           className={studentsStyles.photo}
-          src={members}
+          src={donut}
           priority
           quality="50"
-          alt="4 members smiling"
+          alt="Members having coffee together"
           placeholder="blur"
         />
       </div>
@@ -93,57 +93,65 @@ const Index = () => {
       <div className={studentsStyles.photogrid}>
         <div className={studentsStyles.photo}>
           <Image
-            src={rocks}
-            alt="Team at retreat"
+            src={designers}
+            alt="CTC Designers at a conference"
             quality="100"
             priority
             placeholder="blur"
           />
         </div>
         <Image
-          src={restaurant}
-          alt="CTC Eating Dinner"
+          src={retreat}
+          alt="Club retreat in Del Mar"
           quality="100"
           priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
-          src={lifting}
-          alt="Team Photo lifting one member up"
+          src={boys}
+          alt="CTC members smiling together"
           quality="100"
           priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
-          src={painting}
-          alt="Team members painting at Virtual Retreat"
+          src={writegirl}
+          alt="Write Girl team hack night"
           quality="100"
           priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
-          src={snow}
-          alt="Prank around snow area in retreat"
+          src={retreatfa}
+          alt="Club retreat in Palm Spring Fall 2022"
           quality="50"
           priority
           placeholder="blur"
         />
       </div>
-      <h2>Questions</h2>
+      <h2>Questions.</h2>
       <div className={studentsStyles.faq}>
         {faq.map(({ question, answer }) => {
           return <Accordion question={question} answer={answer} />
         })}
+        <div>
+          <div />
+          <ExtLink href="mailto:ctcusc@gmail.com">
+            <div className={studentsStyles.mail}>Have more? Email us!</div>
+          </ExtLink>
+        </div>
       </div>
-      <h2>Diversity and Inclusion</h2>
-      <h4 className={studentsStyles.inclusion}>
-        Code the Change is dedicated to recruiting members as diverse as the
-        communities it serves. It is a necessity to have different perspectives
-        when building for Nonprofits tackling so many different problems.
-      </h4>
+      <div className={studentsStyles.break} />
+      <h2>Diversity and Inclusion.</h2>
+      <p className={studentsStyles.inclusion}>
+        Code the Change is dedicated to recruiting members from diverse
+        backgrounds, enhancing the accessibility, inclusivity, and value of our
+        work. This is a necessity to build impactful, sustainable products for
+        the nonprofits we partner with.
+      </p>
       <Footer />
     </div>
   )

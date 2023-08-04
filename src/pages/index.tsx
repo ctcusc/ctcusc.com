@@ -22,6 +22,8 @@ import pm from '../../public/pm-char.png'
 import nonprofit1 from '../../public/nonprofit1.png'
 import nonprofit2 from '../../public/nonprofit2.png'
 import nonprofit3 from '../../public/nonprofit3.png'
+import rfpvolunteering from '../../public/rfpvolunteering.jpeg'
+import yash from '../../public/yash.jpg'
 
 const values = [
   {
@@ -34,19 +36,19 @@ const values = [
     number: 2,
     title: 'Community',
     desc:
-      'How do you collaborate with others? We value diverse, new opinions and extend this respect beyond our projects and into relationships.',
+      'How do you collaborate with others? We value diverse, new opinions and extend this respect beyond just our projects.',
   },
   {
     number: 3,
     title: 'Growth',
     desc:
-      'Do you exhibit a desire for continuous growth? Onboarding, mentorship, and learning from others are important parts of our organization.',
+      'Do you exhibit a desire for continuous growth? Onboarding, mentorship, and learning from others are important aspects of our organization.',
   },
   {
     number: 4,
     title: 'Initiative',
     desc:
-      'Are you self-motivated to call out injustices and tackle new problems? Tackling ambiguous, hard problems as students requires self-directed members',
+      'Are you self-motivated to call out injustices and tackle compex issues? Our problem-solving requires active, passionate thinkers.',
   },
 ]
 
@@ -58,13 +60,14 @@ export default function Index() {
         <div className={sharedStyles.fullbleedhero}>
           <h1 className={landingStyles.title}>
             Students Building for <br />
-            social change
+            social impact
           </h1>
+          <br />
           <h2 className={landingStyles.subtitle}>
-            A community of PMs, developers, and designers at USC building
-            products for nonprofits
+            A community of technologists at USC creating products for
+            nonprofits.
           </h2>
-          <div className={landingStyles.buttons}>
+          {/* <div className={landingStyles.buttons}>
             <Link href="/about/">
               <motion.div
                 whileHover={{
@@ -89,9 +92,9 @@ export default function Index() {
                 Join us
               </motion.div>
             </Link>
-          </div>
+          </div> */}
         </div>
-        <div className={landingStyles.photogrid}>
+        {/* <div className={landingStyles.photogrid}>
           <div className={landingStyles.photo}>
             <Image
               src={group}
@@ -117,36 +120,38 @@ export default function Index() {
             alt="Code the Change Dinner Photo"
             placeholder="blur"
           />
-        </div>
+        </div> */}
         <div>
           <div>
-            <h3 className={landingStyles.mission}>OUR MISSION</h3>
+            <h1>Our Purpose.</h1>
+            {/* <h3 className={landingStyles.mission}>OUR PURPOSE:</h3> */}
             <h2 className={landingStyles.statement}>
-              Design and build sustainable software for nonprofit organizations
-              to create social change.
+              To promote social good by creating custom, sustainable software
+              for nonprofit organizations.
             </h2>
           </div>
         </div>
         <div className={landingStyles.grid}>
           <Image
             className={landingStyles.photo}
-            src={relax}
-            alt="Members in team relaxing in room"
+            src={rfpvolunteering}
+            alt="Volunteering event at The Ron Finley Project"
             quality="50"
             priority
             placeholder="blur"
           />
           <h4>
-            Every year, we partner with nonprofits in the Los Angeles area. Many
-            nonprofits are bound in reach and scope of tech, we help
-            improve/create software to help their mission.
+            Every year, we partner with three 501(c)(3) orginizations within the
+            Los Angeles area. Many nonprofits are bound in their reach and scope
+            of technology, so we're here to help free of charge so they can
+            execute their mission to its fullest extent.
           </h4>
         </div>
         <div className={landingStyles.grid}>
           <h4>
-            As an organization, we are structured in project teams: Developers,
-            Designers, Tech Lead, and a Product Manager. EBoard manages events,
-            recruitment, and fun.
+            To accomplish this, CTC is structured into teams comprised of a
+            project manager, technical lead, developers, and designers. The
+            executive board manages recruitment, events, and fun.
           </h4>
           <Image
             src={candid}
@@ -159,7 +164,7 @@ export default function Index() {
         <div className={landingStyles.grid}>
           <Image
             className={landingStyles.photo}
-            src={selfie}
+            src={yash}
             alt="Alumni Selfie of Org"
             quality="100"
             priority
@@ -167,13 +172,13 @@ export default function Index() {
           />
           <h4>
             We're committed to our impact, but we go beyond work — Code the
-            Change is a lifelong family. During an Alumni night, even members
-            from the founding year came back. We support each other beyond just
-            our projects.
+            Change is a lifelong family. During our annual alumni nights, even
+            members from our founding year come back. We support each other
+            beyond just our projects.
           </h4>
         </div>
-        <h2>Last year's nonprofits</h2>
-        <div className={landingStyles.nonprofits}>
+        {/* <h2>Last year's nonprofits</h2> */}
+        {/* <div className={landingStyles.nonprofits}>
           <div className={landingStyles.nonprofit}>
             <Image
               src={nonprofit1}
@@ -201,14 +206,14 @@ export default function Index() {
               placeholder="blur"
             />
           </div>
-        </div>
-        <h2>Our Values</h2>
+        </div> */}
+        <h2>Our Values.</h2>
         <div className={landingStyles.values}>
           {values.map((value) => {
             return <Value {...value} />
           })}
         </div>
-        <h2>We're recruiting for</h2>
+        {/* <h2>We're Recruiting For:</h2>
         <div className={landingStyles.roles}>
           <div className={landingStyles.role}>
             <Image
@@ -238,7 +243,7 @@ export default function Index() {
               quality="100"
               placeholder="blur"
             />
-            <h3>Product Managers</h3>
+            <h3>Project Managers</h3>
           </div>
         </div>
         <div className={landingStyles.buttons}>
@@ -253,8 +258,8 @@ export default function Index() {
             >
               Join us
             </motion.div>
-          </Link>
-        </div>
+          </Link> */}
+        {/* </div> */}
         <Footer />
       </div>
     </>

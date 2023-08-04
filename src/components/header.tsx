@@ -23,10 +23,9 @@ export function debounce(func, wait, immediate) {
 }
 
 const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'About', page: '/about' },
-  { label: 'Nonprofits', page: '/nonprofits' },
   { label: 'Students', page: '/students' },
-  { label: 'Apply', page: 'https://forms.gle/TvXqCpoLUaKvg36z9' },
+  { label: 'Nonprofits', page: '/nonprofits' },
+  { label: 'About', page: '/about' },
 ]
 
 const ogImageUrl = '../../public/og-image.png'

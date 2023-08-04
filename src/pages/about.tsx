@@ -19,27 +19,21 @@ const Index = () => {
         <p>Welcome!</p>
         <p>
           Code the Change started in 2015 by a group of civic-minded developers
-          and designers looking to use their skills for service.
+          and designers looking to use their skills for service. Since then,
+          we’ve partnered with over 20 nonprofits, working in solidarity with
+          their communities to accomplish their missions.
         </p>
         <p>
-          Since then, we’ve partnered with around three nonprofits yearly,
-          working in solidarity with the communities to help our partner
-          organizations accomplish their missions.
-        </p>
-        <p>
-          However, it goes beyond the vague buzzword of “tech for social good”.
-          We as technologists have a responsibility to hold our community
-          accountable for tech’s harms and its role in society.
+          Code the Change tries to goes beyond the vague buzz of “tech for
+          social good”. We realize that technology is never the full solution to
+          a problem. We strive to proactively consider our potential negative
+          impacts and operate with full transparency.
         </p>
         <p>
           We must do better than technosolutionism—we’re currently growing our
-          organization not just to build short term projects, but engage our
-          members in activism, foster discussions on campus, and promote service
-          in our communities.
-        </p>
-        <p>
-          If this mission toward a better future resonates, we’d love to have
-          you join us.
+          organization to not just build projects, but engage our members in
+          activism, foster discussions on campus, and promote service in our
+          communities.
         </p>
       </div>
       <div className={aboutStyles.buttons}>
@@ -56,14 +50,14 @@ const Index = () => {
           </motion.div>
         </Link>
       </div>
-      <h1>Our Team</h1>
+      <h1>Our Team.</h1>
       <p>
         We're a completely student-run organization of ~40 members. Meet a few
         of our members:
       </p>
       <Team />
 
-      <h1>After Graduation</h1>
+      <h1>After Graduation.</h1>
       <p>
         Our alumni have gone on to impact at greater scales in many different
         areas.
@@ -82,7 +76,7 @@ const Index = () => {
         If you're a potential sponsor or partner, please{' '}
         <ExtLink href="mailto:ctcusc@gmail.com">reach out ↗.</ExtLink>
       </h6>
-      <h1>Code the Change</h1>
+      <h1>Learn more.</h1>
       <p>
         Code the Change is part of a{' '}
         <ExtLink href="https://codethechange.org/">

@@ -9,6 +9,8 @@
   transition: ease-in top 0.125s;
   z-index: 1;
   font-size: 17px;
+  padding-left: 5px;
+  padding-right: 15px;
 }
 
 .header ul {
@@ -22,16 +24,16 @@
 }
 
 .header :global(a) {
-  color: #166132;
+  color: var(--verde);
   font-weight: 500;
 }
 
 .header :hover {
-  color: var(--accents-1);
+  color: var(--indent);
 }
 
 .header :global(a.active) {
-  color: var(--accents-1);
+  color: var(--ctc);
 }
 
 .left {
@@ -60,7 +62,7 @@
 
   /* CTC Brand Dark Green */
 
-  color: #166132;
+  color: var(--verde);
   padding: 8px 16px;
 }
 

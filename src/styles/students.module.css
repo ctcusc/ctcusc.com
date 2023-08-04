@@ -6,7 +6,7 @@
   gap: 32px;
   align-items: center;
   justify-items: start;
-  margin: 128px 0px 64px 0px;
+  margin: 0px 0px 64px 0px;
 }
 
 .grid h1 {
@@ -192,6 +192,14 @@
 .statement {
   color: var(--indent);
   margin: auto auto 64px auto;
+}
+
+.break {
+  height: 64px;
+}
+
+.mail {
+  text-decoration: underline;
 }
 
 @media (max-width: 800px) {

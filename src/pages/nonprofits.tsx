@@ -8,19 +8,33 @@ import { motion } from 'framer-motion'
 import Clock from 'react-live-clock'
 import sharedStyles from '../styles/shared.module.css'
 import nonprofitStyles from '../styles/nonprofits.module.css'
+import studentsStyles from '../styles/students.module.css'
 import banner from '../../public/greendot-team.jpg'
 import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
 import usc from '../../public/usc.jpg'
+import volunteering from '../../public/cathartic-volunteering.jpeg'
 
 const faq = [
   {
     question: 'What is the application timeline?',
-    answer: 'We open up applications in May — August.',
+    answer:
+      'We open up applications in May — August. We have picked our partners for the 2023-24 school year.',
   },
   {
-    question: 'What does communication look like?',
-    answer: 'Our expectation is biweekly meetings virtually with a Team lead.',
+    question: 'What does the application look like?',
+    answer:
+      "An application consists of an initial email showing interest, then a follow-up meeting with our VP of Projects and VP of Product who will assess your needs and how well your nonprofit fits with our organization's abilities.",
+  },
+  {
+    question: 'How does communication work?',
+    answer:
+      "Our expectation is biweekly virtual meetings virtually with a Team lead. You'll work directly with an assigned Product Manager and Tech Lead.",
+  },
+  {
+    question: 'Who builds the project?',
+    answer:
+      "We'll assign a Product Manager, Tech Lead, and associated team of 8-14 developers and designers to create your custom solution.",
   },
   {
     question: 'What kinds of projects do you accept?',
@@ -28,15 +42,15 @@ const faq = [
       "We'll work with you to scope out a technical solution to your problem. We've done web, mobile, data science in the past.",
   },
   {
+    question: 'What about maintenance?',
+    answer:
+      "We expect you to maintain the project after handoff. We'll work to make that painless.",
+  },
+  {
     question:
       'What does the timeline of the project look like? Start and end dates?',
     answer:
       "September through April. While we've successfully completed all projects with our clients in the past, we cannot contractually obligate our members to do so.",
-  },
-  {
-    question: 'What about maintenance?',
-    answer:
-      "We expect you to maintain the project after handoff. We'll work to make that painless.",
   },
 ]
 
@@ -47,8 +61,8 @@ export default function Nonprofits() {
       <h1>Partner with us.</h1>
       <div className={nonprofitStyles.grid}>
         <Image
-          src={banner}
-          alt="Greendot Schools Team in front of sign"
+          src={volunteering}
+          alt="CTC doing a volunteer event for Cathartic Health "
           quality="100"
           priority
           placeholder="blur"
@@ -56,18 +70,19 @@ export default function Nonprofits() {
         <div>
           <div>
             <p>
-              If you are a registered nonprofit with a clear understanding of
-              your problem that can be solved with technology, let’s talk.
+              If you are a registered nonprofit with a clear understanding of a
+              problem you're facing that can be solved with technology, let’s
+              talk.
             </p>
             <p>
-              We’ll work deeply with you for 9 months to help build out a
+              We’ll work deeply with you for 7 months to help build out a
               solution within web development, data science, mobile apps, or
               backend system.
             </p>
             <p>
-              Pro boono! We open up applications for Nonprofits in May and select
-              the best fit for their needs and our bandwidth. Apply or send us
-              an email with questions!
+              Don't worry about cost, we operate pro bono. Even though we're a
+              student club, we're dedicated to producing high quality work. If
+              you're interested, please reach out to us!
             </p>
             <div className={nonprofitStyles.buttons}>
               <ExtLink href="mailto:ctcusc@gmail.com">
@@ -86,7 +101,8 @@ export default function Nonprofits() {
           </div>
         </div>
       </div>
-      <div className={nonprofitStyles.faq}>
+      <h2>Questions.</h2>
+      <div className={studentsStyles.faq}>
         {faq.map(({ question, answer }) => {
           return <Accordion question={question} answer={answer} />
         })}
@@ -117,20 +133,22 @@ export default function Nonprofits() {
       </div>
       <div className={nonprofitStyles.info}>
         <div>
-          <h3>Apply</h3>
+          <h3>Apply.</h3>
           <p>
             We focus on Los Angeles Nonprofit organizations, however we do
             accept applications for NGO's outside the area depending on their
             experience with remote work.
           </p>
           <p>
-            If you would like to apply for our next year of projects, we accept
-            applications between May - August. Contact us to set up a meeting.
+            If you would like to apply to be a 2024-25 partner, we accept
+            applications between May - August. Contact us in May 2024 to set up
+            a meeting.
           </p>
           <p>
-            Our members volunteer to serve the community in other ways as well.
-            If you have opportunities to speak or contribute in other ways, we'd
-            love them.
+            Our members are interested in serving communities not just
+            technically. If you have volunteer opportunities or other events
+            you'd be interested in having CTC be a part of, we'd love to hear
+            them.
           </p>
         </div>
         <div>
@@ -140,10 +158,13 @@ export default function Nonprofits() {
               <Clock format={'h:mm a'} ticking={true} timezone={'US/Pacific'} />
             </h3>
           </div>
-          <p>ctcusc@gmail.com</p>
+          <ExtLink href="mailto:ctcusc@gmail.com">
+            <div className={studentsStyles.mail}>ctcusc@gmail.com</div>
+          </ExtLink>
+          <br />
           <p>
             We're a registered student organization out of the University of
-            Southern California Viterbi School of Engineering. Advised by
+            Southern California Viterbi School of Engineering, advised by
             Professor Mark Redekopp.
           </p>
         </div>

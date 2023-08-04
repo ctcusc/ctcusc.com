@@ -20,7 +20,7 @@
   line-height: 36px;
   margin: 32px auto;
   text-align: center;
-  max-width: 30ch;
+  max-width: 35ch;
   color: var(--verde);
 }
 
@@ -84,7 +84,6 @@
 }
 
 .statement {
-  color: var(--indent);
   margin: auto auto 64px auto;
 }
 
@@ -96,7 +95,7 @@
   gap: 32px;
   align-items: center;
   justify-items: start;
-  margin: 64px 0px 64px 0px;
+  margin: 0px 0px 64px 0px;
 }
 
 .grid h4 {
