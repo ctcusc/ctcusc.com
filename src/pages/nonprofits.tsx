@@ -19,7 +19,7 @@ const faq = [
   {
     question: 'What is the application timeline?',
     answer:
-      'We open up applications in May — August. We have picked our partners for the 2023-24 school year.',
+      'We open up applications in May—August. We have picked our partners for the 2023-24 school year.',
   },
   {
     question: 'What does the application look like?',
