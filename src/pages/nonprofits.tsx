@@ -13,7 +13,7 @@ import banner from '../../public/greendot-team.jpg'
 import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
 import usc from '../../public/usc.jpg'
-import volunteering from '../../public/cathartic-volunteering.jpeg'
+import volunteering from '../../public/cathartic-volunteering.jpg'
 
 const faq = [
   {
