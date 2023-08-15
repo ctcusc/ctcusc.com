@@ -20,12 +20,12 @@ const faq = [
   {
     question: 'How does CTC work?',
     answer:
-      'All active CTC members are split into teams and assigned a nonprofit to work with for the year. Teams vary in size depending on the scope of the project, but all will have one Product Manager, 1 Tech Lead, and multiple developers + designers.',
+      'All active CTC members are split into teams and assigned a nonprofit to work with for the year. Teams vary in size depending on the scope of the project, but all will have 1 Product Manager, 1 Tech Lead, and multiple developers + designers.',
   },
   {
     question: 'How much experience do I need?',
     answer:
-      'None! We care more about potential and passion than experience. We encourage all freshman, transfers, any undergraduate student to apply. All new members go through onboarding and are paired with a mentor to work on project tasks together.',
+      'None! We care more about potential and passion than experience. We encourage all undergraduate students to apply. All new members go through onboarding and are paired with a mentor to work on project tasks together.',
   },
   {
     question: 'Can I apply for more than one role?',
@@ -50,7 +50,7 @@ const faq = [
   {
     question: 'How can I meet members to learn more?',
     answer:
-      'Look out for us at the Viterbi Get Connected! Fair on August 29th and the USC Involvment Fair. We will also be holding a couple of info sessions, which we will post about here.',
+      'Look out for us at the USC Involvment Fair on August 24th and the Viterbi Get Connected! Fair on August 29th. We will also be holding a hybrid info session on August 30th @ 7PM.',
   },
 ]
 

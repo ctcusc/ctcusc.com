@@ -213,6 +213,35 @@ export default function Index() {
             return <Value {...value} />
           })}
         </div>
+        <h2>Get to Know us.</h2>
+        <p>
+          If you'd like to learn more about what type of projects we do, what
+          being a member includes, and what the application process looks like,
+          we're participating in a number of student meet & greet events:
+        </p>
+        <ul>
+          <li>
+            <h4>
+              USC Involvement Fair{' '}
+              <p>
+                Thursday, August 24th @ the Great Lawn in the Village, 11am-2pm
+              </p>
+            </h4>
+          </li>
+
+          <li>
+            <h4>
+              Viterbi Get Connected! Fair{' '}
+              <p>Tuesday, August 29th @ Viterbi Quad, 10am-2pm</p>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              Code the Change Info Session{' '}
+              <p>Wednesday, August 30th @ Zoom & classroom TBD, 7pm-8:30pm</p>
+            </h4>
+          </li>
+        </ul>
         {/* <h2>We're Recruiting For:</h2>
         <div className={landingStyles.roles}>
           <div className={landingStyles.role}>

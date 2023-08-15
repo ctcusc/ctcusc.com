@@ -72,9 +72,18 @@ const Index = () => {
           alt="List of companies, fellowships, doctoral studies"
         />
       </div>
+
+      <h1>Sponsors.</h1>
+      <p>
+        While Code the Change is lucky enough to receive some funding from the
+        Viterbi of Engineering, we are always on the lookout for corporate
+        sponsors to truly enhance CTC's mission.
+      </p>
       <h6>
-        If you're a potential sponsor or partner, please{' '}
-        <ExtLink href="mailto:ctcusc@gmail.com">reach out ↗.</ExtLink>
+        If you're interested in being a potential sponsor or partner, please{' '}
+        <ExtLink href="mailto:ctcusc@gmail.com">
+          reach out to hear about our benefits ↗.
+        </ExtLink>
       </h6>
       <h1>Learn more.</h1>
       <p>
