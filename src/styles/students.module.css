@@ -35,6 +35,10 @@
   border-radius: 4px;
 }
 
+.center {
+  margin: auto;
+}
+
 .primarybutton {
   padding: 12px 20px;
   background: var(--ctc);
@@ -43,8 +47,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: var(--verde);
+  color: var(--white);
   cursor: pointer;
+  margin: auto;
 }
 
 .primarybutton:hover {

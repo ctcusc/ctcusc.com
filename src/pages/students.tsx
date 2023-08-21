@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Roles from '../components/roles'
+import Link from 'next/link'
 import ExtLink from '../components/ext-link'
 import Header from '../components/header'
 import Accordion from '../components/accordion'
@@ -75,10 +76,24 @@ const Index = () => {
             our values.
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
-          <p>
-            Applications open August 21, 2023. We're recruiting for developers
-            and designers.
-          </p>
+          <div className={studentsStyles.buttons}>
+            <a
+              target="_blank"
+              href="https://forms.gle/9RpneNKAyCgEWwMx8"
+              className={studentsStyles.center}
+            >
+              <motion.div
+                whileHover={{
+                  y: 4,
+                  transition: { duration: 0.125 },
+                }}
+                whileTap={{ scale: 0.95 }}
+                className={studentsStyles.primarybutton}
+              >
+                Apply now
+              </motion.div>
+            </a>
+          </div>
         </div>
         <Image
           className={studentsStyles.photo}
