@@ -223,9 +223,7 @@ export default function Index() {
           <li>
             <h4>
               USC Involvement Fair{' '}
-              <p>
-                Thursday, August 24th @ the Great Lawn in the Village, 11am-2pm
-              </p>
+              <p>Thursday, August 24th @ Alumni Park, 11am-2pm</p>
             </h4>
           </li>
 

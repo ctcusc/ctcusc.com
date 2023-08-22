@@ -79,7 +79,7 @@ const Index = () => {
           <div className={studentsStyles.buttons}>
             <a
               target="_blank"
-              href="https://forms.gle/9RpneNKAyCgEWwMx8"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeiNY6bkKT6Io7U-dJd_2pXPKK8XuMawDabw41HhLh1xuNbwg/viewform"
               className={studentsStyles.center}
             >
               <motion.div
