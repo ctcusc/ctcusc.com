@@ -67,8 +67,11 @@ export default function Index() {
             A community of technologists at USC creating products for
             nonprofits.
           </h2>
-          {/* <div className={landingStyles.buttons}>
-            <Link href="/about/">
+          <div className={landingStyles.buttons}>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeiNY6bkKT6Io7U-dJd_2pXPKK8XuMawDabw41HhLh1xuNbwg/viewform?usp=sf_link"
+              target="_blank"
+            >
               <motion.div
                 whileHover={{
                   y: 4,
@@ -77,22 +80,10 @@ export default function Index() {
                 whileTap={{ scale: 0.95 }}
                 className={landingStyles.primarybutton}
               >
-                About us
+                APPLY NOW
               </motion.div>
-            </Link>
-            <Link href="/students/">
-              <motion.div
-                whileHover={{
-                  y: 4,
-                  transition: { duration: 0.125 },
-                }}
-                whileTap={{ scale: 0.95 }}
-                className={landingStyles.primarybutton}
-              >
-                Join us
-              </motion.div>
-            </Link>
-          </div> */}
+            </a>
+          </div>
         </div>
         {/* <div className={landingStyles.photogrid}>
           <div className={landingStyles.photo}>
@@ -213,6 +204,7 @@ export default function Index() {
             return <Value {...value} />
           })}
         </div>
+        <h2 />
         <h2>Get to Know us.</h2>
         <p>
           If you'd like to learn more about what type of projects we do, what
@@ -236,7 +228,16 @@ export default function Index() {
           <li>
             <h4>
               Code the Change Info Session{' '}
-              <p>Wednesday, August 30th @ Zoom & classroom TBD, 7pm-8:30pm</p>
+              <p>
+                Wednesday, August 30th @{' '}
+                <a
+                  href="https://usc.zoom.us/j/98152114430?pwd=VmVUdWMzTW9NeW1WcVpaZ05jZEZiZz09"
+                  target="_blank"
+                >
+                  Zoom
+                </a>{' '}
+                & ZHS 159, 7pm-8:30pm
+              </p>
             </h4>
           </li>
         </ul>

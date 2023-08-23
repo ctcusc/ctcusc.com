@@ -37,14 +37,14 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: var(--indent);
+  color: var(--ctc);
   cursor: pointer;
   margin-left: 32px;
 }
 
 .primarybutton:first-child {
   margin-left: 0px;
-  background: var(--verde);
+  background: var(--white);
 }
 
 .primarybutton:hover {
