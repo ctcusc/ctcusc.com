@@ -9,6 +9,7 @@ import sharedStyles from '../styles/shared.module.css'
 import great from '../../public/placement1.svg'
 import things from '../../public/placement2.svg'
 import { motion } from 'framer-motion'
+import stickers from '../../public/stickers.png'
 
 const Index = () => {
   return (
@@ -85,6 +86,21 @@ const Index = () => {
           reach out to hear about our benefits ↗.
         </ExtLink>
       </h6>
+      <div className={aboutStyles.grid}>
+        <p>
+          Thank you to <a href="https://mule.to/p4rt">Sticker Mule</a> for
+          providing our members with wonderful custom stickers.
+        </p>
+        <Image
+          src={stickers}
+          alt="Sticker Mule logo"
+          quality="50"
+          priority
+          placeholder="blur"
+          size="30vw"
+        />
+      </div>
+
       <h1>Learn more.</h1>
       <p>
         Code the Change is part of a{' '}
