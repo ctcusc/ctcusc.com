@@ -97,7 +97,6 @@ const Index = () => {
           quality="50"
           priority
           placeholder="blur"
-          size="30vw"
         />
       </div>
 
