@@ -9,7 +9,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 30vh auto 0px auto;
+  margin: 24vh auto 0px auto;
   text-align: center;
 }
 
@@ -136,6 +136,14 @@
 
 .role {
   margin: 0 32px;
+}
+
+.notice {
+  color: var(--white);
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
 }
 
 @media (max-width: 800px) {

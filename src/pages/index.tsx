@@ -84,6 +84,10 @@ export default function Index() {
               </motion.div>
             </a>
           </div>
+          <p className={landingStyles.notice}>
+            Join us for an informal Q&A on Wednesday, September 6th 8:30-9:30pm,
+            location TBA
+          </p>
         </div>
         {/* <div className={landingStyles.photogrid}>
           <div className={landingStyles.photo}>
@@ -238,6 +242,18 @@ export default function Index() {
                 </a>{' '}
                 & ZHS 159, 7pm-8:30pm
               </p>
+              <p>
+                <a
+                  href=" https://docs.google.com/presentation/d/1DLQS4shPTHCbYr3yHTpq7bQOoGcIiwh2-HQFUIOWX00/edit?usp=sharing"
+                  target="_blank"
+                >
+                  Info session slides
+                </a>
+              </p>
+            </h4>
+            <h4>
+              Informal CTC Q&A{' '}
+              <p>Wednesday, September 6th location TBA, 8:30pm-9:30pm</p>
             </h4>
           </li>
         </ul>
