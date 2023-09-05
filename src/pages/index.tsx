@@ -86,7 +86,7 @@ export default function Index() {
           </div>
           <p className={landingStyles.notice}>
             Join us for an informal Q&A on Wednesday, September 6th 8:30-9:30pm,
-            location TBA
+            DMC 200
           </p>
         </div>
         {/* <div className={landingStyles.photogrid}>
@@ -253,7 +253,7 @@ export default function Index() {
             </h4>
             <h4>
               Informal CTC Q&A{' '}
-              <p>Wednesday, September 6th location TBA, 8:30pm-9:30pm</p>
+              <p>Wednesday, September 6th in DMC 200, 8:30pm-9:30pm</p>
             </h4>
           </li>
         </ul>
