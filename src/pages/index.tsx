@@ -72,7 +72,7 @@ export default function Index() {
               href="https://docs.google.com/forms/d/e/1FAIpQLSeiNY6bkKT6Io7U-dJd_2pXPKK8XuMawDabw41HhLh1xuNbwg/viewform?usp=sf_link"
               target="_blank"
             >
-              <motion.div
+              {/* <motion.div
                 whileHover={{
                   y: 4,
                   transition: { duration: 0.125 },
@@ -81,13 +81,9 @@ export default function Index() {
                 className={landingStyles.primarybutton}
               >
                 APPLY NOW
-              </motion.div>
+              </motion.div> */}
             </a>
           </div>
-          <p className={landingStyles.notice}>
-            Join us for an informal Q&A on Wednesday, September 6th 8:30-9:30pm,
-            DMC 200
-          </p>
         </div>
         {/* <div className={landingStyles.photogrid}>
           <div className={landingStyles.photo}>
@@ -209,101 +205,6 @@ export default function Index() {
           })}
         </div>
         <h2 />
-        <h2>Get to Know us.</h2>
-        <p>
-          If you'd like to learn more about what type of projects we do, what
-          being a member includes, and what the application process looks like,
-          we're participating in a number of student meet & greet events:
-        </p>
-        <ul>
-          <li>
-            <h4>
-              USC Involvement Fair{' '}
-              <p>Thursday, August 24th @ Alumni Park, 11am-2pm</p>
-            </h4>
-          </li>
-
-          <li>
-            <h4>
-              Viterbi Get Connected! Fair{' '}
-              <p>Tuesday, August 29th @ Viterbi Quad, 10am-2pm</p>
-            </h4>
-          </li>
-          <li>
-            <h4>
-              Code the Change Info Session{' '}
-              <p>
-                Wednesday, August 30th @{' '}
-                <a
-                  href="https://usc.zoom.us/j/98152114430?pwd=VmVUdWMzTW9NeW1WcVpaZ05jZEZiZz09"
-                  target="_blank"
-                >
-                  Zoom
-                </a>{' '}
-                & ZHS 159, 7pm-8:30pm
-              </p>
-              <p>
-                <a
-                  href=" https://docs.google.com/presentation/d/1DLQS4shPTHCbYr3yHTpq7bQOoGcIiwh2-HQFUIOWX00/edit?usp=sharing"
-                  target="_blank"
-                >
-                  Info session slides
-                </a>
-              </p>
-            </h4>
-            <h4>
-              Informal CTC Q&A{' '}
-              <p>Wednesday, September 6th in DMC 200, 8:30pm-9:30pm</p>
-            </h4>
-          </li>
-        </ul>
-        {/* <h2>We're Recruiting For:</h2>
-        <div className={landingStyles.roles}>
-          <div className={landingStyles.role}>
-            <Image
-              src={developer}
-              alt="Developer"
-              priority
-              quality="100"
-              placeholder="blur"
-            />
-            <h3>Developers</h3>
-          </div>
-          <div className={landingStyles.role}>
-            <Image
-              src={designer}
-              alt="Designer"
-              priority
-              quality="5"
-              placeholder="blur"
-            />
-            <h3>Designers</h3>
-          </div>
-          <div className={landingStyles.role}>
-            <Image
-              src={pm}
-              alt="Product Manager"
-              priority
-              quality="100"
-              placeholder="blur"
-            />
-            <h3>Project Managers</h3>
-          </div>
-        </div>
-        <div className={landingStyles.buttons}>
-          <Link href="/students/">
-            <motion.div
-              whileHover={{
-                y: 4,
-                transition: { duration: 0.125 },
-              }}
-              whileTap={{ scale: 0.95 }}
-              className={landingStyles.primarybutton}
-            >
-              Join us
-            </motion.div>
-          </Link> */}
-        {/* </div> */}
         <Footer />
       </div>
     </>
