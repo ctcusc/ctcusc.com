@@ -4,7 +4,7 @@ import createTable from './createTable'
 import getTableData from './getTableData'
 import { getPostPreview } from './getPostPreview'
 import { readFile, writeFile } from '../fs-helpers'
-import { BLOG_INDEX_ID, BLOG_INDEX_CACHE } from './server-constants'
+import { NEXT_PUBLIC_BLOG_INDEX_ID, BLOG_INDEX_CACHE } from './server-constants'
 
 export default async function getBlogIndex(previews = true) {
   let postsTable: any = null
@@ -22,7 +22,7 @@ export default async function getBlogIndex(previews = true) {
   if (!postsTable) {
     try {
       const data = await rpc('loadPageChunk', {
-        pageId: BLOG_INDEX_ID,
+        pageId: NEXT_PUBLIC_BLOG_INDEX_ID,
         limit: 100, // TODO: figure out Notion's way of handling pagination
         cursor: { stack: [] },
         chunkNumber: 0,
@@ -44,7 +44,7 @@ export default async function getBlogIndex(previews = true) {
         console.log(`Successfully created table in Notion`)
       } catch (err) {
         console.error(
-          `Auto creating table failed, make sure you created a blank page and site the id with BLOG_INDEX_ID in your environment`,
+          `Auto creating table failed, make sure you created a blank page and site the id with NEXT_PUBLIC_BLOG_INDEX_ID in your environment`,
           err
         )
       }
@@ -66,7 +66,7 @@ export default async function getBlogIndex(previews = true) {
             const timeB = postB.Date
             return Math.sign(timeB - timeA)
           })
-          .map(async postKey => {
+          .map(async (postKey) => {
             await sema.acquire()
             const post = postsTable[postKey]
             post.preview = post.id

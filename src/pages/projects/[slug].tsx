@@ -411,7 +411,7 @@ const RenderPost = ({ post, redirect, preview }) => {
             }
             default:
               if (
-                process.env.NODE_ENV !== 'production' &&
+                process.env.NEXT_PUBLIC_NODE_ENV !== 'production' &&
                 !listTypes.has(type)
               ) {
                 console.log('unknown type', type)

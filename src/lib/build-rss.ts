@@ -7,7 +7,7 @@ import getBlogIndex from './notion/getBlogIndex'
 import getNotionUsers from './notion/getNotionUsers'
 import { postIsPublished, getBlogLink } from './blog-helpers'
 
-// must use weird syntax to bypass auto replacing of NODE_ENV
+// must use weird syntax to bypass auto replacing of NEXT_PUBLIC_NODE_ENV
 process.env['NODE' + '_ENV'] = 'production'
 process.env.USE_CACHE = 'true'
 

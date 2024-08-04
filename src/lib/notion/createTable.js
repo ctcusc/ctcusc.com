@@ -2,8 +2,8 @@
 const { v4: uuid } = require('uuid')
 const fetch = require('node-fetch')
 const {
-  BLOG_INDEX_ID: pageId,
-  NOTION_TOKEN,
+  NEXT_PUBLIC_BLOG_INDEX_ID: pageId,
+  NEXT_PUBLIC_NOTION_TOKEN,
   API_ENDPOINT,
 } = require('./server-constants')
 
@@ -313,7 +313,7 @@ async function main() {
   const res = await fetch(`${API_ENDPOINT}/submitTransaction`, {
     method: 'POST',
     headers: {
-      cookie: `token_v2=${NOTION_TOKEN}`,
+      cookie: `token_v2=${NEXT_PUBLIC_NOTION_TOKEN}`,
       'content-type': 'application/json',
     },
     body: JSON.stringify(requestBody),
@@ -328,7 +328,7 @@ async function getExistingexistingBlockId() {
   const res = await fetch(`${API_ENDPOINT}/loadPageChunk`, {
     method: 'POST',
     headers: {
-      cookie: `token_v2=${NOTION_TOKEN}`,
+      cookie: `token_v2=${NEXT_PUBLIC_NOTION_TOKEN}`,
       'content-type': 'application/json',
     },
     body: JSON.stringify({
@@ -347,7 +347,7 @@ async function getExistingexistingBlockId() {
   }
   const data = await res.json()
   const id = Object.keys(data ? data.recordMap.block : {}).find(
-    id => id !== pageId
+    (id) => id !== pageId
   )
   return id || uuid()
 }
@@ -356,7 +356,7 @@ async function getUserId() {
   const res = await fetch(`${API_ENDPOINT}/loadUserContent`, {
     method: 'POST',
     headers: {
-      cookie: `token_v2=${NOTION_TOKEN}`,
+      cookie: `token_v2=${NEXT_PUBLIC_NOTION_TOKEN}`,
       'content-type': 'application/json',
     },
     body: '{}',
