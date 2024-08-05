@@ -25,6 +25,7 @@ export function debounce(func, wait, immediate) {
 const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Students', page: '/students' },
   { label: 'Nonprofits', page: '/nonprofits' },
+  { label: 'Projects', page: '/pastprojects' },
   { label: 'About', page: '/about' },
 ]
 

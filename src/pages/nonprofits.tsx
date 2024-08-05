@@ -1,6 +1,6 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
-import PastProjects from '../components/projects'
+import PastProjects from '../components/projectshowcase'
 import Image from 'next/image'
 import Link from 'next/link'
 import ExtLink from '../components/ext-link'
@@ -83,7 +83,8 @@ export default function Nonprofits() {
             <p>
               Don't worry about cost, we operate pro bono. Even though we're a
               student club, we're dedicated to producing high quality work. If
-              you're interested, please reach out to us!
+              you're interested, please reach out to us! Feel free to check out
+              some of our recent projects below.
             </p>
             <div className={nonprofitStyles.buttons}>
               <ExtLink href="mailto:ctcusc@gmail.com">

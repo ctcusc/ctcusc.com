@@ -6,10 +6,11 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import aboutStyles from '../styles/about.module.css'
 import sharedStyles from '../styles/shared.module.css'
-import great from '../../public/placement1.svg'
-import things from '../../public/placement2.svg'
+import great from '../../public/about/placement1.svg'
+import things from '../../public/about/placement2.svg'
 import { motion } from 'framer-motion'
-import stickers from '../../public/stickers.png'
+import stickers from '../../public/about/stickers.png'
+import NewTeam from '../components/newteam'
 
 const Index = () => {
   return (
@@ -21,7 +22,7 @@ const Index = () => {
         <p>
           Code the Change started in 2015 by a group of civic-minded developers
           and designers looking to use their skills for service. Since then,
-          we’ve partnered with over 20 nonprofits, working in solidarity with
+          we’ve partnered with over 30 nonprofits, working in solidarity with
           their communities to accomplish their missions.
         </p>
         <p>
@@ -56,7 +57,8 @@ const Index = () => {
         We're a completely student-run organization of ~40 members. Meet a few
         of our members:
       </p>
-      <Team />
+      {/* <Team /> */}
+      <NewTeam />
 
       <h1>After Graduation.</h1>
       <p>
@@ -77,8 +79,8 @@ const Index = () => {
       <h1>Sponsors.</h1>
       <p>
         While Code the Change is lucky enough to receive some funding from the
-        Viterbi of Engineering, we are always on the lookout for corporate
-        sponsors to truly enhance CTC's mission.
+        Viterbi School of Engineering, we are always on the lookout for
+        corporate sponsors to truly enhance CTC's mission.
       </p>
       <h6>
         If you're interested in being a potential sponsor or partner, please{' '}

@@ -77,8 +77,8 @@ const Index = () => {
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
           <p>
-            Applications for the 2023-24 school year are closed. Please apply
-            next Fall!
+            Applications for the 2024-25 school year open August 26th. Stay
+            tuned for more information!
           </p>
           <div className={studentsStyles.buttons}>
             <a
