@@ -85,7 +85,8 @@ const NewTeam = () => {
           {labels.map(({ label, value }) => {
             return (
               <div key={label} className={teamCarouselStyles.teamHolder}>
-                <Team type={value} />
+                Under maintenance. Check back later!
+                {/* <Team type={value} /> */}
               </div>
             )
           })}

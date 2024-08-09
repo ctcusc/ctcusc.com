@@ -48,28 +48,29 @@ const SegmentedControl = ({ goToSlide }) => {
         {pastProjects.map(({ name }, index) => {
           const isActive = index === activeItem
           return (
-            <motion.li
-              className={rolesStyles.item}
-              whileTap={isActive ? { scale: 0.95 } : { opacity: 0.6 }}
-              key={name}
-            >
-              <button
-                onClick={() => {
-                  goToSlide(index)
-                  setActiveitem(index)
-                }}
-                type="button"
-                className={rolesStyles.button}
-              >
-                {isActive && (
-                  <motion.div
-                    layoutId="SegmentedControlActive"
-                    className={rolesStyles.active}
-                  />
-                )}
-                <span className={rolesStyles.label}>{name}</span>
-              </button>
-            </motion.li>
+            <div>Under maintenance. Check back soon!</div>
+            // <motion.li
+            //   className={rolesStyles.item}
+            //   whileTap={isActive ? { scale: 0.95 } : { opacity: 0.6 }}
+            //   key={name}
+            // >
+            //   <button
+            //     onClick={() => {
+            //       goToSlide(index)
+            //       setActiveitem(index)
+            //     }}
+            //     type="button"
+            //     className={rolesStyles.button}
+            //   >
+            //     {isActive && (
+            //       <motion.div
+            //         layoutId="SegmentedControlActive"
+            //         className={rolesStyles.active}
+            //       />
+            //     )}
+            //     <span className={rolesStyles.label}>{name}</span>
+            //   </button>
+            // </motion.li>
           )
         })}
       </ol>
