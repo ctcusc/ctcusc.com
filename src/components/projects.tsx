@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Carousel from 'react-multi-carousel'
 import { motion, AnimateSharedLayout } from 'framer-motion'
-import pastprojectStyles from '../styles/pastprojects.module.css'
+import rolesStyles from '../styles/roles.module.css'
 import sharedStyles from '../styles/shared.module.css'
 import racShowcase from '../../public/projects/rac-showcase.png'
 import vbaShowcase from '../../public/projects/vba-showcase.png'
@@ -44,12 +44,12 @@ const SegmentedControl = ({ goToSlide }) => {
   const [activeItem, setActiveitem] = useState(0)
   return (
     <AnimateSharedLayout>
-      <ol className={pastprojectStyles.list}>
+      <ol className={rolesStyles.list}>
         {pastProjects.map(({ name }, index) => {
           const isActive = index === activeItem
           return (
             <motion.li
-              className={pastprojectStyles.item}
+              className={rolesStyles.item}
               whileTap={isActive ? { scale: 0.95 } : { opacity: 0.6 }}
               key={name}
             >
@@ -59,15 +59,15 @@ const SegmentedControl = ({ goToSlide }) => {
                   setActiveitem(index)
                 }}
                 type="button"
-                className={pastprojectStyles.button}
+                className={rolesStyles.button}
               >
                 {isActive && (
                   <motion.div
                     layoutId="SegmentedControlActive"
-                    className={pastprojectStyles.active}
+                    className={rolesStyles.active}
                   />
                 )}
-                <span className={pastprojectStyles.label}>{name}</span>
+                <span className={rolesStyles.label}>{name}</span>
               </button>
             </motion.li>
           )
@@ -91,13 +91,13 @@ const PastProjects = () => {
           keyBoardControl={true}
           transitionDuration={0}
           focusOnSelect={true}
-          className={pastprojectStyles.carousel}
+          className={rolesStyles.carousel}
         >
           {pastProjects.map(({ name, img, desc, stack }) => {
             return (
-              <div key={name} className={pastprojectStyles.panel}>
+              <div key={name} className={rolesStyles.panel}>
                 <Image
-                  className={pastprojectStyles.photo}
+                  className={rolesStyles.photo}
                   src={img}
                   alt={name}
                   priority
@@ -105,9 +105,9 @@ const PastProjects = () => {
                   placeholder="blur"
                 />
                 <div>
-                  <h4 className={pastprojectStyles.title}>{name}</h4>
-                  <p className={pastprojectStyles.desc}>{desc}</p>
-                  <p className={pastprojectStyles.subdesc}>{stack}</p>
+                  <h4 className={rolesStyles.title}>{name}</h4>
+                  <p className={rolesStyles.desc}>{desc}</p>
+                  <p className={rolesStyles.subdesc}>{stack}</p>
                 </div>
               </div>
             )

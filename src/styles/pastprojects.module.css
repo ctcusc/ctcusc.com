@@ -115,13 +115,6 @@
   gap: 20px 40px;
 }
 
-.prevWork {
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-  gap: 0.5rem;
-}
-
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr;

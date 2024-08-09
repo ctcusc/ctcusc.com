@@ -15,6 +15,7 @@ import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
 import usc from '../../public/usc.jpg'
 import volunteering from '../../public/cathartic-volunteering.jpg'
+import Roles from '../components/roles'
 
 const faq = [
   {
@@ -103,7 +104,7 @@ export default function Nonprofits() {
           </div>
         </div>
       </div>
-      {/* <PastProjects /> */}
+      <PastProjects />
       <h2>Questions.</h2>
       <div className={studentsStyles.faq}>
         {faq.map(({ question, answer }) => {
