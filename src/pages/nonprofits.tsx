@@ -103,7 +103,7 @@ export default function Nonprofits() {
           </div>
         </div>
       </div>
-      <PastProjects />
+      {/* <PastProjects /> */}
       <h2>Questions.</h2>
       <div className={studentsStyles.faq}>
         {faq.map(({ question, answer }) => {
