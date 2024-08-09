@@ -3,6 +3,7 @@ import { motion, AnimateSharedLayout } from 'framer-motion'
 import pastprojectStyles from '../styles/pastprojects.module.css'
 import sharedStyles from '../styles/shared.module.css'
 import teamCarouselStyles from '../styles/teamCarousel.module.css'
+import 'react-multi-carousel/lib/styles.css'
 import Carousel from 'react-multi-carousel'
 import Team from './team'
 
@@ -85,8 +86,7 @@ const NewTeam = () => {
           {labels.map(({ label, value }) => {
             return (
               <div key={label} className={teamCarouselStyles.teamHolder}>
-                Under maintenance. Check back later!
-                {/* <Team type={value} /> */}
+                <Team type={value} />
               </div>
             )
           })}

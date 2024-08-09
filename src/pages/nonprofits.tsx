@@ -10,12 +10,11 @@ import Clock from 'react-live-clock'
 import sharedStyles from '../styles/shared.module.css'
 import nonprofitStyles from '../styles/nonprofits.module.css'
 import studentsStyles from '../styles/students.module.css'
-import banner from '../../public/greendot-team.jpg'
+import 'react-multi-carousel/lib/styles.css'
 import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
 import usc from '../../public/usc.jpg'
 import volunteering from '../../public/cathartic-volunteering.jpg'
-import Roles from '../components/roles'
 
 const faq = [
   {
@@ -104,7 +103,7 @@ export default function Nonprofits() {
           </div>
         </div>
       </div>
-      {/* <PastProjects /> */}
+      <PastProjects />
       <h2>Questions.</h2>
       <div className={studentsStyles.faq}>
         {faq.map(({ question, answer }) => {
