@@ -9,13 +9,14 @@ import 'react-multi-carousel/lib/styles.css'
 import studentsStyles from '../styles/students.module.css'
 import sharedStyles from '../styles/shared.module.css'
 import { motion } from 'framer-motion'
-import members from '../../public/members-sitting.jpg'
-import retreat from '../../public/retreat-spring23.jpg'
-import boys from '../../public/ctc-boys.jpg'
+import beach from '../../public/ctcbeach.jpg'
 import donut from '../../public/donut-22.jpg'
 import designers from '../../public/designers-conference.jpg'
-import writegirl from '../../public/writegirl.jpg'
 import retreatfa from '../../public/retreat-fall23.jpg'
+import ctcf1 from '../../public/ctcf1.jpg'
+import ctckfp from '../../public/ctckfp.jpg'
+import ctcacro from '../../public/ctcacro.png'
+import ctcpie from '../../public/ctcpie.png'
 
 const faq = [
   {
@@ -77,8 +78,8 @@ const Index = () => {
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
           <p>
-            Applications for the 2023-24 school year are closed. Please apply
-            next Fall!
+            Applications for the 2024-25 school year open August 26th. Stay
+            tuned for more information!
           </p>
           <div className={studentsStyles.buttons}>
             <a
@@ -112,32 +113,32 @@ const Index = () => {
       <div className={studentsStyles.photogrid}>
         <div className={studentsStyles.photo}>
           <Image
-            src={designers}
-            alt="CTC Designers at a conference"
+            src={ctcpie}
+            alt="CTC Members pieing each other (for a good cause)"
             quality="100"
             priority
             placeholder="blur"
           />
         </div>
         <Image
-          src={retreat}
-          alt="Club retreat in Del Mar"
+          src={beach}
+          alt="Club retreat at Huntington Beach"
           quality="100"
           priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
-          src={boys}
-          alt="CTC members smiling together"
+          src={ctckfp}
+          alt="CTC members watching Kung Fu Panda"
           quality="100"
           priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
-          src={writegirl}
-          alt="Write Girl team hack night"
+          src={ctcf1}
+          alt="CTC members going go-karting"
           quality="100"
           priority
           placeholder="blur"

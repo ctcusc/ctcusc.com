@@ -1,0 +1,56 @@
+[
+  {
+    "fall": 18,
+    "spring": 19
+  },
+  {
+    "fall": 19,
+    "spring": 20
+  },
+  {
+    "fall": 20,
+    "spring": 21
+  },
+  {
+    "fall": 21,
+    "spring": 22
+  },
+  {
+    "fall": 22,
+    "spring": 23
+  },
+  {
+    "fall": 23,
+    "spring": 24
+  },
+  {
+    "fall": 24,
+    "spring": 25,
+    "projects": [
+      {
+        "name": "RaiseAChild",
+        "highLevel": "Code the Change built a data visualization dashboard for RaiseAChild so that organization members could better view key metrics.",
+        "stack": "NextJS, FastAPI, and PostgreSQL",
+        "designChallenge": "RaiseAChild came to us with a simple issue: they had a way to store their data, but visualizing it was a pain. Creating excel sheets manually was not a scalable solution for their needs.",
+        "solution": "To solve this challenge, the team's designers and developers created a dashboard that allows organization members to view key metrics at a glance while also providing the functionality to  if n. Users can create breakdowns for specific fields for RaiseAChild's constituents and event attendees while using complex filters to narrow down their focus.",
+        "img": "/public/projects/rac-showcase.png"
+      },
+      {
+        "name": "Voices Beyond Assault",
+        "highLevel": "Code the Change built a custom forum for Voices Beyond Assault where survivors of sexual assault could anonymously communicate, share stories, and uplift each other.",
+        "stack": "React, Express, and PostgreSQL",
+        "designChallenge": "RaiseAChild came to us with a simple issue: they had a way to store their data, but visualizing it was a pain. Creating excel sheets manually was not a scalable solution for hteir needs.",
+        "solution": "To solve this challenge, the team's designers and developers created a dashboard that allows organization members to view key metrics at a glance while also providing the functionality to dive deep. Users can create breakdowns for specific fields for RaiseAChild's constituents and event attendees while using complex filters to narrow down their focus.",
+        "img": "/public/projects/vba-showcase.png"
+      },
+      {
+        "name": "We Are G.A.M.E",
+        "highLevel": "Code the Change built an internal dashboard alongside an informational database for prospective college athletes to find mentors and potential colleges.",
+        "stack": "React, Express, and PostgreSQL",
+        "designChallenge": "...",
+        "solution": "...",
+        "img": "/public/projects/wag-showcase.png"
+      }
+    ]
+  }
+]

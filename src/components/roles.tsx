@@ -123,7 +123,7 @@ const Roles = () => {
         >
           {roles.map(({ name, img, desc, skills }) => {
             return (
-              <div className={rolesStyles.panel}>
+              <div key={name} className={rolesStyles.panel}>
                 <Image
                   className={rolesStyles.photo}
                   src={img}

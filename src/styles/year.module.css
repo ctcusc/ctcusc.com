@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: 20px 18px;
+}
+
+.fall {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--verde);
+}
+
+.spring {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--indent);
+  margin-top: -35px;
+  margin-left: 20px;
+}
+
+.selectedCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ctc);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: 20px 18px;
+}
+
+.selectedFall {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--white);
+}
+
+.selectedSpring {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--verde);
+  margin-top: -35px;
+  margin-left: 20px;
+}
+
+.text {
+  padding-top: 20px;
+}
