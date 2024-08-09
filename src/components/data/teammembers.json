@@ -140,6 +140,13 @@
     "type": "general"
   },
   {
+    "name": "Andrew Choi",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-andrew.png",
+    "link": "https://www.linkedin.com/in/andrew-choi-97153a292/",
+    "type": "general"
+  },
+  {
     "name": "Robin Ryu",
     "role": "Developer",
     "photo": "about/headshots/ctc-robin.png",
@@ -231,6 +238,13 @@
     "type": "alumni"
   },
   {
+    "name": "Anthony Xu",
+    "role": "Class of 2024",
+    "photo": "about/headshots/ctc-anthonyxu.png",
+    "link": "https://www.linkedin.com/in/anthony-y-xu/",
+    "type": "alumni"
+  },
+  {
     "name": "Fayez Loan",
     "role": "Class of 2024",
     "photo": "about/headshots/ctc-fayez.png",
@@ -301,6 +315,13 @@
     "type": "alumni"
   },
   {
+    "name": "Matt Cho",
+    "role": "Class of 2024",
+    "photo": "about/headshots/ctc-mattcho.png",
+    "link": "https://www.linkedin.com/in/matthew-cho-usc/",
+    "type": "alumni"
+  },
+  {
     "name": "Timothy Lin",
     "role": "Class of 2024",
     "photo": "about/headshots/ctc-tim.png",
@@ -312,6 +333,13 @@
     "role": "Class of 2024",
     "photo": "about/headshots/ctc-namiha.png",
     "link": "https://www.linkedin.com/in/namihayasuda/",
+    "type": "alumni"
+  },
+  {
+    "name": "Catherine Tsai",
+    "role": "Class of 2024",
+    "photo": "about/headshots/ctc-catherine.png",
+    "link": "https://www.linkedin.com/in/tsai-catherine/",
     "type": "alumni"
   },
   {

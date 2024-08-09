@@ -1,6 +1,6 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
-import PastProjects from '../components/projectshowcase'
+import PastProjects from '../components/projects'
 import Image from 'next/image'
 import Link from 'next/link'
 import ExtLink from '../components/ext-link'

@@ -8,9 +8,6 @@ import racShowcase from '../../public/projects/rac-showcase.png'
 import vbaShowcase from '../../public/projects/vba-showcase.png'
 import wagShowcase from '../../public/projects/wag-showcase.png'
 
-import ExtLink from './ext-link'
-import Link from 'next/link'
-
 const single = {
   single: {
     breakpoint: { max: 5000, min: 0 },
@@ -111,20 +108,6 @@ const PastProjects = () => {
                   <h4 className={pastprojectStyles.title}>{name}</h4>
                   <p className={pastprojectStyles.desc}>{desc}</p>
                   <p className={pastprojectStyles.subdesc}>{stack}</p>
-                  <div className={pastprojectStyles.buttons}>
-                    <Link href="/pastprojects">
-                      <motion.div
-                        whileHover={{
-                          x: 12,
-                          transition: { duration: 0.125 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
-                        className={pastprojectStyles.primarybutton}
-                      >
-                        Learn More →
-                      </motion.div>
-                    </Link>
-                  </div>
                 </div>
               </div>
             )

@@ -37,6 +37,15 @@
   padding: 48px;
 }
 
+.whitecardprojects {
+  width: 100%;
+  grid-column: 1 / 4;
+  margin-top: 24px;
+  background-color: white;
+  padding: 48px;
+  border-radius: 20px;
+}
+
 @media (max-width: 900px) {
   .layout {
     display: grid;

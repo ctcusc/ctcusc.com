@@ -54,8 +54,7 @@ const Index = () => {
       </div>
       <h1>Our Team.</h1>
       <p>
-        We're a completely student-run organization of ~40 members. Meet a few
-        of our members:
+        We're a completely student-run organization. Meet our members below.
       </p>
       {/* <Team /> */}
       <NewTeam />
