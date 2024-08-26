@@ -78,16 +78,16 @@ const Index = () => {
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
           <p>
-            Applications for the 2024-25 school year open August 26th. Stay
-            tuned for more information!
+            Applications for the 2024-25 school year open August 26th. Apply
+            now!
           </p>
           <div className={studentsStyles.buttons}>
             <a
               target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeiNY6bkKT6Io7U-dJd_2pXPKK8XuMawDabw41HhLh1xuNbwg/viewform"
+              href="https://forms.gle/RqusrfwXVzxTZfo28"
               className={studentsStyles.center}
             >
-              {/* <motion.div
+              <motion.div
                 whileHover={{
                   y: 4,
                   transition: { duration: 0.125 },
@@ -96,7 +96,7 @@ const Index = () => {
                 className={studentsStyles.primarybutton}
               >
                 Apply now
-              </motion.div> */}
+              </motion.div>
             </a>
           </div>
         </div>
