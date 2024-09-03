@@ -52,7 +52,7 @@ const faq = [
   {
     question: 'How can I meet members to learn more?',
     answer:
-      'Look out for us at the Viterbi Get Connected Fair on September 5th! We will also be holding an info session during the second week of school.',
+      "We're hosting an info session on Zoom on Wednesday, September 4th from 7-8 PM (https://usc.zoom.us/j/96473652607). In addition, you can find us tabling at the Viterbi Get Connected Fair on September 5th!",
   },
 ]
 

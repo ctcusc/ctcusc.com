@@ -20,17 +20,17 @@ const faq = [
   {
     question: 'What is the application timeline?',
     answer:
-      'We open up applications in May—August. We have picked our partners for the 2023-24 school year.',
+      'We open up applications around May and will select our clients in July. We have already picked our partners for the 2024-2025 school year.',
   },
   {
     question: 'What does the application look like?',
     answer:
-      "An application consists of an initial email showing interest, then a follow-up meeting with our VP of Projects and VP of Product who will assess your needs and how well your nonprofit fits with our organization's abilities.",
+      "We'll reach out to you to fill out an initial interest form. From there, we'll then set up a follow-up meeting to assess your needs and how well your nonprofit fits with our organization's abilities.",
   },
   {
     question: 'How does communication work?',
     answer:
-      "Our expectation is biweekly virtual meetings virtually with a Team lead. You'll work directly with an assigned Product Manager and Tech Lead.",
+      "Our expectation is biweekly virtual meetings virtually with your team's leads. You'll work directly with an assigned Product Manager and Tech Lead.",
   },
   {
     question: 'Who builds the project?',
