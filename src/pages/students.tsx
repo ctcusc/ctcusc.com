@@ -78,8 +78,10 @@ const Index = () => {
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
           <p>
-            Applications for the 2024-25 school year open August 26th. Apply
-            now!
+            Applications for the 2024-25 school year are now open! Meet us at
+            our Zoom info session on Wednesday, September 4th from 7-8PM (
+            <a href="https://usc.zoom.us/j/96473652607">link here</a>) or at the
+            Viterbi Get Connected Fair on Thursday, September 5th from 11-2PM!
           </p>
           <div className={studentsStyles.buttons}>
             <a
