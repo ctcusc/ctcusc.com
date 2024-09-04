@@ -30,13 +30,15 @@
 }
 
 .alumni {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 32px;
 }
 
 @media (max-width: 800px) {
   .alumni {
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
