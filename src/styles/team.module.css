@@ -27,7 +27,7 @@
 
 .pfp {
   max-width: 160px;
-  border-radius: 999px;
+  border-radius: 999px !important;
 }
 
 .name {
