@@ -39,7 +39,7 @@ const Index = () => {
           communities.
         </p>
       </div>
-      <div className={aboutStyles.buttons}>
+      {/* <div className={aboutStyles.buttons}>
         <Link href="/students/">
           <motion.div
             whileHover={{
@@ -52,7 +52,7 @@ const Index = () => {
             Apply now
           </motion.div>
         </Link>
-      </div>
+      </div> */}
       <h1>Our Team.</h1>
       <p>
         We're a completely student-run organization. Meet our members below.

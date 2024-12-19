@@ -32,7 +32,7 @@ const faq = [
   {
     question: 'Can I apply for more than one role?',
     answer:
-      'No, but if you believe you have a good reason to apply to more than one, we can accept on a per-request basis.',
+      'Unfortunately, no. However, many members try multiple roles across their different projects at CTC.',
   },
   {
     question: "I'm not a CS major. Can I still apply?",
@@ -52,7 +52,7 @@ const faq = [
   {
     question: 'How can I meet members to learn more?',
     answer:
-      "We're hosting an info session on Zoom on Wednesday, September 4th from 7-8 PM (https://usc.zoom.us/j/96473652607). In addition, you can find us tabling at the Viterbi Get Connected Fair on September 5th!",
+      "We'll be at Viterbi's Spring Get Connected Fair on January 13th! In addition, we'll be hosting a number of technical workshops throughout the semester for anyone interested in learning more about what we do!",
   },
 ]
 
@@ -78,12 +78,12 @@ const Index = () => {
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
           <p>
-            Applications for the 2024-25 school year are now open! Meet us at
-            our Zoom info session on Wednesday, September 4th from 7-8PM (
-            <a href="https://usc.zoom.us/j/96473652607">link here</a>) or at the
-            Viterbi Get Connected Fair on Thursday, September 5th from 11-2PM!
+            Applications for the 2024-25 school year are unfortunately closed.
+            However, come meet us at Viterbi's Spring Get Connected Fair on
+            January 13th from 11-2PM! We'll also be hosting technical workshops
+            throughout the semester, so come through to learn and say hi!
           </p>
-          <div className={studentsStyles.buttons}>
+          {/* <div className={studentsStyles.buttons}>
             <a
               target="_blank"
               href="https://forms.gle/RqusrfwXVzxTZfo28"
@@ -100,7 +100,7 @@ const Index = () => {
                 Apply now
               </motion.div>
             </a>
-          </div>
+          </div> */}
         </div>
         <Image
           className={studentsStyles.photo}
