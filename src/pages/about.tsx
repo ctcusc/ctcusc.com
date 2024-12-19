@@ -68,11 +68,11 @@ const Index = () => {
       <div className={aboutStyles.alumni}>
         <Image
           src={great}
-          alt="List of companies, fellowships, doctoral studies"
+          alt="List of companies, fellowships, and doctoral studies our alumni have gone on to"
         />
         <Image
           src={things}
-          alt="List of companies, fellowships, doctoral studies"
+          alt="List of companies, fellowships, and doctoral studies our alumni have gone on to"
         />
       </div>
 
