@@ -85,22 +85,9 @@ const Index = () => {
       <h6>
         If you're interested in being a potential sponsor or partner, please{' '}
         <ExtLink href="mailto:ctcusc@gmail.com">
-          reach out to hear about our benefits ↗.
+          reach out to hear about what we have to offer! ↗.
         </ExtLink>
       </h6>
-      <div className={aboutStyles.grid}>
-        <p>
-          Thank you to <a href="https://mule.to/p4rt">Sticker Mule</a> for
-          providing our members with wonderful custom stickers.
-        </p>
-        <Image
-          src={stickers}
-          alt="Sticker Mule logo"
-          quality="50"
-          priority
-          placeholder="blur"
-        />
-      </div>
 
       <h1>Learn more.</h1>
       <p>
