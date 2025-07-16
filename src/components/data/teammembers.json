@@ -1,97 +1,167 @@
 [
   {
-    "name": "Nikhil Murthy",
+    "name": "Kristen Won",
     "role": "President",
+    "photo": "about/headshots/ctc-jason.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Ellen Landrum",
+    "role": "President",
+    "photo": "about/headshots/ctc-jason.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Brennen Ho",
+    "role": "VP of Product",
+    "photo": "about/headshots/ctc-brennen.png",
+    "link": "https://www.linkedin.com/in/brennenho/",
+    "type": "general"
+  },
+  {
+    "name": "Jason Wiemels",
+    "role": "VP of Development",
+    "photo": "about/headshots/ctc-jason.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Yeji Seo",
+    "role": "VP of Design",
+    "photo": "about/headshots/ctc-yeji.png",
+    "link": "https://www.linkedin.com/in/faithyejiseo/",
+    "type": "general"
+  },
+  {
+    "name": "Jeremy Sedillo",
+    "role": "VP of Events",
+    "photo": "about/headshots/ctc-jeremy.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Jerry Zhang",
+    "role": "VP of Finance",
+    "photo": "about/headshots/ctc-jeremy.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Andrew Choi",
+    "role": "VP of Community Outreach",
+    "photo": "about/headshots/ctc-jeremy.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Pari Pandey",
+    "role": "VP of External Relations",
+    "photo": "about/headshots/ctc-jeremy.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Pari Pandey",
+    "role": "VP of External Relations",
+    "photo": "about/headshots/ctc-jeremy.png",
+    "link": "https://www.linkedin.com/in/jwiemels/",
+    "type": "general"
+  },
+  {
+    "name": "Nikhil Murthy",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-nikhil.png",
     "link": "https://www.linkedin.com/in/nikhilmurthy03/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
     "name": "Evans Chun",
-    "role": "VP of Product",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-evans.png",
     "link": "https://www.linkedin.com/in/ejchun/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
     "name": "Wonjun Lee",
-    "role": "VP of Projects",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-wonjun.png",
     "link": "https://www.linkedin.com/in/jason-wonjun-lee/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
     "name": "Aditya Hariharan",
-    "role": "VP of Events",
+    "role": "Class of 2024",
     "photo": "about/headshots/ctc-aditya.png",
     "link": "https://www.linkedin.com/in/hariharan-aditya/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
     "name": "Amy Liu",
-    "role": "VP of Communications",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-amy.png",
     "link": "https://www.linkedin.com/in/amyzhangliu/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
     "name": "Ellen Landrum",
     "role": "VP of Community",
     "photo": "about/headshots/ctc-ellen.png",
     "link": "https://www.linkedin.com/in/ellenlandrum/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
     "name": "Saihaj Gulati",
-    "role": "VP of DEI",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-saihaj.jpg",
     "link": "https://www.linkedin.com/in/saihaj-gulati/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
     "name": "Amber Garcha",
-    "role": "VP of Finance",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-amber.png",
     "link": "https://www.linkedin.com/in/amber-garcha/",
-    "type": "e-board"
+    "type": "alumni"
   },
   {
-    "name": "Yeji Seo",
+    "name": "Naysa Bhargava",
     "role": "Product Manager",
-    "photo": "about/headshots/ctc-yeji.png",
+    "photo": "about/headshots/ctc-naysa.png",
     "link": "https://www.linkedin.com/in/faithyejiseo/",
     "type": "general"
   },
   {
-    "name": "Elissa Martial",
+    "name": "Andrew Choi",
     "role": "Product Manager",
-    "photo": "about/headshots/ctc-elissa.png",
+    "photo": "about/headshots/ctc-andrew.png",
     "link": "https://www.linkedin.com/in/elissamartial/",
     "type": "general"
   },
   {
-    "name": "Reeya Patel",
+    "name": "Lian Song",
     "role": "Product Manager",
-    "photo": "about/headshots/ctc-reeya.png",
+    "photo": "about/headshots/ctc-lian.png",
     "link": "https://www.linkedin.com/in/reeya-a-patel/",
     "type": "general"
   },
   {
-    "name": "Cole Gawin",
+    "name": "Jerry Zhang",
     "role": "Technology Lead",
     "photo": "about/headshots/ctc-cole.png",
     "link": "https://www.linkedin.com/in/colegawin/",
     "type": "general"
   },
   {
-    "name": "Greydon O'Keefe",
+    "name": "Jeremy Sedillo",
     "role": "Technology Lead",
     "photo": "about/headshots/ctc-greydon.png",
     "link": "https://www.linkedin.com/in/greydon-okeefe/",
     "type": "general"
   },
   {
-    "name": "Jason Wiemels",
+    "name": "Enoch Chang",
     "role": "Technology Lead",
     "photo": "about/headshots/ctc-jason.png",
     "link": "https://www.linkedin.com/in/jwiemels/",
@@ -155,10 +225,10 @@
   },
   {
     "name": "Megan Phi",
-    "role": "Design Mentor",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-megan.png",
     "link": "https://www.linkedin.com/in/megan-phi/",
-    "type": "general"
+    "type": "alumni"
   },
   {
     "name": "Joanne Lee",
@@ -183,24 +253,24 @@
   },
   {
     "name": "Hilari Fan",
-    "role": "Developer Mentor",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-hilari.png",
     "link": "https://www.linkedin.com/in/hilarifan/",
-    "type": "general"
+    "type": "alumni"
   },
   {
     "name": "Chely Fernandez",
-    "role": "Developer Mentor",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-chely.png",
     "link": "https://www.linkedin.com/in/chelyfernandez/",
-    "type": "general"
+    "type": "alumni"
   },
   {
     "name": "Niki Torab",
-    "role": "Developer Mentor",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-niki.png",
     "link": "https://www.linkedin.com/in/niki-torab-191108235/",
-    "type": "general"
+    "type": "alumni"
   },
   {
     "name": "Tammy Truong",
