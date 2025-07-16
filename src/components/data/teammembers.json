@@ -1,72 +1,268 @@
 [
   {
-    "name": "Kristen Won",
-    "role": "President",
-    "photo": "about/headshots/ctc-jason.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
-    "type": "general"
-  },
-  {
     "name": "Ellen Landrum",
     "role": "President",
-    "photo": "about/headshots/ctc-jason.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
-    "type": "general"
+    "photo": "about/headshots/ctc-ellen.png",
+    "link": "https://www.linkedin.com/in/ellenlandrum/",
+    "type": "e-board"
+  },
+  {
+    "name": "Kristen Won",
+    "role": "President",
+    "photo": "about/headshots/ctc-kristen.png",
+    "link": "https://linkedin.com/in/kristenwon",
+    "type": "e-board"
   },
   {
     "name": "Brennen Ho",
     "role": "VP of Product",
     "photo": "about/headshots/ctc-brennen.png",
     "link": "https://www.linkedin.com/in/brennenho/",
-    "type": "general"
+    "type": "e-board"
   },
   {
     "name": "Jason Wiemels",
     "role": "VP of Development",
     "photo": "about/headshots/ctc-jason.png",
     "link": "https://www.linkedin.com/in/jwiemels/",
-    "type": "general"
+    "type": "e-board"
   },
   {
     "name": "Yeji Seo",
     "role": "VP of Design",
     "photo": "about/headshots/ctc-yeji.png",
     "link": "https://www.linkedin.com/in/faithyejiseo/",
-    "type": "general"
+    "type": "e-board"
   },
   {
     "name": "Jeremy Sedillo",
     "role": "VP of Events",
     "photo": "about/headshots/ctc-jeremy.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
-    "type": "general"
+    "link": "https://www.linkedin.com/in/jeremy-sedillo/",
+    "type": "e-board"
   },
   {
     "name": "Jerry Zhang",
     "role": "VP of Finance",
-    "photo": "about/headshots/ctc-jeremy.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
+    "photo": "about/headshots/ctc-jerry.png",
+    "link": "https://www.linkedin.com/in/jerry-n-zhang/",
+    "type": "e-board"
+  },
+  {
+    "name": "Andrew Choi",
+    "role": "VP of Community",
+    "photo": "about/headshots/ctc-andrew.png",
+    "link": "https://www.linkedin.com/in/andrew-choi-97153a292/",
+    "type": "e-board"
+  },
+  {
+    "name": "Avni Hulyalkar",
+    "role": "VP of DEI",
+    "photo": "about/headshots/ctc-avni.png",
+    "link": "https://www.linkedin.com/in/avni-hulyalkar-814b7b293/",
+    "type": "e-board"
+  },
+  {
+    "name": "Pari Pandey",
+    "role": "VP of External Relations",
+    "photo": "about/headshots/ctc-pari.png",
+    "link": "https://www.linkedin.com/in/paripandeysg/",
+    "type": "e-board"
+  },
+  {
+    "name": "Naysa Bhargava",
+    "role": "Product Manager",
+    "photo": "about/headshots/ctc-naysa.png",
+    "link": "https://www.linkedin.com/in/naysa-bhargava/",
     "type": "general"
   },
   {
     "name": "Andrew Choi",
-    "role": "VP of Community Outreach",
-    "photo": "about/headshots/ctc-jeremy.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
+    "role": "Product Manager",
+    "photo": "about/headshots/ctc-andrew.png",
+    "link": "https://www.linkedin.com/in/andrew-choi-97153a292//",
     "type": "general"
   },
   {
-    "name": "Pari Pandey",
-    "role": "VP of External Relations",
-    "photo": "about/headshots/ctc-jeremy.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
+    "name": "Lian Song",
+    "role": "Product Manager",
+    "photo": "about/headshots/ctc-lian.png",
+    "link": "https://www.linkedin.com/in/lian-song/",
     "type": "general"
   },
   {
-    "name": "Pari Pandey",
-    "role": "VP of External Relations",
+    "name": "Jerry Zhang",
+    "role": "Technology Lead",
+    "photo": "about/headshots/ctc-jerry.png",
+    "link": "https://www.linkedin.com/in/jerry-n-zhang/",
+    "type": "general"
+  },
+  {
+    "name": "Jeremy Sedillo",
+    "role": "Technology Lead",
     "photo": "about/headshots/ctc-jeremy.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
+    "link": "https://www.linkedin.com/in/jeremy-sedillo/",
+    "type": "general"
+  },
+  {
+    "name": "Enoch Chang",
+    "role": "Technology Lead",
+    "photo": "about/headshots/ctc-enoch.png",
+    "link": "https://www.linkedin.com/in/enoch-chang-ab334525b/",
+    "type": "general"
+  },
+  {
+    "name": "Lauryn Kinsella",
+    "role": "Designer",
+    "photo": "about/headshots/ctc-lauryn.png",
+    "link": "https://www.linkedin.com/in/laurynkinsella/",
+    "type": "general"
+  },
+  {
+    "name": "Teri Shim",
+    "role": "Designer",
+    "photo": "about/headshots/ctc-teri.png",
+    "link": "https://www.linkedin.com/in/teri-shim/",
+    "type": "general"
+  },
+  {
+    "name": "Joanna Poon",
+    "role": "Designer",
+    "photo": "about/headshots/ctc-joanna.png",
+    "link": "https://www.linkedin.com/in/joannapoon-/",
+    "type": "general"
+  },
+  {
+    "name": "Uyen Hoang",
+    "role": "Designer",
+    "photo": "about/headshots/ctc-uyen.png",
+    "link": "https://www.linkedin.com/in/nhatuyenhoang/",
+    "type": "general"
+  },
+  {
+    "name": "Indira Abhyanker",
+    "role": "Designer",
+    "photo": "about/headshots/ctc-indira.png",
+    "link": "https://www.linkedin.com/in/iabhyanker/",
+    "type": "general"
+  },
+  {
+    "name": "Eileen Mou",
+    "role": "Designer",
+    "photo": "about/headshots/ctc-eileen.png",
+    "link": "https://www.linkedin.com/in/eileen-mou-928927210/",
+    "type": "general"
+  },
+  {
+    "name": "Aditi Jain",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-aditi.png",
+    "link": "https://www.linkedin.com/in/aditinjain/",
+    "type": "general"
+  },
+  {
+    "name": "Brandon Choi",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-cole.png",
+    "link": "https://www.linkedin.com/in/serena-li-70abb3292/",
+    "type": "general"
+  },
+  {
+    "name": "Robin Ryu",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-robin.png",
+    "link": "https://www.linkedin.com/in/youngbin-ryu-b4541325a/",
+    "type": "general"
+  },
+  {
+    "name": "Yirui Song",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-yirui.png",
+    "link": "https://www.linkedin.com/in/yirui-song/",
+    "type": "general"
+  },
+  {
+    "name": "Jaime Martin",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-jaime.png",
+    "link": "https://www.linkedin.com/in/jmartin101/",
+    "type": "general"
+  },
+  {
+    "name": "Grace Li",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-grace-li.png",
+    "link": "https://www.linkedin.com/in/grace-li51/",
+    "type": "general"
+  },
+  {
+    "name": "Abby Moll",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-abby.png",
+    "link": "https://www.linkedin.com/in/abby-moll/",
+    "type": "general"
+  },
+  {
+    "name": "Misha Fu",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-cole.png",
+    "link": "https://www.linkedin.com/in/mengxue-f-b05662326/",
+    "type": "general"
+  },
+  {
+    "name": "Cole Gawin",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-cole.png",
+    "link": "https://www.linkedin.com/in/colegawin/",
+    "type": "general"
+  },
+  {
+    "name": "Greydon O'Keefe",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-greydon.png",
+    "link": "https://www.linkedin.com/in/greydon-okeefe/",
+    "type": "general"
+  },
+  {
+    "name": "Serena Li",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-serena.png",
+    "link": "https://www.linkedin.com/in/serena-li-70abb3292/",
+    "type": "general"
+  },
+  {
+    "name": "Robin Ryu",
+    "role": "Developer",
+    "photo": "about/headshots/ctc-robin.png",
+    "link": "https://www.linkedin.com/in/youngbin-ryu-b4541325a/",
+    "type": "general"
+  },
+  {
+    "name": "Megan Phi",
+    "role": "Class of 2025",
+    "photo": "about/headshots/ctc-megan.png",
+    "link": "https://www.linkedin.com/in/megan-phi/",
+    "type": "alumni"
+  },
+  {
+    "name": "Joanne Lee",
+    "role": "Class of 2025",
+    "photo": "about/headshots/ctc-joanne.png",
+    "link": "https://www.linkedin.com/in/jnysn/",
+    "type": "alumni"
+  },
+  {
+    "name": "Grace Kuo",
+    "role": "Class of 2025",
+    "photo": "about/headshots/ctc-grace.png",
+    "link": "https://www.linkedin.com/grace-kuo-710a9719a/",
+    "type": "alumni"
+  },
+  {
+    "name": "Olivia Lai",
+    "role": "Developer Mentor",
+    "photo": "about/headshots/ctc-olivia.png",
+    "link": "https://www.linkedin.com/in/olivia-s-lai/",
     "type": "general"
   },
   {
@@ -105,13 +301,6 @@
     "type": "alumni"
   },
   {
-    "name": "Ellen Landrum",
-    "role": "VP of Community",
-    "photo": "about/headshots/ctc-ellen.png",
-    "link": "https://www.linkedin.com/in/ellenlandrum/",
-    "type": "alumni"
-  },
-  {
     "name": "Saihaj Gulati",
     "role": "Class of 2025",
     "photo": "about/headshots/ctc-saihaj.jpg",
@@ -124,132 +313,6 @@
     "photo": "about/headshots/ctc-amber.png",
     "link": "https://www.linkedin.com/in/amber-garcha/",
     "type": "alumni"
-  },
-  {
-    "name": "Naysa Bhargava",
-    "role": "Product Manager",
-    "photo": "about/headshots/ctc-naysa.png",
-    "link": "https://www.linkedin.com/in/faithyejiseo/",
-    "type": "general"
-  },
-  {
-    "name": "Andrew Choi",
-    "role": "Product Manager",
-    "photo": "about/headshots/ctc-andrew.png",
-    "link": "https://www.linkedin.com/in/elissamartial/",
-    "type": "general"
-  },
-  {
-    "name": "Lian Song",
-    "role": "Product Manager",
-    "photo": "about/headshots/ctc-lian.png",
-    "link": "https://www.linkedin.com/in/reeya-a-patel/",
-    "type": "general"
-  },
-  {
-    "name": "Jerry Zhang",
-    "role": "Technology Lead",
-    "photo": "about/headshots/ctc-cole.png",
-    "link": "https://www.linkedin.com/in/colegawin/",
-    "type": "general"
-  },
-  {
-    "name": "Jeremy Sedillo",
-    "role": "Technology Lead",
-    "photo": "about/headshots/ctc-greydon.png",
-    "link": "https://www.linkedin.com/in/greydon-okeefe/",
-    "type": "general"
-  },
-  {
-    "name": "Enoch Chang",
-    "role": "Technology Lead",
-    "photo": "about/headshots/ctc-jason.png",
-    "link": "https://www.linkedin.com/in/jwiemels/",
-    "type": "general"
-  },
-  {
-    "name": "Indira Abhyanker",
-    "role": "Designer",
-    "photo": "about/headshots/ctc-indira.png",
-    "link": "https://www.linkedin.com/in/iabhyanker/",
-    "type": "general"
-  },
-  {
-    "name": "Eileen Mou",
-    "role": "Designer",
-    "photo": "about/headshots/ctc-eileen.png",
-    "link": "https://www.linkedin.com/in/eileen-mou-928927210/",
-    "type": "general"
-  },
-  {
-    "name": "Serena Li",
-    "role": "Developer",
-    "photo": "about/headshots/ctc-serena.png",
-    "link": "https://www.linkedin.com/in/serena-li-70abb3292/",
-    "type": "general"
-  },
-  {
-    "name": "Jeremy Sedillo",
-    "role": "Developer",
-    "photo": "about/headshots/ctc-jeremy.png",
-    "link": "https://www.linkedin.com/in/jeremy-sedillo/",
-    "type": "general"
-  },
-  {
-    "name": "Jerry Zhang",
-    "role": "Developer",
-    "photo": "about/headshots/ctc-jerry.png",
-    "link": "https://www.linkedin.com/in/jerry-n-zhang/",
-    "type": "general"
-  },
-  {
-    "name": "Kristen Won",
-    "role": "Developer",
-    "photo": "about/headshots/ctc-kristen.png",
-    "link": "https://www.linkedin.com/in/kristenwon/",
-    "type": "general"
-  },
-  {
-    "name": "Andrew Choi",
-    "role": "Developer",
-    "photo": "about/headshots/ctc-andrew.png",
-    "link": "https://www.linkedin.com/in/andrew-choi-97153a292/",
-    "type": "general"
-  },
-  {
-    "name": "Robin Ryu",
-    "role": "Developer",
-    "photo": "about/headshots/ctc-robin.png",
-    "link": "https://www.linkedin.com/in/kristenwon/",
-    "type": "general"
-  },
-  {
-    "name": "Megan Phi",
-    "role": "Class of 2025",
-    "photo": "about/headshots/ctc-megan.png",
-    "link": "https://www.linkedin.com/in/megan-phi/",
-    "type": "alumni"
-  },
-  {
-    "name": "Joanne Lee",
-    "role": "Design Mentor",
-    "photo": "about/headshots/ctc-joanne.png",
-    "link": "https://www.linkedin.com/in/jnysn/",
-    "type": "general"
-  },
-  {
-    "name": "Grace Kuo",
-    "role": "Design Mentor",
-    "photo": "about/headshots/ctc-grace.png",
-    "link": "https://www.linkedin.com/grace-kuo-710a9719a/",
-    "type": "general"
-  },
-  {
-    "name": "Olivia Lai",
-    "role": "Developer Mentor",
-    "photo": "about/headshots/ctc-olivia.png",
-    "link": "https://www.linkedin.com/in/olivia-s-lai/",
-    "type": "general"
   },
   {
     "name": "Hilari Fan",
@@ -274,17 +337,17 @@
   },
   {
     "name": "Tammy Truong",
-    "role": "Developer Mentor",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-tammy.png",
     "link": "https://www.linkedin.com/in/tammytru/",
-    "type": "general"
+    "type": "alumni"
   },
   {
     "name": "Abhinav Gupta",
-    "role": "Developer Mentor",
+    "role": "Class of 2025",
     "photo": "about/headshots/ctc-abhinav.png",
     "link": "https://www.linkedin.com/in/abghinav/",
-    "type": "general"
+    "type": "alumni"
   },
   {
     "name": "Bridget Bell",
