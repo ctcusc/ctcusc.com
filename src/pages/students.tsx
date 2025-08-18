@@ -9,14 +9,12 @@ import 'react-multi-carousel/lib/styles.css'
 import studentsStyles from '../styles/students.module.css'
 import sharedStyles from '../styles/shared.module.css'
 import { motion } from 'framer-motion'
-import beach from '../../public/ctcbeach.jpg'
-import donut from '../../public/donut-22.jpg'
-import designers from '../../public/designers-conference.jpg'
-import retreatfa from '../../public/retreat-fall23.jpg'
-import ctcf1 from '../../public/ctcf1.jpg'
-import ctckfp from '../../public/ctckfp.jpg'
-import ctcacro from '../../public/ctcacro.png'
-import ctcpie from '../../public/ctcpie.png'
+import beach from '../../public/beach-pyramid.jpg'
+import beachgroup from '../../public/beach-group.jpg'
+import beachcandid from '../../public/mysterious-beachcandid.jpeg'
+import ellen from '../../public/ellen-gardening.jpg'
+import bathtub from '../../public/bathtub.jpg'
+import meetingCandid from '../../public/meeting-candid.jpg'
 
 const faq = [
   {
@@ -78,10 +76,8 @@ const Index = () => {
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
           <p>
-            Applications for the 2024-25 school year are unfortunately closed.
-            However, come meet us at Viterbi's Spring Get Connected Fair on
-            January 13th from 11-2PM! We'll also be hosting technical workshops
-            throughout the semester, so come through to learn and say hi!
+            More information about applications for the 2025-26 school year will
+            be out soon!
           </p>
           {/* <div className={studentsStyles.buttons}>
             <a
@@ -104,9 +100,9 @@ const Index = () => {
         </div>
         <Image
           className={studentsStyles.photo}
-          src={donut}
+          src={beachgroup}
           priority
-          quality="50"
+          quality="100"
           alt="Members having coffee together"
           placeholder="blur"
         />
@@ -115,8 +111,8 @@ const Index = () => {
       <div className={studentsStyles.photogrid}>
         <div className={studentsStyles.photo}>
           <Image
-            src={ctcpie}
-            alt="CTC Members pieing each other (for a good cause)"
+            src={meetingCandid}
+            alt="GMs at Old Annenberg"
             quality="100"
             priority
             placeholder="blur"
@@ -131,25 +127,25 @@ const Index = () => {
         />
         <Image
           className={studentsStyles.photo}
-          src={ctckfp}
-          alt="CTC members watching Kung Fu Panda"
+          src={bathtub}
+          alt="CTC members in a bathtub"
           quality="100"
           priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
-          src={ctcf1}
-          alt="CTC members going go-karting"
+          src={ellen}
+          alt="VP of Face at retreat"
           quality="100"
           priority
           placeholder="blur"
         />
         <Image
           className={studentsStyles.photo}
-          src={retreatfa}
-          alt="Club retreat in Palm Spring Fall 2022"
-          quality="50"
+          src={beachcandid}
+          alt="Mysterious beach candid"
+          quality="100"
           priority
           placeholder="blur"
         />

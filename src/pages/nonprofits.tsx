@@ -14,7 +14,7 @@ import 'react-multi-carousel/lib/styles.css'
 import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
 import usc from '../../public/usc.jpg'
-import volunteering from '../../public/cathartic-volunteering.jpg'
+import gard from '../../public/gard.jpg'
 
 const faq = [
   {
@@ -62,8 +62,8 @@ export default function Nonprofits() {
       <h1>Partner with us.</h1>
       <div className={nonprofitStyles.grid}>
         <Image
-          src={volunteering}
-          alt="CTC doing a volunteer event for Cathartic Health "
+          src={gard}
+          alt="CTC doing a volunteer event for Garden School Foundation"
           quality="100"
           priority
           placeholder="blur"
