@@ -114,7 +114,7 @@ export default function Nonprofits() {
         <div className={nonprofitStyles.c}>
           <Image
             src={usc}
-            quality="50"
+            quality="100"
             priority
             alt="picture of University of Southern California Campus"
           />
@@ -122,14 +122,14 @@ export default function Nonprofits() {
         <Image
           className={nonprofitStyles.a}
           src={panel}
-          quality="50"
+          quality="100"
           priority
           alt="Member presenting to nonprofits"
         />
         <Image
           className={nonprofitStyles.b}
           src={present}
-          quality="50"
+          quality="100"
           priority
           alt="Member presenting to audience"
         />
