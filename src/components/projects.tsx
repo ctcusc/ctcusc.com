@@ -5,9 +5,9 @@ import { motion, AnimateSharedLayout } from 'framer-motion'
 import 'react-multi-carousel/lib/styles.css'
 import rolesStyles from '../styles/roles.module.css'
 import sharedStyles from '../styles/shared.module.css'
-import racShowcase from '../../public/projects/rac-showcase.png'
-import vbaShowcase from '../../public/projects/vba-showcase.png'
-import wagShowcase from '../../public/projects/wag-showcase.png'
+import ccShowcase from '../../public/projects/cc-showcase.png'
+import gsfShowcase from '../../public/projects/gsf-showcase.png'
+import icvShowcase from '../../public/projects/icv-showcase.png'
 
 const single = {
   single: {
@@ -19,25 +19,25 @@ const single = {
 // Object that stores information for projects from LAST YEAR
 const pastProjects = [
   {
-    name: 'RaiseAChild',
+    name: 'Climate Cents',
     desc:
-      'Code the Change built a data visualization dashboard for RaiseAChild so that organization members could better view key metrics.',
-    stack: 'Built with NextJS, FastAPI, and PostgreSQL',
-    img: racShowcase,
+      "Code the Change built an interactive map of Blue Sky LA's climate projects to make local action visible, searchable, and engaging.",
+    stack: 'Built with NextJS, CloudFlare, and Mapbox',
+    img: ccShowcase,
   },
   {
-    name: 'Voices Beyond Assault',
+    name: 'Inner City Visions',
     desc:
-      'Code the Change built a custom forum for Voices Beyond Assault where survivors of sexual assault could anonymously communicate, share stories, and uplift each other.',
-    stack: 'Built with React, Express, and PostgreSQL',
-    img: vbaShowcase,
+      'Code the Change built a mobile crisis-management tool to prevent and interrupt the exploitation of families and high-risk or sex-trafficked children.',
+    stack: 'Built with React Native, Expo, and Supabase',
+    img: icvShowcase,
   },
   {
-    name: 'We Are G.A.M.E',
+    name: 'Garden School Foundation',
     desc:
-      'Code the Change built an internal dashboard alongside an informational database for prospective college athletes to find mentors and potential colleges.',
+      'Code the Change built a centralized volunteer management platform that streamlines signups, confirmation, and communication.',
     stack: 'Built with React, Express, and PostgreSQL',
-    img: wagShowcase,
+    img: gsfShowcase,
   },
 ]
 
@@ -97,14 +97,16 @@ const PastProjects = () => {
           {pastProjects.map(({ name, img, desc, stack }) => {
             return (
               <div key={name} className={rolesStyles.panel}>
-                <Image
-                  className={rolesStyles.photo}
-                  src={img}
-                  alt={name}
-                  priority
-                  quality="5"
-                  placeholder="blur"
-                />
+                <div className={rolesStyles.imagewrapper}>
+                  <Image
+                    className={rolesStyles.photo}
+                    src={img}
+                    alt={name}
+                    priority
+                    quality="5"
+                    placeholder="blur"
+                  />
+                </div>
                 <div>
                   <h4 className={rolesStyles.title}>{name}</h4>
                   <p className={rolesStyles.desc}>{desc}</p>

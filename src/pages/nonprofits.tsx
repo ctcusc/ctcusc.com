@@ -14,7 +14,7 @@ import 'react-multi-carousel/lib/styles.css'
 import panel from '../../public//demo-night.jpg'
 import present from '../../public/present.jpg'
 import usc from '../../public/usc.jpg'
-import volunteering from '../../public/cathartic-volunteering.jpg'
+import gard from '../../public/gard.jpg'
 
 const faq = [
   {
@@ -62,11 +62,12 @@ export default function Nonprofits() {
       <h1>Partner with us.</h1>
       <div className={nonprofitStyles.grid}>
         <Image
-          src={volunteering}
-          alt="CTC doing a volunteer event for Cathartic Health "
+          src={gard}
+          alt="CTC doing a volunteer event for Garden School Foundation"
           quality="100"
           priority
           placeholder="blur"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
         <div>
           <div>
@@ -114,24 +115,27 @@ export default function Nonprofits() {
         <div className={nonprofitStyles.c}>
           <Image
             src={usc}
-            quality="50"
+            quality="100"
             priority
             alt="picture of University of Southern California Campus"
+            style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
           />
         </div>
         <Image
           className={nonprofitStyles.a}
           src={panel}
-          quality="50"
+          quality="100"
           priority
           alt="Member presenting to nonprofits"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
         <Image
           className={nonprofitStyles.b}
           src={present}
-          quality="50"
+          quality="100"
           priority
           alt="Member presenting to audience"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
       </div>
       <div className={nonprofitStyles.info}>
@@ -157,9 +161,9 @@ export default function Nonprofits() {
         <div>
           <div className={nonprofitStyles.location}>
             <h3>Los Angeles, CA</h3>
-            <h3>
+            {/* <h3>
               <Clock format={'h:mm a'} ticking={true} timezone={'US/Pacific'} />
-            </h3>
+            </h3> */}
           </div>
           <ExtLink href="mailto:ctcusc@gmail.com">
             <div className={studentsStyles.mail}>ctcusc@gmail.com</div>

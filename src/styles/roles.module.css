@@ -3,12 +3,15 @@
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+  max-width: 100%;
+  height: auto;
   margin: 0;
 }
 
 .panel {
   display: grid;
-  max-width: 880px;
+  max-width: 80%;
+  justify-self: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   gap: 30px;

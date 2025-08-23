@@ -65,8 +65,13 @@
   display: block;
   box-sizing: border-box;
   overflow: hidden;
-  position: relative;
   margin: 0;
+
+  /* constraints */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .photo:first-child {
@@ -90,12 +95,10 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  overflow: hidden;
-  gap: 32px;
   align-items: center;
   justify-items: start;
-  margin: 0px 0px 64px 0px;
+  gap: 32px;
+  margin: 0 0 64px 0;
 }
 
 .grid h4 {

@@ -25,15 +25,13 @@ export default function Footer() {
           <div className={footerStyles.space} />
           <ExtLink href="https://figma.com/@codethechange">Figma</ExtLink>
         </div>
-        <Link href="/">
-          <a className={footerStyles.left}>
-            <Logo
-              className={footerStyles.logo}
-              width={48}
-              height={32}
-              aria-label="Code the Change Logo"
-            />
-          </a>
+        <Link href="/" className={footerStyles.left}>
+          <Logo
+            className={footerStyles.logo}
+            width={48}
+            height={32}
+            aria-label="Code the Change Logo"
+          />
         </Link>
       </div>
     </footer>
