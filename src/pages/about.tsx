@@ -66,14 +66,20 @@ const Index = () => {
         areas.
       </p>
       <div className={aboutStyles.alumni}>
-        <Image
-          src={great}
-          alt="List of companies, fellowships, and doctoral studies our alumni have gone on to"
-        />
-        <Image
-          src={things}
-          alt="List of companies, fellowships, and doctoral studies our alumni have gone on to"
-        />
+        <div>
+          <Image
+            src={great}
+            alt="List of companies, fellowships, and doctoral studies our alumni have gone on to"
+            style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
+        <div>
+          <Image
+            src={things}
+            alt="List of companies, fellowships, and doctoral studies our alumni have gone on to"
+            style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
       </div>
 
       <h1>Sponsors.</h1>

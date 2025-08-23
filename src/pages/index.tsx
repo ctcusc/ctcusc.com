@@ -123,57 +123,71 @@ export default function Index() {
           </div>
         </div>
         <div className={landingStyles.grid}>
-          <Image
-            className={landingStyles.photo}
-            src={rfpvolunteering}
-            alt="Volunteering event at The Ron Finley Project"
-            quality="50"
-            priority
-            placeholder="blur"
-          />
-          <h4>
-            Every year, we partner with three 501(c)(3) orginizations within the
-            Los Angeles area. Many nonprofits are bound in their reach and scope
-            of technology, so we're here to help free of charge so they can
-            execute their mission to its fullest extent.
-          </h4>
+          <div>
+            <Image
+              src={rfpvolunteering}
+              alt="Volunteering event at The Ron Finley Project"
+              className={landingStyles.photo}
+              quality={50}
+              priority={true}
+              placeholder="blur"
+              style={{ width: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div>
+            <h4>
+              Every year, we partner with three 501(c)(3) organizations within
+              the Los Angeles area. Many nonprofits are bound in their reach and
+              scope of technology, so we're here to help free of charge so they
+              can execute their mission to its fullest extent.
+            </h4>
+          </div>
         </div>
         <div className={landingStyles.grid}>
-          <h4>
-            To accomplish this, CTC is structured into teams comprised of a
-            project manager, technical lead, developers, and designers. The
-            executive board manages recruitment, events, and fun.
-          </h4>
-          <Image
-            src={candid}
-            alt="Gladeo team working on project together"
-            quality="50"
-            priority
-            placeholder="blur"
-          />
+          <div>
+            <h4>
+              To accomplish this, CTC is structured into teams comprised of a
+              project manager, technical lead, developers, and designers. The
+              executive board manages recruitment, events, and fun.
+            </h4>
+          </div>
+          <div>
+            <Image
+              src={candid}
+              className={landingStyles.photo}
+              alt="Gladeo team working on project together"
+              quality="50"
+              priority
+              placeholder="blur"
+            />
+          </div>
         </div>
         <div className={landingStyles.grid}>
-          <Image
-            className={landingStyles.photo}
-            src={yash}
-            alt="Alumni Selfie of Org"
-            quality="100"
-            priority
-            placeholder="blur"
-          />
-          <h4>
-            We're committed to our impact, but we go beyond work — Code the
-            Change is a lifelong family. During our annual alumni nights, even
-            members from our founding year come back. We support each other
-            beyond just our projects.
-          </h4>
+          <div>
+            <Image
+              className={landingStyles.photo}
+              src={yash}
+              alt="Alumni Selfie of Org"
+              quality="100"
+              priority
+              placeholder="blur"
+            />
+          </div>
+          <div>
+            <h4>
+              We're committed to our impact, but we go beyond work — Code the
+              Change is a lifelong family. During our annual alumni nights, even
+              members from our founding year come back. We support each other
+              beyond just our projects.
+            </h4>
+          </div>
         </div>
-        {/* <h2>Last year's nonprofits</h2> */}
-        {/* <div className={landingStyles.nonprofits}>
+        {/* <h2>Last year's nonprofits</h2> 
+        <div className={landingStyles.nonprofits}>
           <div className={landingStyles.nonprofit}>
             <Image
               src={nonprofit1}
-              alt="ImagineLA"
+              alt="Climate Cents"
               priority
               quality="100"
               placeholder="blur"
@@ -182,7 +196,7 @@ export default function Index() {
           <div className={landingStyles.nonprofit}>
             <Image
               src={nonprofit2}
-              alt="Affordable South LA"
+              alt="Garden School Foundation"
               priority
               quality="5"
               placeholder="blur"
@@ -191,7 +205,7 @@ export default function Index() {
           <div className={landingStyles.nonprofit}>
             <Image
               src={nonprofit3}
-              alt="Humans Against Trafficking"
+              alt="Inner City Visions"
               priority
               quality="100"
               placeholder="blur"

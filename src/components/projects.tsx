@@ -97,14 +97,16 @@ const PastProjects = () => {
           {pastProjects.map(({ name, img, desc, stack }) => {
             return (
               <div key={name} className={rolesStyles.panel}>
-                <Image
-                  className={rolesStyles.photo}
-                  src={img}
-                  alt={name}
-                  priority
-                  quality="5"
-                  placeholder="blur"
-                />
+                <div className={rolesStyles.imagewrapper}>
+                  <Image
+                    className={rolesStyles.photo}
+                    src={img}
+                    alt={name}
+                    priority
+                    quality="5"
+                    placeholder="blur"
+                  />
+                </div>
                 <div>
                   <h4 className={rolesStyles.title}>{name}</h4>
                   <p className={rolesStyles.desc}>{desc}</p>
