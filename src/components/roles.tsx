@@ -124,14 +124,16 @@ const Roles = () => {
           {roles.map(({ name, img, desc, skills }) => {
             return (
               <div key={name} className={rolesStyles.panel}>
-                <Image
-                  className={rolesStyles.photo}
-                  src={img}
-                  alt={name}
-                  priority
-                  quality="5"
-                  placeholder="blur"
-                />
+                <div>
+                  <Image
+                    className={rolesStyles.photo}
+                    src={img}
+                    alt={name}
+                    priority
+                    quality="5"
+                    placeholder="blur"
+                  />
+                </div>
                 <div>
                   <h4 className={rolesStyles.title}>{name}</h4>
                   <p className={rolesStyles.desc}>{desc}</p>

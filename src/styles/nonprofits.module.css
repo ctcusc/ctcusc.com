@@ -25,33 +25,35 @@
 
 .photogrid {
   display: grid;
-  justify-content: center;
-  margin: 42px auto 0px;
-  gap: 12px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  margin: 42px auto 0px;
+  justify-content: center;
   grid-template-areas:
-    'a c'
-    'b c';
+    'c a'
+    'c b';
 }
 
 .c {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   grid-area: c;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
+
 .a {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   grid-area: a;
-}
-.b {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  overflow: hidden;
+}
+
+.b {
   grid-area: b;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .location {

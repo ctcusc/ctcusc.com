@@ -109,22 +109,27 @@ const Index = () => {
       </div>
       <Roles />
       <div className={studentsStyles.photogrid}>
-        <div className={studentsStyles.photo}>
+        <div className={studentsStyles.photolarge}>
           <Image
             src={meetingCandid}
             alt="GMs at Old Annenberg"
             quality="100"
             priority
             placeholder="blur"
+            style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
           />
         </div>
-        <Image
-          src={beach}
-          alt="Club retreat at Huntington Beach"
-          quality="100"
-          priority
-          placeholder="blur"
-        />
+        <div>
+          <Image
+            className={studentsStyles.photo}
+            src={beach}
+            alt="Club retreat at Huntington Beach"
+            quality="100"
+            priority
+            placeholder="blur"
+            style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
         <Image
           className={studentsStyles.photo}
           src={bathtub}
@@ -132,6 +137,7 @@ const Index = () => {
           quality="100"
           priority
           placeholder="blur"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
         <Image
           className={studentsStyles.photo}
@@ -140,6 +146,7 @@ const Index = () => {
           quality="100"
           priority
           placeholder="blur"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
         <Image
           className={studentsStyles.photo}
@@ -148,6 +155,7 @@ const Index = () => {
           quality="100"
           priority
           placeholder="blur"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
       </div>
       <h2>Questions.</h2>
@@ -156,7 +164,6 @@ const Index = () => {
           return <Accordion question={question} answer={answer} />
         })}
         <div>
-          <div />
           <ExtLink href="mailto:ctcusc@gmail.com">
             <div className={studentsStyles.mail}>Have more? Email us!</div>
           </ExtLink>

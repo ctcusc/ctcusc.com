@@ -74,25 +74,24 @@ const Header = ({ titlePre = '' }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
-      <Link href="/">
-        <a className={styles.left}>
-          <Logo
-            className={styles.logo}
-            width={48}
-            height={32}
-            aria-label={title}
-          />
-          <span className={styles.name}>{title}</span>
-        </a>
+      <Link href="/" className={styles.left}>
+        <Logo
+          className={styles.logo}
+          width={48}
+          height={32}
+          aria-label={title}
+        />
+        <span className={styles.name}>{title}</span>
       </Link>
       <ul>
         {navItems.map(({ label, page, link }) => (
           <li key={label}>
             {page ? (
-              <Link href={page}>
-                <a className={pathname === page ? 'active' : undefined}>
-                  {label}
-                </a>
+              <Link
+                href={page}
+                className={pathname === page ? 'active' : undefined}
+              >
+                {label}
               </Link>
             ) : (
               <ExtLink href={link}>{label}</ExtLink>

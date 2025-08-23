@@ -67,6 +67,7 @@ export default function Nonprofits() {
           quality="100"
           priority
           placeholder="blur"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
         <div>
           <div>
@@ -117,6 +118,7 @@ export default function Nonprofits() {
             quality="100"
             priority
             alt="picture of University of Southern California Campus"
+            style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
           />
         </div>
         <Image
@@ -125,6 +127,7 @@ export default function Nonprofits() {
           quality="100"
           priority
           alt="Member presenting to nonprofits"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
         <Image
           className={nonprofitStyles.b}
@@ -132,6 +135,7 @@ export default function Nonprofits() {
           quality="100"
           priority
           alt="Member presenting to audience"
+          style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto' }}
         />
       </div>
       <div className={nonprofitStyles.info}>
@@ -157,9 +161,9 @@ export default function Nonprofits() {
         <div>
           <div className={nonprofitStyles.location}>
             <h3>Los Angeles, CA</h3>
-            <h3>
+            {/* <h3>
               <Clock format={'h:mm a'} ticking={true} timezone={'US/Pacific'} />
-            </h3>
+            </h3> */}
           </div>
           <ExtLink href="mailto:ctcusc@gmail.com">
             <div className={studentsStyles.mail}>ctcusc@gmail.com</div>
