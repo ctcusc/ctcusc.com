@@ -11,10 +11,10 @@ const Accordion = ({ question, answer }) => {
           className={accordionStyles.question}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <p className={accordionStyles.questionRow}>
-            {question}
-            <div className={accordionStyles.questionPlus}>+</div>
-          </p>
+          <div className={accordionStyles.questionRow}>
+            <span>{question}</span>
+            <span className={accordionStyles.questionPlus}>+</span>
+          </div>
           {isOpen && (
             <motion.div
               className={accordionStyles.answer}

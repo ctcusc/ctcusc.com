@@ -33,16 +33,16 @@ const ogImageUrl = '../../public/og-image.png'
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
   const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [visible, setVisible] = useState(true)
+  const [navVisible, setNavVisible] = useState(true)
 
   const handleScroll = debounce(
     () => {
       const currentScrollPos = window.pageYOffset
 
-      setVisible(
+      setNavVisible(
         (prevScrollPos > currentScrollPos &&
           prevScrollPos - currentScrollPos > 70) ||
-          currentScrollPos < 10
+        currentScrollPos < 10
       )
 
       setPrevScrollPos(currentScrollPos)
@@ -53,16 +53,15 @@ const Header = ({ titlePre = '' }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [prevScrollPos, visible, handleScroll])
+  }, [prevScrollPos, navVisible, handleScroll])
 
   const title = 'Code the Change'
   const desc =
     'Code the Change is a student-run organization at USC that develops technology for nonprofits pro-bono.'
 
   return (
-    <header className={styles.header} style={{ top: visible ? '0' : '-60px' }}>
+    <header className={styles.header}>
       <Head>
         <title>
           {titlePre ? `${titlePre} |` : ''} {title}
@@ -74,31 +73,43 @@ const Header = ({ titlePre = '' }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
-      <Link href="/" className={styles.left}>
-        <Logo
-          className={styles.logo}
-          width={48}
-          height={32}
-          aria-label={title}
-        />
-        <span className={styles.name}>{title}</span>
-      </Link>
-      <ul>
-        {navItems.map(({ label, page, link }) => (
-          <li key={label}>
-            {page ? (
-              <Link
-                href={page}
-                className={pathname === page ? 'active' : undefined}
-              >
-                {label}
-              </Link>
-            ) : (
-              <ExtLink href={link}>{label}</ExtLink>
-            )}
-          </li>
-        ))}
-      </ul>
+      <div className={`${styles.nav} ${navVisible ? '' : styles.navHidden}`}>
+        <Link href="/" className={styles.left}>
+          <Logo
+            className={styles.logo}
+            width={48}
+            height={32}
+            aria-label={title}
+          />
+          <span className={styles.name}>{title}</span>
+        </Link>
+        <ul>
+          {navItems.map(({ label, page, link }) => (
+            <li key={label}>
+              {page ? (
+                <Link
+                  href={page}
+                  className={pathname === page ? 'active' : undefined}
+                >
+                  {label}
+                </Link>
+              ) : (
+                <ExtLink href={link}>{label}</ExtLink>
+              )}
+            </li>
+          ))}
+        </ul>
+        <div className={styles.announcement}>
+          <a
+            className={styles.announcementLink}
+            href="https://forms.gle/NzRPMJpPZ1AthJ4x8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Applications for 2025-26 are now open!
+          </a>
+        </div>
+      </div>
     </header>
   )
 }

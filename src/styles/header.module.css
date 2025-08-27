@@ -2,15 +2,12 @@
   position: fixed;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 64px;
-  transition: ease-in top 0.125s;
-  z-index: 1;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: visible;
+  z-index: 2;
   font-size: 17px;
-  padding-left: 5px;
-  padding-right: 15px;
 }
 
 .header ul {
@@ -34,6 +31,41 @@
 
 .header :global(a.active) {
   color: var(--ctc);
+}
+
+.announcement {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.announcement a {
+  color: var(--verde);
+  text-decoration: underline;
+}
+
+.announcementLink {
+  display: inline-block;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding-left: 5px;
+  padding-right: 15px;
+  background: transparent;
+  transition: transform 0.125s ease-in;
+  position: relative;
+  z-index: 3;
+}
+
+.navHidden {
+  transform: translateY(-100%);
 }
 
 .left {
