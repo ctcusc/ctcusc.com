@@ -75,9 +75,10 @@ const Index = () => {
             our values.
           </p>
           <p>If this resonates with you, we’d love to have you join us.</p>
-          <p>
-            Applications for the 2025-26 school year are now open.
-          </p>
+          {/* <p>
+            More information about applications for the 2026-27 school year will
+            be out soon!
+          </p> */}
           {/* <div className={studentsStyles.buttons}>
             <a
               target="_blank"

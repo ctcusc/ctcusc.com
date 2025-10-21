@@ -99,16 +99,6 @@ const Header = ({ titlePre = '' }) => {
             </li>
           ))}
         </ul>
-        <div className={styles.announcement}>
-          <a
-            className={styles.announcementLink}
-            href="https://forms.gle/NzRPMJpPZ1AthJ4x8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Applications for 2025-26 are now open!
-          </a>
-        </div>
       </div>
     </header>
   )
